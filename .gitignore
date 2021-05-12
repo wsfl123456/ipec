@@ -1,0 +1,8 @@
+.idea/*
+.DS_Store
+node_modules
+public
+utils/config.js
+/src/assets/images/ip_detail/iqiyi_logo.png
+.history/
+

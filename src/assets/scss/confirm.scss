@@ -1,0 +1,215 @@
+@import "var";
+
+li {
+  list-style: none;
+}
+
+.ticket-box {
+  .tic-content {
+    width: 11.4rem;
+    margin: 0 auto;
+    padding: 0;
+
+    .img-top {
+      width: 11.4rem;
+      height: 2.56rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .tic-title {
+      font-size: 0.24rem;
+      color: #343A40;
+      margin: 0.4rem auto 0.2rem;
+      text-align: center;
+    }
+
+    .letter {
+      background-color: #F8F9FA;
+      margin-bottom: 0.4rem;
+
+      .letter-content {
+        padding: 0.4rem 0.2rem 0.4rem 0.3rem;
+
+        .introduce {
+          margin-bottom: 0.3rem;
+
+          .name {
+            font-size: 0.16rem;
+            color: #343A40;
+            margin-bottom: 0.2rem;
+          }
+
+          .hi {
+            font-size: 0.16rem;
+            color: #6B7177;
+            margin-bottom: 0.1rem;
+          }
+
+          .intro {
+            font-size: 0.16rem;
+            color: #6B7177;
+            .place{
+              color: #6B7177;
+              border-bottom: none;
+            }
+            span{
+              color: #16001C;
+              border-bottom: solid 2px #16001C;
+            }
+          }
+        }
+
+        .code {
+          display: flex;
+          position: relative;
+          margin-bottom: 0.38rem;
+
+          .code-left {
+            width: 4.8rem;
+            height: 3.8rem;
+            border: 1px solid #CED4DA;
+            border-radius: 8px;
+            background-color: #fff;
+            margin-right: 0.3rem;
+            position: relative;
+
+            .top-border {
+              position: absolute;
+              width: 1.29rem;
+              height: 0.12rem;
+              background: #F8F9FA;
+              border-bottom: 1px solid #CED4DA;
+              border-radius: 4px;
+              left: 37%;
+              top: -0.09rem;
+            }
+
+            .bottom-border {
+              position: absolute;
+              width: 1.29rem;
+              height: 0.12rem;
+              background: #F8F9FA;
+              border-top: 1px solid #CED4DA;
+              border-radius: 4px;
+              left: 37%;
+              bottom: -0.09rem;
+            }
+
+            .title-img {
+              width: 1.2rem;
+              height: 0.42rem;
+              margin: 0.15rem 0 0.24rem 0.26rem;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .name {
+              font-size: 0.24rem;
+              color: #343A40;
+              text-align: center;
+            }
+
+            .company {
+              font-size: 0.16rem;
+              color: #6B7177;
+              text-align: center;
+              margin: 0.08rem auto;
+            }
+
+            .region {
+              text-align: center;
+              font-size: 0.16rem;
+              color: #6B7177;
+              margin-bottom: 0.16rem;
+            }
+
+            .confirm-code {
+              font-size: 0.18rem;
+              color: #000000;
+              width: 2.8rem;
+              height: 0.24rem;
+              background-color: #F8F9FA;
+              margin: 0 auto;
+
+              p {
+                width: 1.23rem;
+                margin: 0 auto;
+              }
+            }
+
+            .bar-code {
+              width: 2.8rem;
+              height: 0.88rem;
+              display: block;
+              margin: 0 auto 0.2rem;
+            }
+          }
+
+          .code-right {
+            position: absolute;
+            bottom: 0.01rem;
+            right: 0.25rem;
+
+            .code-ul {
+              li:first-child {
+                font-size: 0.16rem;
+                color: #FF6666;
+              }
+
+              li {
+                font-size: 0.16rem;
+                color: #6B7177;
+              }
+            }
+          }
+        }
+
+        .tips {
+          font-size: 0.16rem;
+          color: #6B7177;
+          .cont {
+            margin-top: 0.24rem;
+            font-size: 0.16rem;
+            color: #343A40;
+            font-weight: 400;
+          }
+          .con-word{
+            font-weight: 400;
+            font-size: 0.16rem;
+            color: #343A40;
+            margin: 0.24rem 0 0.12rem 0;
+            .confirm-ul{
+              margin-top: 0.1rem;
+              font-size: 0.16rem;
+              color: #343A40;
+              font-weight: 300;
+            }
+            .con-place{
+              margin-top: 0.12rem;
+              color: #16001C;
+              font-weight: 300;
+            }
+            .call-us{
+              margin-top: 0.12rem;
+              color: #6B7177;
+              li{
+                margin-bottom: 0.08rem;
+                span{
+                  color: #16001C;
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

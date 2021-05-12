@@ -1,0 +1,838 @@
+.vip-card {
+  .btn_primary_fl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-45deg, #4722fe 0%, #cc3afc 100%);
+    border-radius: 0.04rem;
+    outline: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #6248ff;
+    }
+  }
+  .btn_default_fl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.04rem;
+    background: #f8f9fa;
+    outline: none;
+    border: 1px solid #6248ff;
+    color: #6248ff;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #6248ff;
+    }
+  }
+}
+.vip-card-buy {
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  .banner {
+    width: 100%;
+    height: 3.6rem;
+    object-fit: cover;
+  }
+  .list {
+    width: 11.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.9rem auto 0.5rem;
+    .item {
+      flex: 0 0;
+      margin-top: 0.3rem;
+      margin-left: 0.3rem;
+      background-color: #fff;
+      width: 3.6rem;
+      height: 3.32rem;
+      padding: 0.2rem;
+      box-shadow: 0 0.04rem 0.1rem 0 rgba(98, 54, 255, 0.2);
+      border-radius: 0.2rem;
+      &:nth-child(3n + 1) {
+        margin-left: 0;
+      }
+      > img {
+        width: 3.2rem;
+        height: 1.92rem;
+      }
+      .name {
+        font-size: 0.16rem;
+        color: #343a40;
+        margin-top: 0.2rem;
+      }
+      .operate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.2rem;
+        .price {
+          font-size: 0.14rem;
+          color: #e02020;
+          .count {
+            font-size: 0.24rem;
+          }
+          > span {
+            &:last-child {
+              margin-left: 0.1rem;
+            }
+          }
+        }
+        > button {
+          background-image: linear-gradient(-44deg, #4722fe 0%, #cc3afc 100%);
+          border-radius: 0.17rem;
+          border: none;
+          width: 0.88rem;
+          height: 0.34rem;
+          outline: none;
+          a {
+            color: #fff;
+          }
+        }
+        > button:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+.vip-card-buy-detail {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  .detail {
+    width: 11.4rem;
+    margin: 0.4rem auto;
+    padding: 0.3rem 0.4rem;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 0.08rem;
+
+    > img {
+      width: 3.2rem;
+      height: 1.92rem;
+      flex: 0 0;
+      margin-right: 0.24rem;
+    }
+    > div {
+      font-size: 0.14rem;
+      color: #666;
+      .label {
+        margin-right: 0.2rem;
+        color: #999;
+      }
+      .name {
+        font-size: 0.18rem;
+        color: #343a40;
+      }
+      .address {
+        display: flex;
+        align-items: center;
+        margin-top: 0.12rem;
+        > span {
+          &:last-child {
+            margin-left: 0.2rem;
+          }
+        }
+        .icon {
+          display: inline-flex;
+          align-items: center;
+        }
+        img {
+          width: 0.14rem;
+          height: 0.18rem;
+        }
+      }
+      .service {
+        margin-top: 0.06rem;
+      }
+
+      .price {
+        margin-top: 0.09rem;
+        > span {
+          font-size: 0.14rem;
+          color: #999999;
+          &:first-child {
+            margin-right: 0.77rem;
+          }
+        }
+        .new {
+          color: #e02020;
+          margin-left: 0.05rem;
+          span {
+            font-size: 0.24rem;
+          }
+        }
+        .old {
+          color: #666;
+          margin-left: 0.05rem;
+        }
+      }
+      > button {
+        font-size: 0.16rem;
+        margin-top: 0.12rem;
+        width: 1.4rem;
+        height: 0.44rem;
+      }
+    }
+  }
+
+  .intro {
+    width: 11.4rem;
+    margin: 0.24rem auto 0.4rem;
+    border-radius: 0.08rem;
+    background-color: #fff;
+    .title {
+      padding: 0.18rem 0.41rem;
+      font-size: 0.2rem;
+      color: #343a40;
+      border-bottom: 1px solid #ced4da;
+    }
+    .content {
+      padding: 0.22rem 0.41rem 0.6rem 0.41rem;
+      font-size: 0.14rem;
+      color: #666666;
+      .red {
+        color: #e02020;
+      }
+      .privilege {
+        margin-top: 0.2rem;
+        .list {
+          margin-top: 0.12rem;
+          display: flex;
+          justify-content: space-between;
+          // align-items: center;
+          .item {
+            width: 2.5rem;
+            padding: 0.22rem 0.27rem 0;
+            position: relative;
+            text-align: center;
+            border: 1px solid #6236ff;
+            border-radius: 0.1rem;
+            img {
+              width: 0.6rem;
+              height: 0.6rem;
+            }
+            .name {
+              font-size: 0.18rem;
+              margin-top: 0.08rem;
+              color: #343a40;
+            }
+            .text {
+              font-size: 0.14rem;
+              margin-top: 0.08rem;
+              margin-bottom: 0.7rem;
+              color: #666666;
+              text-align: left;
+            }
+            .price {
+              position: absolute;
+              left: 0.2rem;
+              bottom: 0;
+              border-top: 1px dashed #ced4da;
+              width: 2.1rem;
+              font-size: 0.14rem;
+              color: #6236ff;
+              padding-top: 0.16rem;
+              padding-bottom: 0.19rem;
+            }
+          }
+        }
+      }
+
+      .effect {
+        overflow: hidden;
+        margin-top: 0.1rem;
+        .border-bottom-dashed {
+          border-bottom: 1px dashed #ced4da;
+        }
+        .item {
+          display: flex;
+          margin-top: 0.3rem;
+          justify-content: space-between;
+          &:nth-child(2n) {
+            flex-direction: row-reverse;
+          }
+          > img {
+            width: 5.18rem;
+            height: 2.36rem;
+            flex-shrink: 0;
+            padding-bottom: 0.36rem;
+          }
+          > div {
+            width: 5.18rem;
+            .name {
+              font-size: 0.18rem;
+              color: #343a40;
+            }
+            .text {
+              margin-top: 0.05rem;
+              > div {
+                margin-top: 0.15rem;
+                background: rgba(98, 54, 255, 0.1);
+                border-radius: 0.1rem;
+                padding: 0.09rem 0.27rem 0.09rem 0.2rem;
+                display: flex;
+                align-items: center;
+                > img {
+                  width: 0.3rem;
+                  height: 0.3rem;
+                }
+                > div {
+                  font-size: 0.14rem;
+                  color: #6b7177;
+                  margin-left: 0.08rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    .area {
+      width: 6rem;
+      height: 4.4rem;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 0.06rem;
+      text-align: center;
+
+      .banner {
+        width: 100%;
+        height: 1.73rem;
+        background-image: url("../../assets/images/vip-card/entity-modal.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .title {
+        margin-top: 0.33rem;
+        font-size: 0.18rem;
+        color: #343a40;
+      }
+      .text {
+        margin-top: 0.24rem;
+        font-size: 0.14rem;
+        color: #666666;
+      }
+      .bth-group {
+        margin-top: 0.38rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.16rem;
+        > div {
+          width: 1.48rem;
+          height: 0.48rem;
+          &:last-child {
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.vip-card-buy-order {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  .order {
+    width: 11.4rem;
+    margin: 0.4rem auto;
+    .top {
+      background-color: #fff;
+      border-radius: 0.08rem 0.08rem 0 0;
+      > .title {
+        padding: 0.18rem 0.41rem;
+        font-size: 0.2rem;
+        color: #343a40;
+        border-bottom: 1px solid #ced4da;
+      }
+      .sure-order {
+        padding: 0.2rem 0.41rem;
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 0.16rem;
+          color: #343a40;
+          .add-second {
+            font-size: 0.14rem;
+            color: #6236ff;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.7;
+            }
+            img {
+              width: 0.16rem;
+              height: 0.16rem;
+              margin-right: 0.05rem;
+            }
+          }
+        }
+        .add-new {
+          margin-top: 0.15rem;
+          display: flex;
+          align-items: center;
+          > div {
+            &:first-child {
+              width: 1.8rem;
+              height: 0.48rem;
+              font-size: 0.16rem;
+            }
+            &:last-child {
+              font-size: 0.14rem;
+              color: #999999;
+              margin-left: 0.2rem;
+              > span {
+                color: #6236ff;
+              }
+            }
+          }
+        }
+
+        .list {
+          overflow: hidden;
+          .item {
+            margin-top: 0.15rem;
+            position: relative;
+            cursor: pointer;
+
+            &--selected {
+              border: 1px solid #6236ff;
+              cursor: unset;
+            }
+            > img {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 0.48rem;
+              height: 0.48rem;
+            }
+            padding: 0.17rem 0.24rem;
+            border: 1px solid #ced4da;
+            .name {
+              font-size: 0.16rem;
+              color: #343a40;
+            }
+            .default {
+              margin-left: 0.2rem;
+              background: #999999;
+              border-radius: 0.02rem;
+              width: 0.73rem;
+              height: 0.24rem;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 0.14rem;
+              color: #fff;
+            }
+            .edit {
+              font-size: 0.14rem;
+              color: #6236ff;
+              margin-left: 0.2rem;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+            > div {
+              font-size: 0.14rem;
+              color: #343a40;
+            }
+            .bom {
+              margin-top: 0.13rem;
+
+              .address-detail {
+                margin-right: 0.15rem;
+              }
+            }
+          }
+        }
+
+        .tables {
+          margin-top: 0.24rem;
+          > .title {
+            font-size: 0.16rem;
+            color: #343a40;
+          }
+          > table {
+            margin-top: 0.15rem;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            width: 100%;
+            font-size: 0.14rem;
+
+            tr {
+              border: 1px solid #ced4da;
+              th {
+                height: 0.48rem;
+                padding-left: 0.24rem;
+                color: #999999;
+                font-weight: unset;
+              }
+              td {
+                height: 0.48rem;
+                padding: 0.24rem;
+                color: #343a40;
+                .xiaoji {
+                  font-size: 0.16rem;
+                  color: #e02020;
+                }
+                > img {
+                  width: 1.6rem;
+                  height: 0.96rem;
+                  margin-right: 0.15rem;
+                }
+              }
+              .discount {
+                color: #e02020;
+              }
+            }
+          }
+        }
+        .delivery {
+          margin-top: 0.24rem;
+          color: #343a40;
+
+          .title {
+            font-size: 0.16rem;
+          }
+          .content {
+            margin-top: 0.15rem;
+            font-size: 0.14rem;
+            > span {
+              margin-right: 0.15rem;
+            }
+          }
+        }
+      }
+    }
+    .mid {
+      background: #f8f9fa;
+      padding: 0.14rem 0.4rem;
+      font-size: 0.14rem;
+      color: #343a40;
+      .money {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        span {
+          &:last-child {
+            font-size: 0.24rem;
+            color: #e02020;
+            margin-left: 0.15rem;
+          }
+        }
+      }
+      .address {
+        margin-top: 0.15rem;
+        span {
+          &:last-child {
+            margin-left: 0.06rem;
+          }
+        }
+      }
+      .name {
+        margin: 0.06rem 0 0 0.06rem;
+        span {
+          &:last-child {
+            margin-left: 0.15rem;
+          }
+        }
+      }
+      > div {
+        text-align: right;
+        span {
+          &:first-child {
+            color: #999;
+          }
+        }
+      }
+    }
+    .bottom {
+      background-color: #fff;
+      text-align: center;
+      border-radius: 0 0 0.08rem 0.08rem;
+      > div {
+        width: 2.4rem;
+        height: 0.48rem;
+        margin: 0.4rem auto;
+      }
+    }
+  }
+  &-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    .area {
+      width: 6rem;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 0.06rem;
+      text-align: center;
+      .title {
+        width: 100%;
+        height: 0.75rem;
+        line-height: 0.75rem;
+        text-align: center;
+        font-size: 0.18rem;
+        color: #495057;
+        position: relative;
+        img {
+          width: 0.3rem;
+          height: 0.33rem;
+          position: absolute;
+          right: 0.21rem;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .form {
+        padding: 0 0.4rem 0;
+        border-top: 1px solid #ced4da;
+        .ant-form-item {
+          margin: 0.2rem 0 0;
+          padding: 0;
+          text-align: left;
+          .ant-form-item-label {
+            line-height: 1;
+            height: 0.2rem;
+            margin-bottom: 0.08rem;
+            > label {
+              font-size: 0.14rem;
+              color: #6b7177;
+            }
+          }
+          .ant-input {
+            height: 0.48rem;
+          }
+          .ant-checkbox-wrapper {
+            > span {
+              font-size: 0.14rem;
+              color: #adb5bd;
+            }
+          }
+        }
+      }
+      .bth-group {
+        width: 6rem;
+        margin-top: 0.12rem;
+        margin-left: -0.4rem;
+        padding: 0.1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.16rem;
+        border-top: 1px solid #ced4da;
+
+        > div {
+          width: 1.48rem;
+          height: 0.48rem;
+          &:last-child {
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.vip-card-buy-pay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  .area {
+    width: 6rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 0.06rem;
+    .title {
+      height: 1rem;
+      background: #e9ecef;
+      border-radius: 0.06rem 6px 0 0;
+      display: flex;
+      padding: 0.21rem 0.42rem;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        align-items: center;
+        > img {
+          width: 0.58rem;
+          height: 0.58rem;
+          margin-right: 0.1rem;
+          border-radius: 50%;
+        }
+        > div {
+          font-size: 0.16rem;
+          color: #343a40;
+          .account {
+            font-size: 0.14rem;
+            color: #495057;
+            margin-top: 0.06rem;
+          }
+        }
+      }
+      .right {
+        width: 0.3rem;
+        height: 0.33rem;
+        cursor: pointer;
+      }
+    }
+    .content {
+      padding: 0.14rem 0.4rem 0.4rem;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > img {
+          &:first-child {
+            width: 2.35rem;
+            height: 1.41rem;
+          }
+          &:nth-of-type(2) {
+            width: 0.2rem;
+            height: 0.2rem;
+          }
+        }
+        > div {
+          width: 2.35rem;
+          height: 1.41rem;
+          background-image: url("../../assets/images/vip-card/discount.png");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          color: #fff;
+          font-size: 0.16rem;
+          padding: 0.11rem 0.23rem 0;
+          text-align: center;
+          > div {
+            &:nth-of-type(2) {
+              margin-top: 0.26rem;
+              font-size: 0.14rem;
+              text-align: left;
+            }
+            &:last-child {
+              margin-top: -0.1rem;
+
+              span {
+                font-size: 0.4rem;
+                margin-left: 0.14rem;
+              }
+            }
+          }
+        }
+      }
+      .mid {
+        margin-top: 0.25rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.06rem;
+        padding: 0.23rem 0.7rem;
+        > div {
+          &:first-child {
+            text-align: center;
+            font-size: 0.14rem;
+            color: #868e96;
+            span {
+              color: #e02020;
+            }
+          }
+        }
+        .pay-code {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 0.06rem;
+          > div {
+            .wechat {
+              width: 1.56rem;
+              height: 1.56rem;
+            }
+            canvas {
+              width: 1.56rem !important;
+              height: 1.56rem !important;
+              padding: 0.18rem;
+            }
+            > div {
+              margin-top: 0.13rem;
+              text-align: center;
+              > img {
+                width: 0.16rem;
+                height: 0.16rem;
+                margin-right: 0.05rem;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        margin-top: 0.16rem;
+        font-size: 0.14rem;
+        color: #868e96;
+        >img {
+          width: 0.14rem;
+          height: 0.14rem;
+          margin-right: 0.07rem;
+        }
+        >span:hover {
+          color: #6236FF;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

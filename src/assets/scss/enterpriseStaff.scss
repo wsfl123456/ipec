@@ -1,0 +1,345 @@
+@import "var";
+
+$personalBorder: #f2f3f5;
+.EnterpriseStaff {
+
+  .mobox {
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+
+    .mobox_content {
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background: white;
+      border-radius: 6px;
+
+      .label-dot {
+        color: #ff7575;
+      }
+
+      .form-group {
+        margin-bottom: 0.2rem;
+
+        .input-label {
+          color: $limit-gray-text;
+        }
+
+        input {
+          height: 0.4rem;
+          line-height: 0.4rem;
+          border-radius: 4px;
+        }
+      }
+
+      .title {
+        margin: 0;
+        padding: 0;
+        height: 0.74rem;
+        line-height: 0.74rem;
+        text-align: center;
+        border-bottom: 1px solid #CED4DA;
+        font-size: 0.18rem;
+        color: #495057;
+        position: relative;
+
+        img {
+          cursor: pointer;
+          position: absolute;
+          top: 0.25rem;
+          right: 0.28rem;
+        }
+      }
+
+      .center {
+        padding: 0.18rem 0.4rem 0.1rem;
+        border-bottom: 1px solid #CED4DA;
+
+        textarea {
+          height: 0.8rem;
+        }
+
+        input:read-only {
+          background: #f1f3f5 !important;
+          border: none;
+        }
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+
+        button {
+          background-image: linear-gradient(-95deg, #2853ff 0%, #933efe 100%);
+          width: 1.48rem;
+          height: 0.48rem;
+          border-radius: 4px;
+          outline: none;
+          padding: 0;
+          font-size: 16px;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          margin-left: 10px;
+          margin-right: 10px;
+          border: none;
+
+          &.resolve {
+            background: #F8F9FA;
+            border: 1px solid #6248FF;
+            color: #6248FF;
+          }
+        }
+      }
+    }
+
+    .mb0 {
+      margin-bottom: 0;
+    }
+
+    .code-area {
+      flex-direction: row !important;
+
+      .code-input {
+        width: 77%;
+        height: 0.448rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      input::placeholder {
+        font-size: 0.14rem;
+      }
+
+      button {
+        width: 1.2rem;
+        font-size: 0.13rem;
+        height: 0.448rem;
+        background-image: $balance-button-active;
+        border: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-weight: normal;
+        border-radius: 0 0.04rem 0.04rem 0;
+      }
+    }
+
+  }
+
+  .title {
+    font-size: 0.16rem;
+    letter-spacing: 0;
+    height: 58px;
+    line-height: 0.58rem;
+    border-bottom: 1px solid $personalBorder;
+    padding-right: 0.4rem;
+
+    .add {
+      float: right;
+      width: 0.15rem;
+      height: 0.15rem;
+      margin-top: 0.215rem;
+      margin-right: 0.05rem;
+      cursor: pointer;
+    }
+
+    .zhiyuan {
+      cursor: pointer;
+      float: right;
+      font-size: 14px;
+      color: #6B7177;
+      margin: 0;
+    }
+
+    span {
+      height: 58px;
+      line-height: 58px;
+      margin-left: 40px;
+      color: #343A40;
+      display: block;
+      float: left;
+      cursor: pointer;
+
+      &.active {
+        color: #6248FF;
+        border-bottom: 2px solid #6248FF;
+      }
+    }
+  }
+
+  .checkAll {
+    height: 48px;
+    list-style: 0.48rem;
+    background: #F8F9FA;
+  }
+
+
+  .StaffContent {
+    background: white;
+    padding: 0 0.4rem;
+
+    .StaffContentli {
+      padding: 0.24rem 0 0.19rem 0;
+      border-bottom: 1px solid #CED4DA;
+      display: flex;
+      flex-wrap: wrap;
+      height: 1.23rem;
+
+      &:last-child {
+        border-bottom: unset;
+      }
+
+      .align-items-center {
+        height: 80px;
+      }
+
+      .userImag {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 0.12rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .Job {
+        width: 4rem;
+        height: 80px;
+
+        h3 {
+          font-size: 16px;
+          color: #343A40;
+          margin-bottom: 8px;
+
+          img {
+            height: 0.16rem;
+            vertical-align: text-top;
+            margin-left: 0.07rem;
+          }
+
+          .joinExhibitionSpan {
+            font-size: 0.12rem;
+            color: #ADB5BD;
+            margin-left: 0.05rem;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #6B7177;
+          margin-bottom: 4px;
+        }
+      }
+
+      .editData {
+        flex: 1;
+
+        img {
+          width: 0.16rem;
+          height: 0.16rem;
+        }
+
+        ul {
+          li {
+            float: right;
+            margin-left: 0.2rem;
+            font-size: 14px;
+            color: #343A40;
+            letter-spacing: 0;
+            cursor: pointer;
+
+            img {
+              vertical-align: sub;
+              margin-right: 4px;
+              width: 0.16rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .checkAll {
+    padding-left: 0.42rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-control {
+    height: 0.48rem;
+    border-radius: 0px;
+    background: white !important;
+    font-size: 14px;
+    letter-spacing: 0;
+
+    &::placeholder {
+      color: #ADB5BD;
+    }
+  }
+
+  .sub-item {
+    display: flex;
+    // margin-bottom: 0.12rem;
+    cursor: pointer;
+
+    .custom-checkbox {
+      width: 0.16rem;
+      height: 0.16rem;
+      background: url("../images/check.jpg") center center no-repeat;
+      margin: 0;
+    }
+
+    .custom-checkbox {
+      margin-right: 0.2rem;
+    }
+
+    .checkbox-text {
+      font-size: 0.14rem;
+      color: #6b7177;
+      letter-spacing: 0;
+      margin-right: 0.2rem;
+      width: 0.88rem;
+      height: 0.33rem;
+      line-height: 0.31rem;
+      background: white;
+      text-align: center;
+      border: 1px solid #CED4DA;
+      border-radius: 3px;
+    }
+
+    .checkbox-text-large {
+      width: 1.08rem;
+    }
+  }
+
+  .sub-item:hover {
+    .custom-checkbox {
+      border-radius: 2px;
+      border: 1px solid $limit-purple-text;
+    }
+
+    .checkbox-text {
+      color: #696e73;
+      font-weight: 500;
+    }
+  }
+
+  .sub-item-selected {
+    .custom-checkbox {
+      background: url("../images/checked.svg") center center no-repeat;
+    }
+
+  }
+
+}

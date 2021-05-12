@@ -1,0 +1,134 @@
+@import "var";
+
+.satisfaction_model {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+
+  .s_box {
+    width: 6rem;
+    background: $balance-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 0.06rem;
+    z-index: 9999;
+
+
+    .m-header {
+      height: 1.2rem;
+
+      .rc-rate-star {
+        margin: 0 0.316rem 0 0;
+      }
+
+      .rc-rate-star:last-child {
+        margin: 0;
+      }
+
+      img {
+        width: 6rem;
+        height: 1.2rem;
+      }
+    }
+
+    .m-body {
+      //height: 4.15rem;
+      padding: 0.2rem 0 0.24rem;
+      font-size: 0.16rem;
+
+      .u-title {
+        text-align: center;
+        line-height: 0.22rem;
+        color: #16001C;
+
+        span {
+          color: #e50113;
+        }
+      }
+
+      .five-star {
+        margin: 0.137rem 0 0.213rem;
+        text-align: center;
+
+        li:not(last-child) {
+          margin-right: 0.3rem;
+        }
+      }
+
+      .g-single {
+        padding: 0.2rem 0 0;
+        width: 5.21rem;
+        margin: 0 auto;
+        border-top: 1px dashed #CED4DA;
+
+        .single.single-textarea {
+          height: auto;
+          margin: 0;
+        }
+
+        .single {
+          height: 0.22rem;
+          margin: 0 0 0.2rem 0;
+
+          textarea {
+            width: 100%;
+            border: 1px solid #ced4da;
+            height: 1rem;
+            padding: 0.16rem 0.1rem;
+            text-indent: 0.12rem;
+            font-size: 0.14rem;
+          }
+
+          textarea::placeholder {
+            color: #ADB5BD;
+          }
+        }
+
+
+        .rc-rate-star {
+          margin: 0 0.226rem 0 0;
+        }
+
+
+        p {
+          display: inline-block;
+          width: 1.12rem;
+          color: $limit-gray-text;
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+          margin: 0 0.58rem 0 0;
+        }
+      }
+    }
+
+    .m-footer {
+      border: 1px solid #CED4DA;
+      padding: 0.14rem 1.46rem;
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        font-size: 0.16rem;
+        width: 1.4rem;
+        height: 0.48rem;
+        cursor: pointer;
+        text-align: center;
+        outline: none;
+        background: #fff;
+        color: $balance-color;
+        border-color: $balance-color;
+      }
+
+      .btn-submit {
+        background: $balance-button-active;
+        color: $balance-white;
+      }
+    }
+  }
+}

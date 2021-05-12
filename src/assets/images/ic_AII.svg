@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_AII</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_AII">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M2.44538037,1.98819729 L0.8,1.99232095 L0.8,0.804686904 L2.44538037,0.8 L2.44538037,1.98819729 Z M3.97304534,0.8 L15.2,0.8 L15.2,1.99230082 L3.97304534,1.99230082 L3.97304534,0.8 Z M2.44538037,8.39664576 L0.8,8.40068895 L0.8,7.21309514 L2.44538037,7.20840826 L2.44538037,8.39664576 Z M3.97304534,7.20840826 L15.2,7.20840826 L15.2,8.40066886 L3.97304534,8.40066886 L3.97304534,7.20840826 Z M2.44538037,14.8050138 L0.8,14.8090972 L0.8,13.6214632 L2.44538037,13.6168567 L2.44538037,14.8050138 Z M3.97304534,13.6168567 L15.2,13.6168567 L15.2,14.8090972 L3.97304534,14.8090972 L3.97304534,13.6168567 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

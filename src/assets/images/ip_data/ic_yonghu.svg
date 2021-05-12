@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_yonghu</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="17.5" cy="17.5" r="17.5"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_yonghu">
+            <g>
+                <rect id="矩形" x="0" y="0" width="40" height="40"></rect>
+                <ellipse id="Oval-2" fill="#ADB5BD" cx="19.6508361" cy="20.3418803" rx="17.0923077" ry="17.0940171"></ellipse>
+                <g id="Group-2-Copy" transform="translate(2.000000, 3.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#CED4DA" xlink:href="#path-1"></use>
+                    <g id="Group-2" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(6.176471, 6.176471)">
+                            <ellipse id="Oval" cx="11.3647059" cy="6.22588235" rx="6.19893048" ry="6.22588235"></ellipse>
+                            <ellipse id="Oval-5" cx="11.5368984" cy="24.0388235" rx="11.5368984" ry="11.5870588"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

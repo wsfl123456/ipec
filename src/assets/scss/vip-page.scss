@@ -1,0 +1,596 @@
+.vip-page-container {
+
+  .vip-title-area {
+    width: 100%;
+    height: 1.88rem;
+    background: url("../images/user/vip/vip-banner.png") no-repeat center;
+    background-size: cover;
+
+    display: flex;
+
+    .title-1 {
+      font-size: 32px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .title-2 {
+      font-size: 24px;
+      color: #f8f9fa;
+    }
+  }
+
+  .services-area {
+    display: flex;
+    margin-top: .2rem;
+    height: 4.81rem;
+
+    .service-item {
+      position: relative;
+      display: flex;
+      width: 2.09rem;
+      background-color: #fff;
+      border-radius: .06rem;
+      padding-top: .14rem;
+      padding-bottom: .14rem;
+      overflow: hidden;
+
+      .vip-icon {
+        width: .4rem;
+        height: .4rem;
+      }
+
+      .title-area {
+        display: flex;
+
+        span {
+          margin-top: .09rem;
+          font-size: .14rem;
+          color: #6b7177;
+
+          &:first-child {
+            margin-top: 0;
+            font-size: .18rem;
+            color: #343a40;
+          }
+
+          &:last-child {
+            margin-top: 0;
+            color: #16001c;
+            line-height: .2rem;
+          }
+        }
+      }
+
+      .line-title {
+        display: flex;
+        margin-top: .16rem;
+        margin-bottom: .11rem;
+        font-size: .14rem;
+
+        span {
+          padding: 0 0.04rem;
+        }
+
+        .line {
+          width: .48rem;
+          height: 2px;
+        }
+
+        .left-purple-line {
+          background: linear-gradient(2deg, #fff 50%, #6248ff 100%);
+        }
+
+        .right-purple-line {
+          background: linear-gradient(-2deg, #fff 50%, #6248ff 100%);
+        }
+
+        .left-gold-line {
+          background: linear-gradient(2deg, #fff 50%, #d79e6b 100%);
+        }
+
+        .right-gold-line {
+          background: linear-gradient(-2deg, #fff 50%, #d79e6b 100%);
+        }
+
+        .left-diamond-line {
+          background: linear-gradient(2deg, #fff 50%, #d09f10 100%);
+        }
+
+        .right-diamond-line {
+          background: linear-gradient(-2deg, #fff 50%, #d09f10 100%);
+        }
+
+        .left-normal-line {
+          background: linear-gradient(2deg, #fff 50%, #343a40 100%);
+        }
+
+        .right-normal-line {
+          background: linear-gradient(-2deg, #fff 50%, #343a40 100%);
+        }
+
+      }
+
+      .feature-list {
+        overflow: hidden;
+        margin-left: .17rem;
+
+        .feature-item {
+          display: flex;
+          float: left;
+          margin-right: .2rem;
+          margin-bottom: .07rem;
+
+          img {
+            width: .14rem;
+            height: .14rem;
+          }
+
+          span {
+            font-size: .12rem;
+            margin-left: .04rem;
+            color: #6b7177;
+          }
+        }
+      }
+
+      .custom-process {
+        display: flex;
+
+        span {
+          font-size: .12rem;
+          color: #6B7177;
+          margin-top: .02rem;
+        }
+
+        img {
+          margin-top: 0.02rem;
+        }
+
+      }
+
+      .bottom-btn-area {
+        display: flex;
+        height: .6rem;
+        background-color: #e9ecef;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+        .bottom-btn {
+          border: 0;
+          border-radius: .17rem;
+          color: white;
+          width: 1.69rem;
+          height: .34rem;
+        }
+      }
+    }
+  }
+
+  .faq-area {
+    background-color: #fff;
+    border-radius: .06rem;
+    margin-top: .2rem;
+
+    .faq-title {
+      padding-top: .19rem;
+      padding-left: .2rem;
+      padding-bottom: .19rem;
+      border-bottom: 1px solid #ced4da;
+    }
+
+    .faq-list {
+      padding-top: .24rem;
+      padding-left: .21rem;
+      padding-bottom: .36rem;
+
+      .faq-item {
+        margin-bottom: .15rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .faq-item-title-area {
+          display: flex;
+
+          .faq-item-icon {
+            width: .2rem;
+            height: .2rem;
+          }
+
+          .faq-item-title {
+            font-size: .16rem;
+            color: #495057;
+            margin-left: .06rem;
+          }
+        }
+
+        .faq-content {
+          margin-top: .06rem;
+          font-size: .14rem;
+          color: #6b7177;
+          text-indent: .26rem;
+        }
+      }
+    }
+  }
+
+}
+
+.wrap-modal {
+
+  .vip-modal-header {
+    background-color: #e9ecef;
+    height: 1.2rem;
+    padding-top: .17rem;
+    padding-left: .413rem;
+
+    .vip-modal-header-title {
+      display: flex;
+
+      .modal-header-icon {
+        width: .171rem;
+        height: .171rem;
+      }
+
+      span.title {
+        font-size: .14rem;
+        color: #343a40;
+        margin-left: .076rem;
+      }
+    }
+  }
+
+  .header-info-area {
+    display: flex;
+    margin-top: .11rem;
+
+    .avatar {
+      width: .54rem;
+      height: .54rem;
+      border-radius: 50%;
+    }
+
+    .info-name-area {
+      display: flex;
+      margin-left: .11rem;
+
+      .info-name {
+        font-size: .16rem;
+        color: #343a40;
+      }
+
+      .info-account {
+        font-size: .14rem;
+        color: #495057;
+      }
+    }
+  }
+
+  .vip-card-area {
+    display: flex;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    margin-top: .2rem;
+
+    .vip-card {
+      position: relative;
+      display: flex;
+      background-color: #f8f9fa;
+      width: 2rem;
+      height: 1.2rem;
+      border: 1px solid #ced4da;
+      border-radius: .06rem;
+      overflow: hidden;
+      cursor: pointer;
+
+      &.vip-card-selected {
+        border-color: #6248ff;
+      }
+
+      .icon-selected {
+        border-bottom-right-radius: .06rem;
+        position: absolute;
+        width: .4rem;
+        height: .33rem;
+        right: -1px;
+        bottom: -1px;
+      }
+
+      .icon-no-text {
+        position: absolute;
+        width: .45rem;
+        height: .45rem;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+
+        .icon-recommend {
+          width: .45rem;
+          height: .45rem;
+        }
+      }
+
+      .icon-with-text {
+        width: .45rem;
+        height: .45rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+
+        .discount {
+          position: absolute;
+          top: 6px;
+          color: white;
+          z-index: 1;
+          transform: rotate(-45deg);
+          font-size: .11rem;
+        }
+
+        .icon-bg {
+          position: absolute;
+          top: -1px;
+          left: -1px;
+          width: .45rem;
+          height: .45rem;
+          border-radius: .06rem;
+        }
+      }
+
+      div {
+        font-size: .14rem;
+        margin-top: .1rem;
+
+        &.vip-name {
+          font-size: .16rem;
+        }
+
+        .price-number {
+          color: #343a40;
+          font-size: .2rem;
+        }
+
+        &.vip-card-selected {
+          color: #6248ff;
+          font-size: .16rem;
+        }
+
+        .vip-card-selected {
+          color: #6248ff;
+        }
+      }
+
+      .original-price {
+        font-size: .12rem;
+        color: #868e96;
+        text-decoration: line-through;
+        margin-top: 0;
+      }
+
+      .save-price {
+        display: flex;
+        margin-top: 0;
+        color: white;
+        font-size: .12rem;
+        background-color: #e50113;
+        border-radius: .1rem;
+        width: .92rem;
+        font-weight: 300;
+      }
+
+    }
+  }
+
+  .vip-pay-area {
+    margin-top: .2rem;
+    margin-left: .4rem;
+    margin-right: .4rem;
+    border: 1px solid #ced4da;
+    border-radius: .06rem;
+    overflow: hidden;
+
+    .pay-header {
+      background-color: #f8f9fa;
+      display: flex;
+
+      .pay-header-item {
+        padding: .14rem .32rem;
+        font-size: .14rem;
+        color: #495057;
+        border-bottom: 1px solid #ced4da;
+        cursor: pointer;
+        background-color: #f8f9fa;
+
+        &.pay-header-item-active {
+          border-left: 1px solid #ced4da;
+          border-right: 1px solid #ced4da;
+          border-top: 1px solid #6248ff;
+          color: #6248ff;
+          border-bottom: none;
+          background-color: white;
+
+          &:first-child {
+            border-left: 0;
+          }
+        }
+      }
+
+      .pay-header-blank-item {
+        display: flex;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ced4da;
+        flex: 1;
+      }
+    }
+
+    .pay-qr-code-area {
+      display: flex;
+      padding-top: .37rem;
+      padding-bottom: .37rem;
+
+      .qr-code-area {
+        width: 1.18rem;
+        height: 1.18rem;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .qr-code-img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 1.16rem;
+          height: 1.16rem;
+        }
+
+        .qr-code-mask {
+          position: absolute;
+          width: 1.16rem;
+          height: 1.16rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          background-color: rgba(0, 0, 0, 0.4);
+          display: flex;
+
+          .mask-img {
+            width: .3rem;
+            height: .3rem;
+          }
+
+          .mask-text {
+            color: white;
+            font-size: .16rem;
+          }
+        }
+      }
+
+      .qr-price-area {
+        color: #868e96;
+        font-size: .14rem;
+        margin-left: .26rem;
+
+        .qr-price {
+          .price-mark {
+            color: black;
+            font-size: .12rem;
+          }
+
+          .qr-price-number {
+            color: black;
+            font-size: .24rem;
+            margin-left: 0.04rem;
+          }
+        }
+
+        .qr-price-tip {
+          .icon-tip {
+            width: .16rem;
+            height: .16rem;
+            margin-right: .05rem;
+          }
+        }
+      }
+
+    }
+
+    .union-pay-area {
+      display: flex;
+      margin-top: .2rem;
+      padding-bottom: .2rem;
+
+      .union-pay-line {
+        display: flex;
+
+        margin-bottom: 0.1rem;
+
+        .line-name {
+          color: #a4aab0;
+          width: 1.3rem;
+          text-align: right;
+        }
+
+        .line-content {
+          color: #16001c;
+        }
+      }
+
+      .bottom-union-pay-line {
+        display: flex;
+        padding-left: .3rem;
+        padding-right: .2rem;
+        margin-top: .3rem;
+
+        .exclamation-mark {
+          width: .16rem;
+          height: .16rem;
+          margin-top: .04rem;
+        }
+
+        .pay-tip {
+          font-size: .14rem;
+          color: red;
+        }
+      }
+    }
+  }
+
+  .clause-area {
+    margin-left: .4rem;
+    margin-top: .16rem;
+    margin-bottom: .41rem;
+    display: flex;
+    cursor: pointer;
+
+    .no-ic-select {
+      width: .16rem;
+      height: .16rem;
+      border: 1px solid #ced4da;
+      border-radius: 50%;
+    }
+
+    .ic-select {
+      width: .16rem;
+      height: .16rem;
+    }
+
+    span {
+      margin-left: 0.07rem;
+      font-size: .14rem;
+      color: #868e96;
+    }
+  }
+}
+
+.payment-agreement{
+  h4{
+    font-size: 0.16rem;
+    font-weight: 600;
+    margin: 0.1rem 0;
+  }
+  .ant-modal-header{
+    text-align: center;
+  }
+}
+.limit-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: .04rem;
+  display: flex;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}

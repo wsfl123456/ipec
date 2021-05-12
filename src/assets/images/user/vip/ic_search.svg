@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="个人中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VIP会员主页" transform="translate(-880.000000, -545.000000)">
+            <g id="ic_search" transform="translate(880.000000, 545.000000)">
+                <g>
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                    <path d="M6.965,5.145 C6.475,5.145 6.02,5.32 5.67,5.67 C4.935,6.405 4.935,7.56 5.67,8.295 C6.405,9.03 7.56,9.03 8.295,8.295 C9.03,7.56 9.03,6.405 8.295,5.67 C7.91,5.32 7.455,5.145 6.965,5.145 Z M7,0 C3.15,0 0,3.15 0,7 C0,10.85 3.15,14 7,14 C10.85,14 14,10.85 14,7 C14,3.15 10.85,0 7,0 Z M8.785,8.82 C8.295,9.31 7.63,9.555 7,9.555 C6.335,9.555 5.705,9.31 5.215,8.82 C4.235,7.84 4.235,6.195 5.215,5.215 C6.02,4.41 7.175,4.27 8.12,4.725 L11.06,2.975 L9.38,6.09 C9.695,7 9.52,8.085 8.785,8.82 Z" id="形状" fill="#ADB5BD" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

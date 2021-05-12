@@ -1,0 +1,243 @@
+@import "var";
+.helpcenter-container,
+.contact-container {
+  background-color: #f1f3f5;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .static-menu ul,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  table {
+    padding: 0;
+    margin: 0;
+  }
+
+  tr {
+    padding: 0;
+    margin: 0;
+  }
+
+  td {
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  div {
+    margin: 0;
+    padding: 0
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #444444;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    margin: 0;
+    padding: 0;
+  }
+
+  .clear {
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    border: none;
+    overflow: hidden;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    /*超链接无下划线*/
+  }
+
+  a:hover {
+    text-decoration: none;
+    /*鼠标放上去有下划线*/
+  }
+
+  .clearfix:after {
+    content: '';
+    clear: both;
+    overflow: hidden;
+    display: block;
+    height: 0;
+  }
+
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+  }
+
+  .main {
+    width: 12.8rem;
+    padding: 0.7rem;
+    min-height: 6rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .static-menu {
+    position: absolute;
+    background-color: #fff;
+    top: 0.7rem;
+    left: 0.7rem;
+  }
+
+  .static-menu li a {
+    display: block;
+    width: 2.2rem;
+    color: #6b7177;
+    font-size: 16px;
+    padding: 0.2rem 0.3rem;
+    position: relative;
+  }
+
+  .static-menu li a:hover, .static-menu li .curr {
+    color: $balance-color;
+    font-weight: bold;
+  }
+
+  .static-menu li a:hover::before, .static-menu li .curr::before {
+    content: '';
+    width: 4px;
+    height: 48px;
+    background-color: $balance-color;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -24px;
+  }
+
+  .static-container {
+    // position: absolute;
+    // right: 70;
+    margin-left: 2.5rem;
+    width: 8.88rem;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+
+  .static-container h1 {
+    font-size: 16px;
+    line-height: 16px;
+    color: #343a40;
+    padding: 0.2rem 0.5rem;
+    border-bottom: 1px solid #ced4da;
+    margin-bottom: 0.1rem;
+  }
+
+  .container-inner {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .container-inner p {
+    font-size: 16px;
+    color: #6b7177;
+    margin-bottom: 0.3rem;
+  }
+
+  .container-inner p a {
+    color: $balance-color;
+  }
+
+  .container-inner h2 {
+    font-size: 0.18rem;
+    color: #343a40;
+    margin-bottom: 0.1rem;
+    line-height: 0.3rem;
+    height: 0.3rem;
+    font-weight: 500;
+  }
+
+  .container-inner h2::after {
+    content: '';
+    clear: both;
+    overflow: hidden;
+    display: block;
+    height: 0;
+  }
+
+  //.container-inner h2::before {
+  //  display: inline-block;
+  //  width: 4px;
+  //  background-color: $balance-color;
+  //  height: 0.2rem;
+  //  content: '';
+  //  float: left;
+  //  margin-right: 0.1rem;
+  //}
+
+  .container-inner li {
+    margin-bottom: 0.2rem;
+  }
+
+  .container-inner li h3 {
+    font-size: 16px;
+    color: #6b7177;
+    margin-bottom: 0.1rem;
+  }
+
+  .container-inner li div a {
+    color: #6b7177;
+    font-size: 16px;
+  }
+
+  .container-inner li div a:hover {
+    text-decoration: underline;
+    color: $balance-color;
+  }
+
+}
+
+.helpcenter-container{
+  .static-container{
+     h1{
+      padding: 0.18rem 0.4rem 0.16rem;
+      margin-bottom: 0;
+    }
+  }
+  .container-inner{
+   padding: 0.30rem 0.40rem 0.38rem;
+    h2{
+      margin-bottom: 0.06rem;
+      font-size: 16px;
+      color: #343A40;
+      letter-spacing: 0;
+      line-height: 0.3rem;
+      font-weight: unset;
+    }
+    p{
+      line-height: 0.24rem;
+      font-size: 14px;
+      color: #6B7177;
+      margin-bottom:0.2rem;
+    }
+  } 
+}

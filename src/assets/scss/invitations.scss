@@ -1,0 +1,248 @@
+@import "var";
+
+.invitations-container {
+
+  .top-title {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-bottom: 1px solid #ced4da;
+    font-size: 0.16rem;
+    padding-left: 0.4rem;
+    color: $limit-detail-title-color;
+  }
+
+  .invitations-main {
+    .invite-search {
+      background: #F8F9FA;
+      height: 0.6rem;
+
+      .ant-input:focus, .ant-input:hover, .ant-select-selection:hover, .ant-select-selection:focus {
+        box-shadow: none;
+        border-color: #e9ecef;
+      }
+
+      .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background-color: #f8f9fa;
+        color: #e9ecef;
+      }
+
+      .select-state {
+        padding: 0.08rem 0.4rem;
+        display: flex;
+
+        .form-control {
+          width: 2.2rem;
+          margin-right: 0.2rem;
+          height: 0.42rem;
+          padding: 0;
+          border: none;
+        }
+
+        .ant-calendar-picker {
+          margin-right: 0.2rem;
+        }
+      }
+    }
+
+    .invitations-list {
+      padding: 0 0.4rem;
+
+      .invitations-single:last-child, .invitations-single.no-border {
+        border: none;
+      }
+
+      .invitations-single {
+        border-bottom: $balance-model-border;
+        //padding: 0.3rem 0 0.2rem;
+        padding: 0.2rem 0;
+        //position: relative;
+
+        .head-img {
+          width: 0.8rem;
+          height: 0.8rem;
+          margin-right: 0.18rem;
+          vertical-align: middle;
+
+          img {
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+          }
+        }
+
+        .is-detail {
+          vertical-align: middle;
+
+          p {
+            font-size: 0.14rem;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            color: $limit-gray-text;
+            margin: 0 0 0.04rem 0;
+          }
+
+          .long-word {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            min-width: 4rem;
+            max-width: 6rem;
+            cursor: pointer;
+          }
+          .long-word:hover {
+            height: auto;
+            white-space: normal;
+          }
+
+          .title {
+            font-size: 0.16rem;
+            height: 0.22rem;
+            line-height: 0.22rem;
+            margin: 0 0 0.08rem 0;
+            color: $limit-detail-title-color;
+          }
+        }
+
+        .is-reply {
+          //position: absolute;
+          //bottom: 0.2rem;
+          //right: 0;
+          float: right;
+          margin: 0.7rem 0 0;
+          font-size: 0.14rem;
+
+          .click-able {
+            color: $balance-color;
+            cursor: pointer;
+          }
+
+          .click-disable {
+            color: $balance-color-gray;
+          }
+        }
+
+        .is-reply-detail-parent {
+          width: 100%;
+          //position: absolute;
+          //left: 0;
+          //top: 1.6rem;
+          //padding: 0.2rem 0.25rem;
+          //background: $balance-bg-fb;
+          //border: $balance-model-border;
+          //color: $limit-gray-text;
+          //font-size: 0.14rem;
+          //z-index:9;
+
+        }
+
+        .is-reply-detail {
+          width: 100%;
+          position: relative;
+          //position: absolute;
+          //left: 0;
+          //top: 1.6rem;
+          padding: 0.2rem 0.25rem;
+          background: $balance-bg-fb;
+          border: $balance-model-border;
+          color: $limit-gray-text;
+          font-size: 0.14rem;
+          z-index: 9;
+
+          .is-answer {
+            text-align: center;
+            color: $balance-care-red;
+            margin: 0 0 0.2rem 0;
+          }
+
+          p {
+            margin: 0 0 0.04rem 0;
+
+            i {
+              font-style: normal;
+              color: $balance-color;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+
+          .is-remark > div {
+            display: inline-block;
+            vertical-align: top;
+          }
+
+          .is-remark {
+            width: 100%;
+
+            .rk-title {
+              width: 0.8rem;
+            }
+
+            .rk-answer {
+              width: calc(100% - 0.8rem);
+            }
+
+          }
+
+          .button-group {
+            margin: 0.2rem 0 0;
+            text-align: center;
+
+            button {
+              width: 0.88rem;
+              height: 0.34rem;
+              background: none;
+              border: none;
+              cursor: pointer;
+              outline: none;
+              border-radius: 2px;
+            }
+
+            .refuse {
+              background: $balance-white;
+              color: $balance-color;
+              border: $balance-border;
+            }
+
+            .accept {
+              background: $balance-color;
+              color: $balance-white;
+              margin-right: 0.2rem;
+            }
+          }
+        }
+
+        .is-reply-detail.refuse-update-status {
+          color: $balance-color-gray;
+
+          .refuse-reason {
+            border-top: $balance-model-border;
+            color: $limit-gray-text;
+            padding: 0.15rem 0 0;
+            margin: 0.15rem 0 0;
+          }
+        }
+
+        .is-reply-detail:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 95%;
+          transform: translate(-50%, -50%) rotate(135deg);
+          background-color: #fbfbfb;
+          border-left: 1px solid #ced4da;
+          border-bottom: 1px solid #ced4da;
+          border-top: 0 none;
+          border-right: 0 none;
+          width: 0.1rem;
+          height: 0.1rem;
+        }
+
+      }
+
+      .invitations-single > div {
+        display: inline-block;
+      }
+    }
+  }
+}
+

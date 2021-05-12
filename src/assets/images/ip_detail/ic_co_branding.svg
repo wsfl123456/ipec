@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_co_branding</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2853FF" offset="0%"></stop>
+            <stop stop-color="#933EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_co_branding">
+            <g>
+                <g>
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                    <path d="M11.625,6 L7.25,6 L7.25,9.75 C7.25,9.75 10.5875,9.75 11.625,9.75 C12.6625,9.75 13.5,8.9125 13.5,7.875 C13.5,6.8375 12.6625,6 11.625,6 Z M10.375,1 C5.2,1 1,5.2 1,10.375 C1,15.55 5.2,19.75 10.375,19.75 C15.55,19.75 19.75,15.55 19.75,10.375 C19.75,5.2 15.55,1 10.375,1 Z M14.55,15.0125 C14.725,15.3125 14.575,15.6875 14.2875,15.8625 C13.9875,16.0375 13.525,15.9375 13.35,15.6375 L10.85,11.3125 C10.7875,11.2125 10.7875,11.1 10.8,11 C9.1625,11 7.25,11 7.25,11 L7.25,15.375 C7.25,15.725 6.975,16 6.625,16 C6.275,16 6,15.725 6,15.375 L6,5.375 C6,5.025 6.275,4.75 6.625,4.75 C6.625,4.75 10.3625,4.75 11.625,4.75 C13.35,4.75 14.75,6.15 14.75,7.875 C14.75,9.4 13.65,10.675 12.2,10.9375 L14.55,15.0125 Z" id="形状" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

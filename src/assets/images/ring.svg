@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_notifications</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2853FF" offset="0%"></stop>
+            <stop stop-color="#933EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_notifications">
+            <g id="分组-3">
+                <g>
+                    <polygon id="Bounds" fill-opacity="0" fill="#FFFFFF" points="0 0 28 0 28 28 0 28"></polygon>
+                    <path d="M14.4083333,26.8333333 C15.82,26.8333333 16.975,25.6783333 16.975,24.2666667 L11.8416667,24.2666667 C11.8416667,25.6783333 12.9966667,26.8333333 14.4083333,26.8333333 L14.4083333,26.8333333 Z M22.75,19.1333333 L22.75,12.075 C22.75,8.13516667 20.0165,4.837 16.3333333,3.96433333 L16.3333333,3.09166667 C16.3333333,2.0265 15.4735,1.16666667 14.4083333,1.16666667 C13.3431667,1.16666667 12.4833333,2.0265 12.4833333,3.09166667 L12.4833333,3.96433333 C8.80016667,4.837 6.06666667,8.13516667 6.06666667,12.075 L6.06666667,19.1333333 L3.5,21.7 L3.5,22.9833333 L25.3166667,22.9833333 L25.3166667,21.7 L22.75,19.1333333 L22.75,19.1333333 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

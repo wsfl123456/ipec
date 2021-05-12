@@ -1,0 +1,327 @@
+@import "var";
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #444;
+}
+
+.messageTip {
+  line-height: 11px;
+  padding-left: 0.2rem;
+
+  img {
+    width: 0.12rem !important;
+    margin: 0 0.05rem 0 0 !important;
+    float: left;
+  }
+
+  span {
+    font-size: 12px;
+    color: #FF6666;
+  }
+}
+
+.backHome {
+  padding: 0 1.49rem;
+  img{
+    width: 1.28rem;
+    height: 0.32rem;
+  }
+  .float_img {
+    float: right;
+    width: 0.14rem;
+    height: 0.14rem;
+    margin-top: 1px;
+  }
+
+  .float_text {
+    cursor: pointer;
+    float: right;
+    display: block;
+    font-size: 0.16rem;
+    line-height: 0.16rem;
+    color: #FFFFFF;
+    margin-left: 0.068rem;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  color: $balance-color;
+}
+
+.container-all {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 0.48rem;
+  background: url("../images/login/full_bg.png") no-repeat center bottom/cover;
+  position: relative;
+  min-height: 8rem;
+
+  .container-login {
+    .login_img {
+      width: 11.78rem;
+      margin: 0 auto;
+      margin-top: 30px;
+      height: 7.7rem;
+      background: url("../images/loginbg.png") no-repeat;
+    }
+
+    .login-content {
+      width: 4.8rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      //background: url("../images/ic_login.png") no-repeat;
+      //border-radius: 0.08rem;
+      z-index: 1;
+      img {
+        width: 1.2rem;
+        margin: 0.3rem auto 0.24rem auto;
+        display: block;
+      }
+      .login-content-title{
+        text-align: center;
+        margin-bottom: 0.16rem;
+        //text-shadow: 0 2px 0px  #8CE2F9;
+        //text-shadow: #210487 1px 3px 0, #8ce2f9 0 3px 0, #8ce2f9 -1px 4px 0, #8ce2f9 0 -1px 0;
+        text-shadow: #210487 1px 1px 0, #210487 0 3px 0, #8ce2f9 -1px 4px 0, #8ce2f9 0 -1px 0;
+        color: $balance-white;
+        font-size: 0.3rem;
+        font-family: '思源黑体';
+        font-weight: bold;
+      }
+
+      .login-main{
+        height: 4rem;
+        background: rgba(255, 255, 255, 0.85);
+
+      }
+      .login-title-area {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        box-shadow: none;
+        margin-bottom: 0.04rem;
+
+        .login-old-title {
+          width: 50%;
+          height: 0.48rem;
+          line-height: 0.48rem;
+          font-weight: bold;
+          text-align: center;
+          padding-bottom: 0.13rem;
+          font-size: 16px;
+          letter-spacing: 0;
+          cursor: pointer;
+          color: $balance-color-6;
+          background: $balance-white;
+          &.last.active{
+           &:after{
+             left: 0;
+             border-width: 0 0 48px 18px;
+           }
+          }
+          &.active {
+            color: $balance-white;
+            background: $balance-login-button;
+            border-bottom: 1px solid #6248FF;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 0;
+              height: 0;
+              border-color: transparent #fff; /*上下颜色 左右颜色*/
+              border-width:  49px 18px 0 0;
+              border-style: solid;
+            }
+          }
+        }
+
+        .login-p-text {
+          font-weight: bold;
+        }
+      }
+      .form-group{
+        label{
+          height: 0.2rem;
+          line-height: 0.2rem;
+          font-size:0.14rem;
+          color: $balance-color-6;
+          margin-bottom: 0.04rem;
+        }
+        .form-control{
+          border: 1px solid $balance-color-9;
+          //color: $balance-color-9;
+          background: transparent;
+        }
+        input::placeholder {
+          font-size: 0.14rem;
+          color: $balance-color-9;
+        }
+
+      }
+
+      .input-area {
+        width: 4.2rem;
+        margin: 0.2rem auto;
+
+        input {
+          width: 4.2rem;
+          height: 0.4rem;
+          letter-spacing: 0;
+          line-height: 24px;
+          font-size: 0.14rem;
+        }
+
+        .form-control {
+          padding: 0.06rem 0.12rem;
+          font-size: 0.16rem;
+          border-radius: 0.04rem;
+        }
+
+        input::placeholder {
+          color: #ADB5BD;
+        }
+      }
+      .code-area {
+        margin: 0.2rem auto 0.16rem;
+        width: 4.2rem;
+        label{
+          display: block;
+        }
+        input {
+          display: inline-block;
+          vertical-align: top;
+          width: 3rem;
+          height: 0.4rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        input::placeholder {
+          color: $balance-color-9;
+          font-size: 14px;
+        }
+
+        button {
+          display: inline-block;
+          width: 1.2rem;
+          height: 0.4rem;
+          vertical-align: top;
+          background-image: $balance-button-active;
+          border: none;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          font-weight: normal;
+          font-size: 0.13rem;
+          outline: none;
+          box-shadow: none;
+          border-radius: 0 0.04rem 0.04rem 0;
+
+          &.gray {
+            background-image: unset;
+            background: gray;
+          }
+        }
+      }
+      .form-operation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        color: #999999;
+        margin-top: -0.05rem;
+        height: 0.17rem;
+
+        a {
+          font-size: 0.12rem;
+          color: $balance-color;
+          letter-spacing: 0;
+          line-height: 0.16rem;
+        }
+
+        .thirty-checkbox {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          span {
+            margin-left: 0.032rem;
+            font-size: 0.12rem;
+            line-height: 0.13rem;
+            letter-spacing: 0;
+            color: #999999;
+          }
+        }
+      }
+
+      .login-btn-area {
+        background-image: $balance-login-button;
+        border-radius: 6px;
+        width: 4.2rem;
+        height: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //margin: 0.35rem auto;
+        //margin-bottom: 0.16rem;
+        font-size: 16px;
+        color: #FFFFFF;
+      }
+      .margin55{
+        margin: 0.55rem auto 0;
+      }
+      .margin87{
+        margin: 0.87rem auto 0;
+      }
+      .btn-primary {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+      }
+
+      .btn-primary:active {
+        box-shadow: none;
+      }
+
+      .no-account {
+        font-size: 0.12rem;
+        line-height: 0.2rem;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto ;
+        padding: 0.16rem 0 0.17rem;
+        color: #6B7177;
+
+        a {
+          color: $balance-color;
+        }
+      }
+    }
+
+  }
+
+
+.bottom-txt {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0.5rem;
+  font-size: 0.12rem;
+  color: #adb5bd;
+}
+
+}
+

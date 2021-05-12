@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_nextpart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="个人中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VIP会员主页" transform="translate(-1100.000000, -530.000000)">
+            <g id="ic_nextpart" transform="translate(1100.000000, 530.000000)">
+                <g>
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="12" height="12"></rect>
+                    <path d="M0.75,5.65546875 L4.00429687,5.65546875 L4.00429687,1.09453125 L7.99570312,1.09453125 L7.99570312,5.65664063 L11.25,5.65664063 L6,10.9066406 L0.75,5.65546875 Z M4.575,1.6640625 L4.575,6.22617188 L2.12695312,6.22617188 L6,10.0992187 L9.87304688,6.22617188 L7.425,6.22617188 L7.425,1.6640625 L4.575,1.6640625 Z" id="形状" fill="#343A40" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

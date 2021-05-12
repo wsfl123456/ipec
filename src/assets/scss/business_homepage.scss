@@ -1,0 +1,793 @@
+@import "var";
+
+.business-homepage-container {
+  background: #fff;
+  width: 11.4rem;
+  margin: 0 auto 0.43rem;
+  // 封面及企业信息
+  .cover {
+    height: 4.20rem;
+    position: relative;
+
+    .coverTop {
+      height: 2.8rem;
+      background-image: url("../images/personal_homepage_BG.png");
+      background-size: 100% 100%;
+      padding-top: 1.80rem;
+      padding-left: 0.40rem;
+
+      .Avatar {
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        padding: 0.1rem;
+
+        img {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+    }
+
+    .coverLeft {
+      padding-top: 0.12rem;
+      padding-left: 2.64rem;
+
+      .name {
+        font-size: 24px;
+        color: #343A40;
+        display: flex;
+
+        .name-width {
+          min-width: 0.5rem;
+          max-width: 3.6rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+
+        .name-width:hover {
+          height: auto;
+          width: auto;
+          white-space: normal;
+        }
+
+        img {
+          width: 0.24rem;
+          height: 0.24rem;
+          vertical-align: middle;
+          margin-left: 0.06rem;
+          margin-top: -0.02rem;
+        }
+      }
+
+
+      .newsletter {
+        font-size: 14px;
+        color: #495057;
+        margin: 0.06rem 0 0 0;
+
+        span {
+          color: #6248FF;
+          margin-left: 0.2rem;
+        }
+      }
+
+      .companyAbbreviation {
+        font-size: 12px;
+        color: #ADB5BD;
+      }
+
+      .address {
+        font-size: 12px;
+        color: #ADB5BD;
+        margin: 0.06rem 0 0 0;
+
+        img {
+          width: 0.16rem;
+          height: 0.16rem;
+          vertical-align: middle;
+          margin-right: 0.08rem;
+        }
+      }
+    }
+
+    .coverRight {
+      position: absolute;
+      top: 3.08rem;
+      right: 0;
+
+      div {
+        display: inline-block;
+        width: 1rem;
+        height: 0.34rem;
+        margin-right: 0.2rem;
+        background: #FFFFFF;
+        border: 1px solid #6248FF;
+        color: #6248FF;
+        border-radius: 4px;
+        line-height: 0.34rem;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background-color: #6248FF;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // 资料 IP 案例 职员 四大Tabs
+  .fourContainer {
+    // antd相关样式设置
+    .ant-tabs-nav-scroll {
+      text-align: center;
+    }
+
+    .ant-tabs-tab {
+      color: #343A40;
+      font-size: 16px;
+      margin: 0 0.60rem;
+    }
+
+    .ant-tabs-tab-active {
+      color: #6248FF;
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: #6248FF;
+    }
+  }
+
+  // loading
+  .loading {
+    text-align: center;
+
+    img {
+      //margin: 0 auto;
+      width: 1rem;
+    }
+  }
+
+  // 没有更多
+  .ofTheBottom {
+    font-size: 14px;
+    color: #888888;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: .38rem;
+
+    span {
+      width: unset;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0.4rem;
+        height: 1px;
+        background: #888888;
+        position: absolute;
+        left: -50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0.4rem;
+        height: 1px;
+        background: #888888;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%) translateX(50%);
+
+      }
+    }
+  }
+
+  // 资料
+  .material {
+    display: flex;
+    min-height: 3rem;
+
+    .material-left {
+      display: inline-block;
+      width: 7.75rem;
+      vertical-align: top;
+      padding-right: 0.11rem;
+
+      .title {
+        font-size: 18px;
+        color: #343A40;
+        margin-bottom: 0.1rem;
+      }
+
+      .ic_no_resultDiv {
+        text-align: center;
+
+        .ic_no_result {
+          display: block;
+          margin: 0 auto;
+          width: 3.7rem;
+        }
+      }
+
+      .carousel {
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .swiper-banner {
+          position: relative;
+          margin: 0 auto;
+        }
+
+        .swiper-slide-bg {
+          background-size: cover;
+        }
+      }
+
+      .newsletter {
+        font-size: 14px;
+        color: #343a40;
+        line-height: 24px;
+      }
+
+      .introduce {
+        font-size: 14px;
+        color: #6B7177;
+        line-height: 24px;
+        margin-top: 0.10rem;
+      }
+    }
+
+    .material-right {
+      width: calc(100% - 7.75rem);
+      padding-left: 0.20rem;
+      border-left: 1px solid #ced4da;
+      display: flex;
+
+      .title {
+        font-size: 18px;
+        color: #343A40;
+        margin-bottom: 0.20rem;
+      }
+
+      .visitors-list {
+        width: 3.8rem;
+        height: 1rem;
+        display: flex;
+
+        .link-container {
+          display: flex;
+        }
+
+        .visitors-avatar {
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+        }
+
+        .text-area {
+          display: flex;
+          margin-left: 0.2rem;
+
+          .name {
+            font-size: 16px;
+            color: #343a40;
+            width: 2.5rem;
+            display: flex;
+
+            .com-real-name {
+              display: inline-block;
+              max-width: 1.3rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              vertical-align: middle;
+              cursor: pointer;
+            }
+
+            .com-real-name:hover {
+              overflow: visible;
+              white-space: normal;
+              max-width: 1.7rem;
+              height: auto;
+            }
+
+            img {
+              margin-left: 0.05rem;
+              width: 0.16rem;
+              height: 0.16rem;
+            }
+
+            .lastTime {
+              font-size: 12px;
+              color: #adb5bd;
+              vertical-align: middle;
+              margin-left: 0.08rem;
+            }
+          }
+
+          .company {
+            width: 2.5rem;
+            font-size: 14px;
+            color: #6b7177;
+          }
+        }
+
+
+      }
+    }
+  }
+
+  // IP
+  .ip {
+    min-height: 3rem;
+
+    .title {
+      font-size: 18px;
+      color: #343A40;
+      padding-top: 0.40rem;
+      padding-bottom: 0.20rem;
+    }
+
+    .ic_no_resultDiv {
+      text-align: center;
+
+      .ic_no_result {
+        display: block;
+        margin: 0 auto;
+        width: 3.7rem;
+      }
+    }
+
+    .ipContainer {
+      .ipSendList {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.12rem;
+
+        .ipSendImageOut {
+          width: 1.80rem;
+          height: 2.40rem;
+          border-radius: 4px;
+          cursor: pointer;
+          position: relative;
+          background-color: #fff;
+          overflow: hidden;
+
+          .image {
+            // max-width: 1.80rem;
+            height: 2.40rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+          }
+        }
+
+        .name {
+          font-size: 16px;
+          color: #495057;
+          margin: 0.12rem 0 0.24rem;
+          width: 1.8rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .name:hover {
+          height: auto;
+          white-space: normal;
+        }
+      }
+
+      .ipSendList:nth-child(6n) {
+        margin-right: 0;
+      }
+
+      .ant-pagination {
+        text-align: right;
+      }
+    }
+  }
+
+  // 案例
+  .case {
+    min-height: 3rem;
+
+    .title {
+      font-size: 18px;
+      color: #343A40;
+      padding-top: 0.40rem;
+      padding-bottom: 0.20rem;
+    }
+
+    .ic_no_resultDiv {
+      text-align: center;
+
+      .ic_no_result {
+        display: block;
+        margin: 0 auto;
+        width: 3.7rem;
+      }
+    }
+
+    .caseContainer {
+      .caseSendList {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.30rem;
+        margin-bottom: 0.36rem;
+        width: 3.60rem;
+        height: 3.60rem;
+        background: #F8F8F8;
+        position: relative;
+
+        .caseSendImage {
+          width: 100%;
+          height: 2.40rem;
+        }
+
+        .caseSendImg {
+          width: 0.60rem;
+          height: 0.80rem;
+          position: absolute;
+          top: 2.6rem;
+          left: 0.16rem;
+        }
+
+        .name {
+          width: 2.50rem;
+          position: absolute;
+          top: 2.6rem;
+          left: 0.95rem;
+          font-size: 16px;
+          color: #343A40;
+        }
+
+        .likeNumber {
+          position: absolute;
+          top: 3.25rem;
+          left: 0.95rem;
+          font-size: 14px;
+          color: #6B7177;
+          cursor: pointer;
+
+          .red {
+            color: #ff6b6b;
+          }
+
+          * {
+            vertical-align: middle;
+          }
+
+          i {
+            margin-right: 0.07rem;
+          }
+        }
+
+        .autherAndTime {
+          position: absolute;
+          top: 3.25rem;
+          right: 0.15rem;
+          font-size: 14px;
+          color: #6B7177;
+
+          span {
+            font-size: 14px;
+            color: #ADB5BD;
+            margin-left: 0.06rem;
+          }
+        }
+      }
+
+      .caseSendList:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      .ant-pagination {
+        text-align: right;
+      }
+    }
+  }
+
+  // 职员
+  .staff {
+    min-height: 3rem;
+
+    .ic_no_resultDiv {
+      text-align: center;
+
+      .ic_no_result {
+        display: block;
+        margin: 0 auto;
+        width: 3.7rem;
+      }
+    }
+
+    .staffContainer {
+      padding-top: 0.43rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      .visitorsList {
+        width: 3.80rem;
+        height: 1.00rem;
+        position: relative;
+        display: flex;
+        vertical-align: top;
+
+        .visitorsAvatar {
+          width: 0.80rem;
+          height: 0.80rem;
+          border-radius: 50%;
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .name {
+          position: absolute;
+          left: 0.92rem;
+          top: 0.15rem;
+          font-size: 16px;
+          color: #343A40;
+          display: flex;
+
+          .com-word {
+            max-width: 1.7rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .com-word:hover {
+            max-width: 2.8rem;
+            white-space: normal;
+          }
+
+          img {
+            margin: 0 0.14rem 0 0.08rem;
+          }
+
+          .lastTime {
+            font-size: 12px;
+            color: #ADB5BD;
+          }
+        }
+
+        .company {
+          position: absolute;
+          left: 0.92rem;
+          top: 0.43rem;
+          font-size: 14px;
+          color: #6b7177;
+        }
+      }
+
+      .ant-pagination {
+        text-align: right;
+      }
+    }
+  }
+}
+
+// 登录提醒
+.toLogin {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.16rem;
+  background-image: linear-gradient(-95deg, #2853ff 0%, #933efe 100%);
+  width: 1.2rem;
+  height: 0.4rem;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 0.4rem;
+  margin: 0.2rem auto 0.1rem;
+}
+
+// 私信弹窗
+.letterDiv {
+  .modal-main {
+    padding: 0 0.4rem;
+  }
+
+  .userRealName {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 20px;
+    background: #f1f3f5;
+    border: 1px solid #E9ECEF;
+    font-size: 14px;
+    color: #ADB5BD;
+    padding-left: 12px;
+  }
+
+  .twoBtn {
+    margin-top: 20px;
+    border-top: 1px solid #CED4DA;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+    div {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 4px;
+      width: 148px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .cancelBtn {
+      color: #6248FF;
+      background: #fff;
+      border: 1px solid #6248FF;
+    }
+
+    .submitBtn {
+      background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+// 职员加入弹窗
+.joinDiv {
+  .modal-main {
+    padding: 0 0.4rem;
+  }
+
+  .userRealName {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 20px;
+    background: #f1f3f5;
+    border: 1px solid #E9ECEF;
+    font-size: 14px;
+    color: #ADB5BD;
+    padding-left: 12px;
+  }
+
+  .label {
+    font-size: 0.14rem;
+    color: #6B7177;
+    margin-top: 0.2rem;
+    margin-bottom: 0.08rem;
+
+    span {
+      color: #ff6666;
+    }
+  }
+
+  .twoBtn {
+    margin-top: 20px;
+    border-top: 1px solid #CED4DA;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+    div {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 4px;
+      width: 148px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .cancelBtn {
+      color: #6248FF;
+      background: #fff;
+      border: 1px solid #6248FF;
+    }
+
+    .submitBtn {
+      background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+.ant-modal-title {
+  text-align: center;
+  font-size: 0.18rem;
+}
+
+.ant-modal-body {
+  padding: 0.2rem 0 0.1rem
+}
+
+.inviteDiv {
+  .ant-modal-content {
+    width: 6rem;
+  }
+
+  .modal-main {
+    padding: 0 0.4rem;
+  }
+
+  .ant-modal-header {
+    text-align: center;
+    color: #495057;
+    height: 0.74rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .ant-modal-title {
+      font-size: 18px;
+      line-height: 0.74rem;
+      font-weight: 400;
+    }
+  }
+
+  .ant-modal-body {
+    padding-top: 0;
+
+    .label {
+      font-size: 14px;
+      color: #6B7177;
+      margin-top: 0.2rem;
+      margin-bottom: 0.08rem;
+
+      span {
+        color: #ff6666;
+      }
+    }
+  }
+
+  .teleInput {
+    margin-top: 0.08rem;
+  }
+
+  .twoBtn {
+    margin-top: 20px;
+    border-top: 1px solid #CED4DA;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+    div {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 4px;
+      width: 148px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .cancelBtn {
+      color: #6248FF;
+      background: #fff;
+      border: 1px solid #6248FF;
+    }
+
+    .submitBtn {
+      background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+      color: #FFFFFF;
+    }
+  }
+}

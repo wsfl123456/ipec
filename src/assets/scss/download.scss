@@ -1,0 +1,72 @@
+@import "var";
+
+.download-content {
+  font-size: 0.16rem;
+  width: 11.4rem;
+  margin: 0.5rem auto;
+
+  .download-controls-wrap {
+    display: flex;
+
+    h4 {
+      font-size: 0.2rem;
+      font-weight: bold;
+      display: inline-block;
+
+    }
+
+    .pull-right {
+      .go-back {
+        color: $limit-purple-text;
+        margin-right: 0.15rem;
+      }
+
+      .download {
+        display: inline-block;
+        width: 1.5rem;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        text-align: center;
+        background-image: $balance-button-active;
+        border-radius: 6px;
+
+        a {
+          color: $balance-white;
+        }
+      }
+    }
+  }
+
+  .download-lists {
+    .download-list-wrap {
+      height: 0.48rem;
+      background: #F8F9FA;
+      border: 1px solid #E9ECEF;
+      border-radius: 6px;
+      padding: 0.1rem 0.25rem 0.1rem 0.15rem;
+      line-height: 26px;
+      margin: 0.15rem 0 0.25rem;
+
+      .download-list-top {
+        display: flex;
+        color: #6B7177;
+
+        .pull-left {
+          .iconfuxuankuangweixuanzhong:before {
+            color: #e5e5e5;
+            font-size: 0.2rem;
+            cursor: pointer;
+            margin-right: 0.3rem;
+          }
+        }
+
+        .clear {
+          color: #6b7177;
+          .iconlajitong {
+            margin-right: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,454 @@
+@import "var";
+
+.main-container {
+  .detail-forecast {
+
+    .g-top {
+      background-color: $limit-gray-bg-color;
+
+      .tab {
+        display: flex;
+        //margin-left: 0.9rem;
+        width: 11.4rem;
+        margin: auto;
+        border-bottom: $balance-model-border;
+
+        span {
+          padding: 0.132rem 0.2rem;
+          font-size: 0.14rem;
+          color: $limit-detail-title-color;
+          cursor: pointer;
+          border-bottom: 2px solid transparent;
+        }
+
+        .span-active {
+          color: $limit-purple-text;
+          border-bottom: 2px solid $limit-purple-text;
+        }
+
+        span:hover {
+          color: $limit-purple-text;
+          border-bottom: 2px solid $limit-purple-text;
+        }
+      }
+
+      .m-tab-title {
+        display: flex;
+        width: 11.4rem;
+        margin: auto;
+
+        span {
+          height: 0.48rem;
+          line-height: 0.48rem;
+          margin: 0 0.2rem 0 0;
+          font-size: 0.14rem;
+          color: $limit-detail-title-color;
+          cursor: pointer;
+        }
+
+        .span-active {
+          color: $limit-purple-text;
+        }
+      }
+    }
+
+    .g-content {
+      width: 11.4rem;
+      margin: 0 auto;
+      padding: 0.4rem 0 0.24rem;
+
+      .show {
+        display: block;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      // 匹配度
+      .m-star, .m-life-cycle {
+
+        table {
+          width: 11.4rem;
+          table-layout: fixed;
+          margin: 0 0 0.4rem;
+
+          th {
+            text-align: center;
+            background: $balance-model-border;
+            font-size: 0.14rem;
+            height: 0.48rem;
+            line-height: 0.48rem;
+            font-weight: normal;
+            color: $limit-gray-text;
+            border-width: 0.01rem;
+
+            &:first-child {
+              width: 3.83rem;
+            }
+
+            .u-hover.wb img:hover + .hover-box {
+              left: 0.68rem;
+            }
+
+            .u-hover {
+              position: relative;
+
+              img {
+                width: 0.13rem;
+                cursor: pointer;
+                margin: 0 0 0 0.036rem;
+              }
+
+              img:hover + .hover-box {
+                display: inline-block;
+              }
+
+              .hover-box {
+                text-align: left;
+                width: 2rem;
+                position: absolute;
+                top: 0.4rem;
+                left: 0.6rem;
+                background: rgba(0, 0, 0, .4);
+                color: #fff;
+                line-height: 0.24rem;
+                padding: 0.05rem;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                border-radius: 0.04rem;
+                display: none;
+              }
+
+              .hover-box:after {
+                position: absolute;
+                top: -0.1rem;
+                left: 0.1rem;
+                content: "";
+                width: 0;
+                height: 0;
+                border: 0.05rem solid;
+                border-color: transparent transparent rgba(0, 0, 0, 0.4) transparent;
+              }
+            }
+
+          }
+
+          tr {
+            &:nth-child(n+1) td {
+              background: $limit-gray-bg-color;
+            }
+
+            &:nth-child(2n) td {
+              background: #fff;
+            }
+
+            td {
+              height: 0.6rem;
+              padding: 0.1rem;
+              line-height: 0.22rem;
+              color: $limit-detail-title-color;
+
+              &.td-detail {
+                div {
+                  height: 1.1rem;
+                  //position: relative;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 5;
+                  -webkit-box-orient: vertical;
+                }
+
+                div:after {
+                  //content: "...";
+                  //position: absolute;
+                  //bottom: 0;
+                  //right: 0;
+                  ////background: ;
+                }
+              }
+
+              &:first-child {
+                width: 3.83rem;
+              }
+
+              .td-info {
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+
+                img {
+                  display: inline-block;
+                  width: 0.9rem;
+                  height: 1.2rem;
+                  border-radius: 0.06rem;
+                  object-fit: cover;
+                  margin: 0 0.1rem 0 0;
+                }
+
+                .td-info-detail {
+                  display: inline-block;
+
+                  p {
+                    display: block;
+                    width: 2.56rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin: 0 0 0.08rem;
+
+                    span {
+
+                    }
+                  }
+                }
+
+              }
+
+              &.td-math {
+                text-align: right;
+                padding: 0 0.2rem 0 0;
+              }
+            }
+          }
+
+        }
+
+      }
+
+      .m-life-cycle {
+        table {
+          th:nth-child(3), th:nth-child(4), th:nth-child(5),
+          td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+            width: 1.4rem;
+            text-align: center;
+          }
+
+          td {
+            div > span {
+              color: $balance-tab-gray;
+              font-size: 0.2rem;
+
+              &.active {
+                color: $balance-care-red;
+              }
+            }
+          }
+        }
+      }
+
+      .m-star {
+        .title {
+          .hover-box {
+            left: 0.9rem;
+          }
+        }
+
+        .fans-sex {
+          .hover-box {
+            left: 0.9rem;
+          }
+        }
+
+        .fans-age {
+          .hover-box {
+            left: 1.7rem;
+          }
+        }
+      }
+
+      .m-star > div, .m-develop > div, .m-heat-trend > div {
+        margin: 0 0 0.4rem 0;
+
+        .title {
+          display: flex;
+          height: 0.25rem;
+          line-height: 0.25rem;
+          margin: 0 0 0.2rem 0;
+          flex: 1;
+          align-items: center;
+          flex-direction: row;
+          font-size: 0.16rem;
+          color: $limit-detail-title-color;
+          letter-spacing: 0;
+          font-weight: bold;
+          position: relative;
+
+          img {
+            vertical-align: top;
+          }
+
+          .icon_detail:hover + .hover-box {
+            display: inline-block;
+          }
+
+          .icon_detail {
+            width: 0.13rem;
+            height: 0.13rem;
+            margin: 0 0 0 0.05rem;
+            cursor: pointer;
+            vertical-align: middle;
+          }
+
+
+          .hover-box {
+            font-weight: 400;
+            z-index: 99;
+            position: absolute;
+            top: 0.26rem;
+            font-size: 0.14rem;
+            line-height: 0.24rem;
+            padding: 0.05rem 0.1rem;
+            color: $balance-white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 0.04rem;
+            background: rgba(0, 0, 0, .4);
+            display: none;
+            max-width: 5rem;
+          }
+
+          .hover-box:after {
+            border-width: 0.05rem;
+            border-color: transparent transparent rgba(0, 0, 0, .4) transparent;
+            border-style: solid;
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            top: -0.1rem;
+            left: 0.13rem;
+          }
+        }
+
+        .chart-small {
+          height: 3.48rem;
+        }
+
+        .chart {
+          height: 5.62rem;
+        }
+
+        .chart-parent {
+          border: 1px solid #e5e5e5;
+
+          .chart {
+            border: none;
+            padding: 0;
+            height: 2rem;
+          }
+        }
+
+        .chart, .chart-small {
+          border: 1px solid #e5e5e5;
+          padding: 0.3rem;
+
+          .no-auth {
+            margin: 1rem auto;
+            text-align: center;
+          }
+
+          .echart {
+            height: 100%;
+
+            .echarts-for-react {
+              height: 100% !important;
+            }
+          }
+        }
+
+        .tab-chart {
+          height: 3rem;
+          padding: 0 0.2rem 0;
+
+          .echart {
+            height: 84%;
+
+          }
+
+          .tab-title {
+            //width:100% ;
+            //padding: 0 0.2rem;
+            border-bottom: 1px solid $balance-tab-gray;
+            //overflow-x:scroll ;
+            //overflow-y:hidden ;
+            .tab-item {
+              display: inline-block;
+              height: 0.48rem;
+              line-height: 0.48rem;
+              margin: 0 0.3rem 0 0;
+              color: $balance-color-6;
+              cursor: pointer;
+            }
+
+            .active {
+              color: $balance-color;
+              border-bottom: 1px solid $balance-color;
+            }
+
+          }
+        }
+
+        .tab-chart-map {
+          height: 4.5rem;
+
+          .city-tab-content {
+            display: flex;
+            align-items: center;
+            height: 89%;
+
+            .echart {
+              width: 45%;
+            }
+
+            .middle-line {
+              border-right: 1px solid $balance-tab-gray;
+              height: 3.11rem;
+              margin: 0 0.4rem;
+            }
+          }
+        }
+      }
+
+      .m-develop {
+        .wave-value {
+          .hover-box {
+            left: 0.92rem;
+          }
+        }
+      }
+
+
+      //  热度&知名度
+      .m-heat-trend {
+        .heat-content {
+          margin: 0;
+
+          > div {
+            margin: 0 0 0.4rem;
+          }
+        }
+
+        .chart {
+          height: 5.04rem;
+        }
+
+
+        .title {
+          .hover-box {
+            left: 0.92rem;
+          }
+        }
+
+        .famous-heat, .match-heat {
+          .chart {
+            height: 5.2rem;
+          }
+        }
+      }
+
+
+    }
+
+  }
+}
+

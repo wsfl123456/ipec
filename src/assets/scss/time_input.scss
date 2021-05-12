@@ -1,0 +1,75 @@
+@import "var";
+
+
+.invert-triangle {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 6px solid;
+  position: absolute;
+}
+
+.main-triangle {
+  border-color: transparent transparent #ced4da transparent;
+  margin-top: -0.72rem;
+  z-index: 1;
+}
+
+.bg-triangle {
+  border-color: transparent transparent #f8f9fa transparent;
+  margin-top: -0.6rem;
+  z-index: 1;
+}
+
+.time-input {
+  position: relative;
+
+  .time-list {
+    position: relative;
+    width: 100%;
+
+    .calendar-element {
+      z-index: 20;
+    }
+
+    .timeLine{
+      display: inline-block;
+      width: 0.2rem;
+      border: 0.005rem solid #CED4DA;
+      vertical-align: middle;
+      margin: 0 0.12rem;
+    }
+    .time-style::-webkit-input-placeholder{
+      color: #ADB5BD;
+    }
+    .time-style::-moz-placeholder{   /* Mozilla Firefox 19+ */
+      color: #ADB5BD;
+    }
+    .time-style:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+      color: #ADB5BD;
+    }
+    .time-style:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+      color: #ADB5BD;
+    }
+
+    .time-style{
+      width: 2rem;
+      height: 0.3rem;
+      text-indent: 0.12rem;
+      background: #FFFFFF;
+      border: 0.5px solid #CED4DA;
+      border-radius: 2px;
+
+    }
+
+    .calendar-icon {
+      position: absolute;
+      top: 0.9375rem;
+      right: 1.25rem;
+    }
+  }
+}
+
+.form-control {
+  background-color: #f8f9fa !important;
+}

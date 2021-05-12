@@ -1,0 +1,94 @@
+@import "app";
+
+.date-and-time-picker-body {
+  position: relative;
+
+  .meeting-box {
+    position: absolute;
+    // top: 0.7rem;
+    margin-top: 0.03rem;
+    z-index: 8888;
+    // width: 5.2rem;
+    width: 100%;
+    height: 2.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.04rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    background: #F8F9FA;
+
+    .datePicker {
+      float: left;
+      max-height: 2.78rem;
+      overflow-y: auto;
+
+      .month {
+        width: 1.3rem;
+        line-height: 0.48rem;
+        font-size: 0.14rem;
+        color: #495057;
+        letter-spacing: 0;
+        text-align: center;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          color: #6248FF;
+          background: white;
+        }
+      }
+    }
+
+    .timePicker {
+      background: white;
+      margin-left: 1.3rem;
+      padding: 0.1rem 0 0.04rem 0.1rem;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      flex-wrap: wrap;
+
+      div {
+        display: inline-block;
+        width: 1.06rem;
+        height: 0.32rem;
+        line-height: 0.3rem;
+        background: #FFFFFF;
+        border: 1px solid #E9ECEF;
+        border-radius: 4px;
+        margin-right: 0.12rem;
+        margin-bottom: 0.12rem;
+        font-size: 0.14rem;
+        color: #495057;
+        letter-spacing: 0;
+        text-align: center;
+        cursor: pointer;
+
+        &.disabled-active {
+          background: #d6d6d6 !important;
+          border-color: #d6d6d6 !important;
+          color: #495057 !important;
+          cursor: no-drop;
+        }
+
+        &.already {
+          background: #d6d6d6 !important;
+          border-color: #d6d6d6 !important;
+          // color: #495057 !important;
+          cursor: no-drop;
+          line-height: 0.15rem;
+          color: #adb5bd !important;
+        }
+
+        // &:nth-child(3n){
+        //   margin-right: 0;
+        // }
+        &.active,
+        &:hover {
+          border-color: #6248FF;
+          color: #6248FF;
+        }
+      }
+    }
+  }
+
+}

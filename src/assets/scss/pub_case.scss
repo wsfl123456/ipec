@@ -1,0 +1,317 @@
+@import "var";
+
+li {
+  list-style: none;
+}
+
+.table tbody:nth-child(odd) {
+  background: rgba(248, 249, 250, 0.60);
+}
+
+.case-right {
+  width: 100%;
+  //margin-left: 0.24rem;
+
+  .case-top {
+    height: 0.6rem;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #CED4DA;
+
+    .top-left {
+      font-size: 0.16rem;
+      color: #343A40;
+      margin: 0.2rem 0 0.18rem 0.4rem;
+    }
+
+    .top-right {
+      position: absolute;
+      right: 0.4rem;
+      top: 0.21rem;
+      font-size: 0.14rem;
+      color: #6B7177;
+
+      img {
+        width: 0.15rem;
+        height: 0.15rem;
+
+        margin: -0.04rem 0.04rem 0 0;
+        //margin-right: 0.05rem;
+        //margin-top: -0.01rem;
+      }
+    }
+
+  }
+
+  .case-change {
+    display: flex;
+    background: #F8F9FA;
+
+    li {
+      font-size: 0.14rem;
+      margin: 0.12rem 0.3rem 0.12rem 0.1rem;
+      line-height: 24px;
+      color: #ADB5BD;
+    }
+
+    li:first-child {
+      margin: 0.12rem 0.2rem 0.12rem 0.4rem;
+      color: #ADB5BD;
+    }
+
+    li:last-child {
+      margin: 0.12rem 0 0.12rem;
+    }
+
+    li {
+      font-size: 14px;
+      color: #495057;
+      letter-spacing: 0;
+      line-height: 0.24rem;
+      margin: 0.12rem 0.2rem 0.12rem 0;
+
+      .u-input {
+        width: 2.28rem;
+        height: 0.48rem;
+        font-size: 0.14rem;
+        color: #343A40;
+        border: 1px solid #E9ECEF;
+        text-indent: 0.16rem;
+        border-radius: 0.04rem;
+        outline: none;
+      }
+
+      .u-input::placeholder {
+        color: $balance-color-gray;
+      }
+
+      .u-search {
+        width: 0.63rem;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #E9ECEF;
+        border-left: none;
+        display: inline-block;
+        border-radius: 0 0.04rem 0.04rem 0;
+
+        i {
+          font-size: 0.288rem;
+          color: #9b9b9b;
+          cursor: pointer;
+        }
+      }
+
+      .ant-select-selection--multiple {
+        background: white !important;
+      }
+
+      .ant-calendar-picker {
+        .ant-calendar-input,
+        input {
+          min-height: 0.48rem;
+        }
+      }
+
+      .ant-calendar-picker-input:hover,
+      .form-control:hover {
+        box-shadow: none !important;
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-calendar-picker-input:focus,
+      .form-control:focus {
+        box-shadow: none !important;
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-select-selection {
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-select-open {
+        .ant-select-selection {
+          box-shadow: none !important;
+          border-color: #E9ECEF !important;
+        }
+      }
+
+      .ant-select-selection:focus {
+        box-shadow: none !important;
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-select-selection,
+      .ant-select-selection--multiple {
+        min-height: 0.48rem;
+        background: #fff;
+        border-radius: 4px 0 0 4px;
+
+        &:hover {
+          border-color: #E9ECEF;
+        }
+
+        .ant-select-selection__rendered {
+          height: 100%;
+          font-size: 0.14rem;
+          line-height: 0.36rem;
+
+          ul {
+            li {
+              margin-top: 0.08rem;
+
+              input:focus {
+                border-color: #E9ECEF;
+              }
+            }
+          }
+
+          .ant-select-selection--multiple .ant-select-selection__placeholder {
+            font-size: 0.14rem;
+            color: #ADB5BD !important;
+            letter-spacing: 0;
+          }
+        }
+      }
+
+    }
+  }
+
+  .case-list {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0.21rem 0;
+
+    .checked-button {
+      margin: 0 0 0 0.4rem;
+      display: inline-block;
+
+      .checkbox-text {
+        display: inline-block;
+        font-size: 0.14rem;
+        color: #6b7177;
+        letter-spacing: 0;
+        margin-right: 0.2rem;
+        width: 0.88rem;
+        height: 0.33rem;
+        line-height: 0.31rem;
+        background: white;
+        text-align: center;
+        border: 1px solid #CED4DA;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .checkbox-text-large {
+        width: 1.08rem;
+        margin: 0 0 0.2rem;
+      }
+
+    }
+
+
+    .table {
+      font-size: 0.12rem;
+      width: 8.06rem;
+      table-layout: fixed;
+      margin: 0 auto;
+
+      .custom-checkbox {
+        width: 0.16rem;
+        height: 0.16rem;
+        margin: 0;
+        background: url("../images/check.jpg") center center no-repeat;
+        cursor: pointer;
+      }
+
+      .th-selected:hover {
+        .custom-checkbox {
+          border: $balance-border;
+        }
+      }
+
+      .th-selected, .td-selected {
+        .custom-checkbox {
+          border: $balance-border;
+          border-radius: 0.02rem;
+          background: url("../images/checked.svg") center center no-repeat;
+        }
+      }
+
+      tbody {
+        border-top: none;
+      }
+
+      //.ing {
+      //  text-align: center;
+      //}
+
+      .td-45 {
+        width: 0.45rem;
+      }
+
+      .td-100 {
+        width: 1rem;
+
+        a:first-child {
+          margin: 0 0.05rem 0 0;
+        }
+      }
+
+      .td-85 {
+        width: 0.85rem;
+      }
+
+      .td-90 {
+        width: 0.9rem;
+      }
+
+      .td-105 {
+        width: 1.05rem;
+      }
+
+      .td-120 {
+        width: 1.2rem;
+      }
+
+      thead tr {
+        border: solid 1px #E9ECEF;
+        border-bottom: none;
+
+        td {
+          color: #6B7177;
+          padding: 0.07rem 0.15rem;
+          border: solid 1px #E9ECEF;
+        }
+      }
+
+      tbody tr {
+        td {
+          padding: 0.07rem 0.15rem;
+          font-size: 0.14rem;
+          color: #343A40;
+          line-height: 0.24rem;
+          border: solid 1px #E9ECEF;
+
+          a {
+            display: inline-block;
+            font-size: 0.14rem;
+            color: #6248FF;
+            line-height: 24px;
+            //padding: 0.11rem 0.1rem;
+          }
+        }
+      }
+
+    }
+
+    .page {
+      margin-left: 6.2rem;
+      margin-top: 0.2rem;
+    }
+  }
+}
+

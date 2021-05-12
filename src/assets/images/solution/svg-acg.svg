@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="206" height="206" viewBox="0 0 206 206">
+    <defs>
+        <circle id="b" cx="80" cy="80" r="80"/>
+        <filter id="a" width="143.1%" height="143.1%" x="-21.6%" y="-21.6%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="11.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.942800389 0 0 0 0 0.373993845 0 0 0 0 1 0 0 0 0.58092731 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(23 23)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFC078" xlink:href="#b"/>
+        </g>
+        <g fill="#FFF">
+            <text font-family="PingFangSC-Regular, PingFang SC" font-size="16" transform="translate(59 83)">
+                <tspan x="0" y="43">游戏/动漫等</tspan>
+            </text>
+            <text font-family="DINNextLTPro-Regular, DIN Next LT Pro" font-size="24" transform="translate(59 83)">
+                <tspan x="22" y="18">ACG</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

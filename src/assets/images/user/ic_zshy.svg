@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>diamond_membership</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-54.2%" y="-56.6%" width="208.3%" height="217.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.805447385   0 0 0 0 0.488675821  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="diamond_membership" transform="translate(2.000000, 1.000000)">
+            <g transform="translate(-2.000000, -1.000000)" id="钻石VIP">
+                <g transform="translate(2.000000, 1.000000)">
+                    <g id="Group-10" filter="url(#filter-1)" transform="translate(0.000000, -0.000000)">
+                        <polygon id="Fill-1" fill="#FFF255" points="5.98980645 0.388077071 8.63246452 3.2969773 3.34727742 3.2969773"></polygon>
+                        <polygon id="Fill-2" fill="#F9CE19" points="5.98980645 0.388077071 2.99496774 0.0245011601 8.98477419 0.0245011601"></polygon>
+                        <polygon id="Fill-3" fill="#FFE317" points="8.63246452 3.2969773 5.98980645 0.388077071 8.98477419 0.0245011601"></polygon>
+                        <polygon id="Fill-4" fill="#FFED12" points="8.98477419 0.0245011601 11.9797419 3.2969773 8.63246452 3.2969773"></polygon>
+                        <polygon id="Fill-5" fill="#FFE317" points="3.34727742 3.2969773 5.98980645 0.388077071 2.99496774 0.0245011601"></polygon>
+                        <polygon id="Fill-7" fill="#FFED12" points="2.99496774 0.0245011601 0 3.2969773 3.34727742 3.2969773"></polygon>
+                        <polygon id="Fill-8" fill="#FFE317" points="5.98980645 11.4782076 3.34727742 3.2969773 8.63246452 3.2969773"></polygon>
+                        <path d="M5.98980645,11.4782076 L8.63246452,3.2969773 L11.9797419,3.2969773 L5.98980645,11.4782076 Z M5.98980645,11.4782076 L3.34727742,3.2969773 L0,3.2969773 L5.98980645,11.4782076 Z" id="Fill-9" fill="#F9CE19"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

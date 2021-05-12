@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="33px" viewBox="0 0 30 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_clear</title>
+    <g id="web端VIP储值卡模块11.20" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="购买-无需实体卡" transform="translate(-881.000000, -114.000000)">
+            <g id="编组-14" transform="translate(356.000000, 96.000000)">
+                <g id="ic_clear" transform="translate(525.000000, 18.000000)">
+                    <polygon id="Bounds" fill-opacity="0" fill="#FFFFFF" points="0 0 30 0 30 33 0 33"></polygon>
+                    <polygon id="Shape" fill="#868E96" points="23.75 8.81375 21.9875 6.875 15 14.56125 8.0125 6.875 6.25 8.81375 13.2375 16.5 6.25 24.18625 8.0125 26.125 15 18.43875 21.9875 26.125 23.75 24.18625 16.7625 16.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

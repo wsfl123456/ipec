@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2853FF" offset="0%"></stop>
+            <stop stop-color="#933EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-22">
+            <g>
+                <g id="合作案例">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                    <circle id="椭圆形" fill="url(#linearGradient-1)" cx="10" cy="10" r="10"></circle>
+                </g>
+                <path d="M10.5536,15.7426 C10.2441273,16.038978 9.75605837,16.0388016 9.4468,15.7422 L5.6884,12.1388 C5.6832,12.1346 4.2,10.8248 4.2,9.184 C4.2,7.2418 5.43,6.0354 7.4108,6.0354 C8.4574,6.0354 9.4276,6.75099999 10,7.278 C10.572,6.75099999 11.5422,6.0354 12.5892,6.0354 C14.5696,6.0354 15.8,7.2418 15.8,9.184 C15.8,10.6102 14.664,11.8076 14.316,12.1408 L10.5536,15.7426 Z" id="路径" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_bianji</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_bianji">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M4.422,12.349 C4.701,12.369 4.987,12.284 5.215,12.096 L5.292,12.071 L2.866,9.645 L2.842,9.722 C2.653,9.95 2.569,10.236 2.589,10.515 L1.728,13.209 L4.422,12.349 Z M13.205,2.526 L12.411,1.732 C11.973,1.294 11.262,1.294 10.824,1.732 L10.055,2.501 L12.435,4.881 L13.204,4.112 C13.643,3.675 13.643,2.964 13.205,2.526 Z M11.618,5.7 L9.238,3.32 L3.708,8.85 L6.088,11.231 L11.618,5.7 Z M1,13.938 L15,13.938 L15,14.938 L1,14.938 L1,13.938 Z" id="形状" fill="#4185F3" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

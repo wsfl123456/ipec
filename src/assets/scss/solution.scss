@@ -1,0 +1,312 @@
+
+.solution-index {
+  .main_top {
+    height: auto;
+    padding-bottom: 90px;
+    min-width: 900px;
+    width: 100%;
+    margin-bottom: 24px;
+    object-fit: contain;
+    background-image: linear-gradient(122deg, #7f55a9, #3c1371);
+    z-index: -1;
+    position: relative;
+    padding-top: 76px;
+
+    .solution-tag {
+      width: 100%;
+      margin: 0 auto 42px;
+      height: 216px;
+      /* padding-left: 70px; */
+      h2 {
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        opacity: .6;
+      }
+
+      li {
+        float: left;
+        width: 33.333%;
+        padding: 0 10px;
+        height: 216px;
+
+        > div {
+          max-width: 300px;
+          text-align: center;
+          margin: 0 auto;
+          color: #fff;
+
+          .svg-lib {
+            background: url(../images/solution/svg-lib.svg) no-repeat scroll 0 0 transparent;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+          }
+
+          .svg-brand {
+            background: url(../images/solution/svg-brand.svg) no-repeat scroll 0 0 transparent;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+          }
+
+          .svg-service {
+            background: url(../images/solution/svg-service.svg) no-repeat scroll 0 0 transparent;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .solution-tag-sub {
+      text-align: center;
+
+      .svg-acg,
+      .svg-movie,
+      .svg-celebrity {
+        width: 206px;
+        height: 206px;
+      }
+
+      .svg-acg {
+        background: url(../images/solution/svg-acg.png) no-repeat scroll 0 0 transparent;
+        background-size: contain;
+      }
+
+      .svg-celebrity {
+        background: url(../images/solution/svg-celebrity.png) no-repeat scroll 0 0 transparent;
+        background-size: contain;
+      }
+
+      .svg-movie {
+        background: url(../images/solution/svg-movie.png) no-repeat scroll 0 0 transparent;
+        background-size: contain;
+      }
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  .main {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+
+    .panel-box {
+      padding: 134px 80px;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+
+      p {
+        color: #6b7177;
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 32px;
+        color: #8a54be;
+        margin-bottom: 30px;
+
+        span {
+          height: 80px;
+          line-height: 80px;
+          vertical-align: top;
+          margin-right: 22px;
+        }
+      }
+
+      h4 {
+        font-size: 28px;
+        color: #343a40;
+        margin-bottom: 20px;
+      }
+    }
+
+    .service-panel {
+      ul {
+        text-align: center;
+        height: 248px;
+
+        li {
+          display: inline-block;
+          text-align: center;
+          margin-right: 64px;
+
+          .svg-service-detail-4,
+          .svg-service-detail-3,
+          .svg-service-detail-2,
+          .svg-service-detail-1 {
+            width: 160px;
+            height: 160px;
+          }
+
+          .svg-service-detail-1 {
+            background: url(../images/solution/svg-service-1.svg) no-repeat scroll 0 0 transparent;
+          }
+
+          .svg-service-detail-2 {
+            background: url(../images/solution/svg-service-2.svg) no-repeat scroll 0 0 transparent;
+          }
+
+          .svg-service-detail-3 {
+            background: url(../images/solution/svg-service-3.svg) no-repeat scroll 0 0 transparent;
+          }
+
+          .svg-service-detail-4 {
+            background: url(../images/solution/svg-service-4.svg) no-repeat scroll 0 0 transparent;
+          }
+
+          p {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .lib-panel-2 {
+      h3 {
+        text-align: right;
+      }
+    }
+
+    .brand-panel {
+      > div:first-child {
+        width: 617px;
+      }
+
+      .svg-brand {
+        background: url(../images/solution/svg-brand.svg) no-repeat scroll 0 0 transparent;
+        width: 80px;
+        margin: 0 auto;
+        margin-right: 22px;
+      }
+
+      .pos-div {
+        position: absolute;
+        font-size: 20px;
+        color: #6b7177;
+        right: 384px;
+        bottom: 45px;
+      }
+
+      .svg-brand-detail {
+        right: 500px;
+        bottom: 134px;
+      }
+    }
+
+    .svg-brand-detail {
+      background: url(../images/solution/svg-brand-detail.svg) no-repeat scroll 0 0 transparent;
+      width: 335px;
+      height: 194px;
+    }
+
+    .svg-brand-detail-2 {
+      background: url(../images/solution/svg-brand-detail-2.svg) no-repeat scroll 0 0 transparent;
+      width: 361px;
+      height: 345px;
+    }
+
+    > div:nth-child(2n) {
+      background-color: #f8f9fa;
+    }
+
+    .svg-service {
+      background: url(../images/solution/svg-service.svg) no-repeat scroll 0 0 transparent;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+    }
+
+    .svg-lib {
+      background: url(../images/solution/svg-lib.svg) no-repeat scroll 0 0 transparent;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+    }
+
+    .svg-lib-detail {
+      background: url(../images/solution/svg-lib-detail.svg) no-repeat scroll 0 0 transparent;
+      width: 493px;
+      height: 282px;
+    }
+
+    .svg-lib-detail-2 {
+      background: url(../images/solution/svg-lib-detail-2.svg) no-repeat scroll 0 0 transparent;
+      width: 354px;
+      height: 354px;
+    }
+
+    .inblock {
+      display: inline-block;
+    }
+
+    .panel-box > div:last-child {
+      float: right;
+    }
+
+    .brand-panel > div:last-child {
+      margin-top: 80px;
+    }
+
+    .lib-panel > div:first-child {
+      width: 484px;
+    }
+
+    .panel-box > div:first-child {
+      float: left;
+    }
+
+    .lib-panel-2 > div:last-child {
+      width: 600px;
+    }
+
+    .lib-panel-2 > div:first-child {
+      width: 360px;
+    }
+  }
+
+  .mb0 {
+    margin-bottom: 0;
+  }
+
+  li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    /*超链接无下划线*/
+  }
+
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+    /*鼠标放上去有下划线*/
+  }
+
+  .clearfix:after {
+    content: '';
+    clear: both;
+    overflow: hidden;
+    display: block;
+    height: 0;
+  }
+}

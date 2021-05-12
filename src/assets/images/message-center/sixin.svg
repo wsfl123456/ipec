@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>sixin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9B7EFF" offset="0%"></stop>
+            <stop stop-color="#6248FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sixin">
+            <g id="分组-2-copy-3">
+                <g transform="translate(3.000000, 3.000000)">
+                    <path d="M17,0 L17,0 C26.3888407,-1.72470207e-15 34,7.61115925 34,17 L34,17 C34,26.3888407 26.3888407,34 17,34 L17,34 C7.61115925,34 1.14980138e-15,26.3888407 0,17 L0,17 C-1.14980138e-15,7.61115925 7.61115925,1.72470207e-15 17,0 Z" id="Background" fill="url(#linearGradient-1)"></path>
+                    <path d="M24.33,9.62 L9.67,9.62 C8.75,9.62 8,10.37 8,11.29 L8,22.72 C8,23.64 8.75,24.39 9.67,24.39 L24.33,24.39 C25.25,24.39 26,23.64 26,22.72 L26,11.29 C26,10.36 25.25,9.62 24.33,9.62 Z M24.58,14.22 C24.58,14.3 24.54,14.37 24.47,14.41 L17.1,18.19 C17.04,18.22 16.97,18.22 16.91,18.19 L9.53,14.41 C9.46,14.37 9.42,14.3 9.42,14.22 L9.42,13.51 C9.42,13.36 9.57,13.26 9.71,13.32 L16.92,16.36 C16.97,16.38 17.03,16.38 17.08,16.36 L24.29,13.32 C24.43,13.26 24.58,13.36 24.58,13.51 L24.58,14.22 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

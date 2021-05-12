@@ -1,0 +1,145 @@
+@import 'var';
+
+$background: #f2f3f5;
+.gray-container {
+  background: $background;
+  padding: 0.4rem 0 0.62rem;
+}
+
+.add-forecast {
+  width: 11.4rem;
+  margin: 0 auto;
+
+  .g-main {
+    background: $balance-white;
+
+    .m-title {
+      text-align: center;
+      font-size: 0.28rem;
+      padding: 0.3rem;
+      font-weight: 500;
+      color: #343A40;
+      letter-spacing: 0;
+      border-bottom: $balance-model-border;
+    }
+
+    .m-form {
+      padding: 0.15rem 0.4rem 0.48rem;
+
+      .m-form-div {
+        margin: 0.24rem 0 0 0;
+        width: 100%;
+
+
+        .input-label {
+          display: block;
+          height: 0.22rem;
+          line-height: 0.22rem;
+          font-size: 0.16rem;
+          color: $limit-gray-text;
+          margin: 0 0 0.12rem 0;
+
+          .label-dot {
+            color: red;
+          }
+        }
+
+        .ant-input {
+          height: 0.48rem;
+        }
+
+        .ant-select-selection--single {
+          height: 0.48rem;
+          padding: 0;
+        }
+
+        .ant-select-selection__rendered {
+          line-height: 0.48rem;
+        }
+
+        .m-form-input {
+          width: 6rem;
+          height: 0.48rem;
+          line-height: 0.48rem;
+          text-indent: 0.16rem;
+          font-size: 0.14rem;
+          border: $balance-model-border;
+          border-radius: 0.04rem;
+
+        }
+        .m-form-input:disabled{
+          color: rgba(0,0,0,.25);
+          background-color: #f5f5f5;
+          cursor: not-allowed;
+          opacity: 1;
+        }
+
+        .m-form-input::placeholder {
+          color: $balance-color-gray;
+        }
+
+        .special-checkboxes {
+          border: $balance-model-border;
+          border-radius: 0.04rem;
+          padding: 0.36rem 0.27rem 0.33rem 0.45rem;
+
+          .checkbox-div {
+            margin: 0 0 0.2rem 0;
+
+            .province-div {
+              .ant-checkbox-group {
+                display: inline;
+              }
+            }
+
+            .label {
+              display: block;
+              height: 0.22rem;
+              line-height: 0.22rem;
+              margin: 0 0 0.11rem 0;
+              font-size: 0.16rem;
+              color: $limit-gray-text;
+            }
+          }
+        }
+      }
+
+      .m-form-div-textarea {
+        .m-form-textarea {
+          width: 100%;
+          height: 1.4rem;
+        }
+      }
+
+
+    }
+  }
+
+  .g-btn {
+    margin: 0.52rem 0 0;
+    text-align: center;
+
+    button {
+      width: 2.4rem;
+      height: 0.48rem;
+      line-height: 0.48rem;
+      outline: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      border-radius: 0.04rem;
+    }
+
+    .u-confirm-btn {
+      background: $balance-button-active;
+      color: $balance-white;
+      border: none;
+      margin: 0 0.4rem 0 0;
+    }
+
+    .u-clear-btn {
+      background: $balance-white;
+      color: $balance-color;
+      border: $balance-border;
+    }
+  }
+}

@@ -1,0 +1,385 @@
+.model {
+
+  .btn {
+    width: 1.2rem;
+    height: 0.4rem;
+    //line-height: 0.48rem;
+    border-radius: 4px;
+    outline: none;
+    padding: 0;
+  }
+
+  .btn-cancel {
+    border: 1px solid #6248ff;
+    color: #6248FF;
+  }
+
+  .btn-submit {
+    color: #fff;
+    background-image: linear-gradient(-95deg, #2853ff 0%, #933efe 100%);
+
+  }
+
+  .menban {
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .model-container {
+    width: 6rem;
+    height: 5.6rem;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 9999;
+    box-shadow: 0 4px 9px rgba(195, 205, 222, 0.6);
+
+    .model-header {
+      height: 0.8rem;
+      padding: 0 0.2rem 0 0.4rem;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      overflow: hidden;
+      cursor: pointer;
+
+      .close_model {
+        float: right;
+        margin: 0.25rem auto;
+      }
+
+      .model-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #495057;
+        letter-spacing: 0;
+        display: inline-block;
+        height: 0.79rem;
+        line-height: 0.79rem;
+        vertical-align: top;
+      }
+    }
+
+    .model-body {
+      height: 3.99rem;
+      padding: 0.2rem 0.18rem;
+
+      .business-table {
+        color: #6B7177;
+        height: 3.59rem;
+        overflow: auto;
+        border: 1px solid #e5e5e5;
+
+        .business-info {
+          font-size: 0.12rem;
+
+          .table {
+            margin-bottom: 0;
+          }
+
+          thead th {
+            text-align: left;
+            color: #6b7177;
+            padding: 0.06rem 0.15rem;
+            font-weight: normal;
+            border-bottom: 1px;
+            border: none;
+          }
+
+          tbody {
+            background: #fff;
+
+            tr:last-child {
+              border-bottom: 1px solid #e5e5e5;
+            }
+
+            td {
+              background: #fff;
+              padding: 0.06rem 0.15rem;
+
+              a {
+                cursor: pointer;
+                color: #6248ff;
+                margin-right: 0.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .model-footer {
+      padding: 0 1.48rem;
+      justify-content: space-around;
+      display: flex;
+    }
+  }
+}
+
+// alert.tsx css
+.model-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+
+  .menban {
+    overflow: hidden;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+  }
+
+  .model-container {
+    overflow: hidden;
+    width: 4.8rem;
+    height: 1.62rem;
+    z-index: 9999;
+    box-shadow: 0 4px 9px rgba(195, 205, 222, 0.6);
+
+    .model-body {
+      height: 1rem !important;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+      line-height: 0.8rem;
+      padding: 0;
+      font-size: 0.16rem;
+
+      img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .model-footer {
+      height: 0.4rem;
+      margin: 0.1rem 0 0;
+      overflow: hidden;
+      display: block;
+      padding: 0;
+      text-align: center;
+
+      .btn-submit:hover {
+        color: #fff;
+      }
+
+      .btn-submit {
+        font-size: 0.16rem;
+        float: right;
+      }
+
+    }
+
+    .model-footer,
+    .model-info {
+      text-align: center;
+
+      .btn-submit:nth-child(2) {
+        margin-left: 0.3rem;
+      }
+
+      .btn-submit:hover {
+        color: #fff;
+      }
+
+      .btn-submit {
+        color: #fff;
+        float: none;
+
+      }
+    }
+  }
+
+}
+
+// upload-file-model.tsx  css
+.model.model-upload-file {
+  .model-header {
+    height: 1.19rem;
+
+    .model-title {
+      height: auto;
+    }
+
+    p {
+      font-size: 0.12rem;
+      color: #6B7177;
+      margin: 0 0 0.16rem;
+    }
+
+    .close {
+      cursor: pointer;
+      width: 0.17rem;
+      height: 0.17rem;
+      display: inline-block;
+      margin-top: 0.2rem;
+
+    }
+  }
+
+  .model-body {
+    height: 3.6rem;
+
+    .upload-box {
+      width: 5.2rem;
+      height: 3.6rem;
+      overflow: auto;
+      background-image: linear-gradient(-95deg, #2853ff 0%, #933efe 100%);
+      border-radius: 4px;
+      text-align: center;
+      margin: 0.2rem auto;
+      padding: 0.22rem 0 0;
+      position: relative;
+
+      input[type=file] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .upload-container {
+        width: 4.72rem;
+        height: 3.18rem;
+        border: 1px dashed #CED4DA;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .upload-list {
+      height: 100%;
+      padding: 0.14rem 0;
+      overflow: auto;
+
+      .single-list {
+        height: 0.78rem;
+        padding: 0 0.4rem;
+
+        .file-content {
+          .file-name {
+            font-size: 0.16rem;
+            color: #687177;
+            height: 0.22rem;
+            line-height: 0.22rem;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          .file-state {
+            font-size: 14px;
+            height: 0.24rem;
+            line-height: 24px;
+          }
+        }
+
+        .file-remove {
+          cursor: pointer;
+
+        }
+      }
+
+      .single-list:hover {
+        background: #f8f9fa;
+
+        .file-remove {
+
+        }
+      }
+    }
+  }
+
+  .model-footer {
+    span.btn-submit {
+      display: inline-block;
+      line-height: 0.4rem;
+      cursor: pointer;
+      position: relative;
+
+      input[type=file] {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .btn-submit:hover {
+      color: #fff;
+    }
+  }
+}
+
+//  注册条款
+.mockboxPopup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .7);
+  z-index: 8888;
+
+  &.hidden {
+    display: none;
+  }
+
+  &.show {
+    display: block;
+  }
+
+  .mockbox {
+    width: 50%;
+    height: 500px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 8999;
+    background: white;
+    border-radius: 4px;
+  }
+
+  .content {
+    padding: 0.4rem 0.2rem 0.4rem;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+
+    .clearfix {
+      margin-bottom: 0.1rem;
+      position: absolute;
+      right: -0.32rem;
+      top: -0.32rem;
+      cursor: pointer;
+
+      img {
+        width: 0.3rem;
+        height: 0.3rem;
+        float: right;
+      }
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+}

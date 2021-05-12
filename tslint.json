@@ -1,0 +1,70 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "interface-over-type-literal": false,
+    "no-parameter-properties": false,
+    "max-classes-per-file": false,
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "member-ordering": false,
+    "eofline": false,
+    "object-literal-key-quotes": false,
+    "ordered-imports": false,
+    "no-conditional-assignment": true,
+    "one-variable-per-declaration": false,
+    "no-trailing-whitespace": false,
+    "arrow-parens": false,
+    "forin": true,
+    "array-type": false,
+    "no-eval": true,
+    "trailing-comma": false,
+    "one-line": true,
+    "no-unsafe-finally": true,
+    "encoding": true,
+    "max-line-length": false,
+    "no-shadowed-variable": false,
+    "no-for-in-array": true,
+    "quotemark": false,
+    "no-console": false,
+    "no-unused-expression": false,
+    "radix": false,
+    "no-string-literal": false,
+    "prefer-for-of": false,
+    "deprecation": true,
+    "use-isnan": true,
+    "prefer-object-spread": true,
+    "no-duplicate-imports": false,
+    "ban-types": false,
+    "import-spacing": true,
+    "triple-equals": true,
+    "no-var-keyword": true,
+    "no-use-before-declare": true,
+    "no-unused-variable": true,
+    "variable-name": false,
+    "prefer-const": false,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "semicolon": false,
+    "curly": [
+      true,
+      "ignore-same-line"
+    ],
+    "no-empty": [
+      false,
+      "allow-empty-catch"
+    ]
+  },
+  "rulesDirectory": []
+}

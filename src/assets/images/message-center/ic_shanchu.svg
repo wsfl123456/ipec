@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_shanchu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_shanchu">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M8.00000914,0 C3.58171849,0 0,3.58173677 0,8.00000914 C0,12.4182815 3.58173677,16 8.00000914,16 C12.4182815,16 16,12.4182815 16,8.00000914 C16,3.58173677 12.4182815,0 8.00000914,0 Z M5.21627342,12.1632005 L3.9141062,10.8688937 L6.7616213,8.00408562 L3.8968132,5.1565705 L5.19111996,3.85440327 L8.05594635,6.70191837 L10.9034615,3.83711028 L12.2056287,5.13143531 L9.35811357,7.99622516 L12.22294,10.8437585 L10.9286149,12.145944 L8.0638068,9.29842893 L5.21627342,12.1632005 Z" id="形状" fill="#FF6666" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

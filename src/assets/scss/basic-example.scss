@@ -1,0 +1,95 @@
+@import "var";
+
+.example-content{
+  width: 11.4rem;
+  margin: 0 auto;
+  color: $limit-detail-title-color;
+  font-size:0.16rem;
+   .example-top-body{
+     display: flex ;
+     justify-content: space-between;
+   }
+  .example-top{
+    .top-title{
+      color: $limit-gray-text;
+      line-height: 0.22rem;
+      margin-bottom:0.2rem;
+      .title-color{
+        display: inline-block;
+        font-weight: bold;
+        color: $balance-word-purple;
+      }
+    }
+    .top-detail{
+      background: rgba(98,54,255,0.07);
+      border-radius:0.1rem;
+      display: flex;
+      padding: 0.16rem 0.13rem;
+      margin-bottom:0.2rem;
+      .top-detail__img{
+        width:0.48rem;
+        height: 0.48rem;
+        margin: 0 0.1rem 0 0;
+      }
+      .top-detail__words{
+        color: $limit-detail-title-color;
+        letter-spacing: 0;
+        line-height: 0.2rem;
+      }
+      &:last-child{
+        margin-bottom: 0 ;
+      }
+    }
+
+  }
+  .example-body{
+    .body-title{
+      color: $limit-gray-text;
+      line-height:0.2rem;
+    }
+    .body-banner{
+      width: 6.32rem;
+      height: 3.21rem;
+    }
+    .body-banner-appraise{
+      width: 5.89rem;
+      height: 3.35rem;
+    }
+  }
+  .example-bottom{
+    margin: 0.8rem 0 0;
+    text-align: center;
+    .bottom-underline{
+      font-weight: 500;
+      line-height: 0.26rem;
+      letter-spacing: 0.8px;
+      text-decoration: underline;
+    }
+    .bottom-text{
+      line-height:0.26rem;
+      letter-spacing:0.8px;
+      margin: 0 0 0.41rem;
+    }
+    .bottom-button{
+      margin: 0 auto 0.6rem;
+      text-align: center;
+      width: 3rem;
+      height:0.4rem;
+      line-height:0.4rem;
+      border: none;
+      outline: none;
+      background-image: linear-gradient(90deg, #9B7EFF 0%, #6248FF 100%);
+      box-shadow: 0 0.02rem 0.04rem 0 rgba(98,54,255,0.50);
+      border-radius: 0.3rem;
+      color: $balance-white;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+    }
+  }
+}
+.basic-example{
+  padding: 0.55rem 0 0;
+  .top-detail{
+    width: 4.2rem;
+  }
+}

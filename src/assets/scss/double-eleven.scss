@@ -1,0 +1,938 @@
+@import "var";
+
+.footer-container {
+  display: none;
+}
+
+.double-eleven-content {
+  width: 11.4rem;
+  //height: 18.86rem;
+  margin: 0 auto;
+  background: url("../images/double-eleven/bg.png") no-repeat;
+  background-size: 100%;
+  padding: 6rem 0.4rem 0.4rem;
+  position: relative;
+
+  .limit-num{
+    position: absolute;
+    top:4.35rem;
+    left: 2.58rem;
+    .limit-num-left{
+      display: inline-block;
+      width: 1.5rem;
+      font-size: 0.32rem;
+      line-height: 0.46rem;
+      transform: rotate(4deg);
+      font-weight: bold;
+      color: $balance-white;
+    }
+    .limit-num-right{
+      display: inline-block;
+      color: $balance-white;
+      font-size: 0.48rem;
+      font-weight: bold;
+      .limit-num-right__num{
+        display: inline-block;
+        width: 0.63rem;
+        height: 0.63rem;
+        line-height: 0.63rem;
+        margin: 0 0.05rem 0 0;
+        text-align: center;
+        background: rgba(255,255,255,0.60);
+        border: 1px solid #FFFFFF;
+        border-radius: 0.08rem;
+        color: $default-red;
+        transform: rotate(-3deg);
+        &:first-child{
+          margin: 0 0.05rem 0 0.15rem;
+        }
+        //&:nth-child(3){
+        //  transform: rotate(-5deg);
+        //}
+        //&:last-child{
+        //  transform: rotate(-5deg);
+        //}
+      }
+
+    }
+  }
+
+  .three-vip-tabs {
+    //margin-top: 6rem;
+    height: 0.88rem;
+    background: url("../images/double-eleven/vip1-tab-bg.png") no-repeat center;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      display: inline-block;
+      width: 3.56rem;
+      line-height: 0.8rem;
+      font-size: 0.24rem;
+      margin: 0.04rem;
+      color: $limit-detail-title-color;
+      font-weight: bold;
+      text-align: center;
+
+      &:first-child {
+        border-radius: 0.1rem 0 0 0.1rem;
+      }
+
+      //&:nth-child(2) {
+      //  width: 3.5rem;
+      //}
+
+      &:last-child {
+        border-radius: 0 0.1rem 0.1rem 0;
+      }
+    }
+
+    .active {
+      color: $balance-word-purple;
+      background: rgba(255, 255, 255, .8);
+    }
+  }
+
+  .vip-tab-contents {
+    margin-top: 0.16rem;
+
+    .tab-content {
+      padding: 0.2rem 0.6rem;
+
+      .content-title {
+        width: 3rem;
+        height: 0.3rem;
+        margin: 0.45rem auto 0;
+      }
+
+      .content-buy-card {
+        width: 4.8rem;
+        height: 2.6rem;
+        margin: 0.328rem auto 0;
+        padding: 0.42rem 0.27rem 0.1rem;
+        background: url("../images/double-eleven/buy-box.png") no-repeat;
+        background-size: 100%;
+
+        p {
+          font-size: 0.18rem;
+          line-height: 0.25rem;
+
+          span {
+            color: $default-red;
+            font-weight: bold;
+          }
+        }
+
+        .card-money {
+          height: 0.88rem;
+          background: rgb(242, 220, 231);
+          font-size: 0.16rem;
+          margin: 0.15rem 0 0;
+          color: $light-gray;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .middle-icon {
+            width: 0.16rem;
+            height: 0.16rem;
+            //background: ;
+          }
+
+          .word-red {
+            color: $default-red;
+          }
+
+          .second-line {
+            margin: 0.1rem 0 0;
+
+            .word-middleline {
+              color: $default-gray;
+              font-size: 0.3rem;
+              line-height: 0.42rem;
+              text-decoration: line-through;
+            }
+
+            .word-red {
+              font-size: 0.3rem;
+              line-height: 0.42rem;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .go-buy-button {
+          width: 1.4rem;
+          height: 0.4rem;
+          line-height: 0.4rem;
+          margin: 0.17rem auto 0;
+          text-align: center;
+          border-radius: 0.22rem;
+          background-image: linear-gradient(-45deg, #4722FE 0%, #E289FF 100%);
+          box-shadow: 0 0.02rem 0.04rem 0 rgba(98, 54, 255, 0.50);
+          color: $balance-white;
+          cursor: pointer;
+        }
+      }
+
+      .auth-title {
+        margin: 0.38rem 0 0;
+        line-height: 0.3rem;
+        font-size: 0.22rem;
+        color: $balance-word-purple;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          left: 50%;
+          bottom: -0.04rem;
+          transform: translateX(-50%);
+          width: 0.3rem;
+          height: 0.03rem;
+          background: $balance-word-purple;
+        }
+
+        &:nth-child(2) {
+
+        }
+      }
+
+      .four-auth {
+        margin: 0.4rem 0 0.38rem;
+        display: flex;
+        justify-content: space-between;
+
+        .auth-item {
+          width: 2.2rem;
+          border-radius: 0.1rem;
+          padding: 0.22rem 0.12rem 0;
+          border: 0.03rem solid $balance-word-purple;
+
+          &:last-child {
+            .item-img {
+              background: url("../images/double-eleven/icon_basic_active.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+
+          &:nth-child(3) {
+            .item-img {
+              background: url("../images/double-eleven/icon_appraise_active.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+
+          &:nth-child(2) {
+            .item-img {
+              background: url("../images/double-eleven/icon_compare_active.png") no-repeat;
+              background-size: 100%;
+            }
+
+          }
+
+          &:first-child {
+            .item-img {
+              background: url("../images/double-eleven/icon_filter_active.png") no-repeat;
+              background-size: 100%;
+            }
+
+          }
+
+          .item-img {
+            width: 0.6rem;
+            height: 0.6rem;
+            margin: 0 auto;
+          }
+
+          .item-title {
+            margin: 0.08rem 0 0;
+            font-size: 0.18rem;
+            text-align: center;
+            color: $default-gray;
+            line-height: 0.25rem;
+            font-weight: bold;
+          }
+
+          .item-desc {
+            margin: 0.06rem 0 0;
+            font-size: 0.14rem;
+            line-height: 0.2rem;
+            color: $light-gray;
+          }
+        }
+      }
+
+      //  会员权限作用
+
+      .auth-content {
+        display: flex;
+        align-items: center;
+        color: $default-gray;
+
+        .auth-content__desc {
+          .desc-title {
+            font-size: 0.18rem;
+            margin: 0 0 0.2rem 0;
+            font-weight: bold;
+            line-height: 0.25rem;
+          }
+
+          .desc-words {
+            width: 4.16rem;
+            display: flex;
+            align-items: center;
+            padding: 0.09rem 0.19rem 0.08rem;
+            margin: 0 0 0.15rem;
+            border-radius: 0.1rem;
+            background: #d5befe;
+
+            .img {
+              display: inline-block;
+              width: 0.3rem;
+              height: 0.3rem;
+              margin: 0 0.08rem 0 0;
+            }
+
+            p {
+              font-size: 0.14rem;
+            }
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .auth-content-filter {
+        margin: 0.28rem 0 0;
+
+        .auth-content__img {
+          width: 4.66rem;
+          height: 3rem;
+          margin: 0 0.3rem 0 0.28rem;
+          background: url("../images/double-eleven/banner-filter.png") no-repeat;
+          background-size: 100%;
+        }
+
+        .desc-words {
+          .img {
+            background: url("../images/double-eleven/filter1.png") no-repeat;
+            background-size: 100%;
+          }
+
+          &:last-child {
+            .img {
+              background: url("../images/double-eleven/filter2.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+
+      .auth-content-compare {
+        .auth-content__img {
+          width: 4.74rem;
+          height: 3rem;
+          margin: 0 0 0 0.3rem;
+          background: url("../images/double-eleven/banner-compare.png") no-repeat;
+          background-size: 100%;
+        }
+
+        .desc-words {
+          .img {
+            background: url("../images/double-eleven/compare1.png") no-repeat;
+            background-size: 100%;
+          }
+
+          &:last-child {
+            .img {
+              background: url("../images/double-eleven/compare2.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+      .auth-content-appraise{
+        margin: 0 0 0.55rem;
+        .auth-content__img {
+          width: 3.97rem;
+          height: 4.04rem;
+          margin: 0 0.3rem 0 0.97rem;
+          background: url("../images/double-eleven/banner-appraise.png") no-repeat;
+          background-size: 100%;
+        }
+        .desc-words {
+          .img {
+            background: url("../images/double-eleven/appraise1.png") no-repeat;
+            background-size: 100%;
+          }
+          &:nth-child(2) {
+            .img {
+              background: url("../images/double-eleven/appraise2.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+          &:last-child {
+            .img {
+              background: url("../images/double-eleven/appraise3.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+      .auth-content-basic {
+        .auth-content__img {
+          width: 5.03rem;
+          height: 2.88rem;
+          margin: 0 0 0 0.3rem;
+          background: url("../images/double-eleven/banner-basic.png") no-repeat;
+          background-size: 100%;
+        }
+        .desc-words {
+          .img {
+            background: url("../images/double-eleven/basic1.png") no-repeat;
+            background-size: 100%;
+          }
+          &:nth-child(2){
+            .img {
+              background: url("../images/double-eleven/basic2.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+          &:last-child {
+            .img {
+              background: url("../images/double-eleven/basic3.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+    }
+
+
+    .diamonds-content {
+      height: 22.76rem;
+      background: url("../images/double-eleven/vip1-content-bg.png") no-repeat;
+      background-size: 100%;
+
+      .content-title {
+        background: url("../images/double-eleven/vip1-title.png") no-repeat center;
+        background-size: 100%;
+      }
+
+      .card-money {
+        padding: 0 0.29rem 0 0.2rem;
+      }
+    }
+
+    .gold-content {
+      height: 16.16rem;
+      background: url("../images/double-eleven/vip2-content-bg.png") no-repeat;
+      background-size: 100%;
+      .four-auth {
+        .auth-item {
+          &:first-child {
+            .item-img {
+              background: url("../images/double-eleven/icon_basic_active.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+
+          &:nth-child(2) {
+            .item-img {
+              background: url("../images/double-eleven/icon_appraise_active.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+
+          &:nth-child(3) {
+            border: 3px solid #ADB5BD;
+            .item-title{
+              color: #868E96;
+            }
+            .item-desc{
+              color: #ADB5BD;
+            }
+            .item-img {
+              background: url("../images/double-eleven/icon_compare.png") no-repeat;
+              background-size: 100%;
+            }
+
+          }
+
+          &:last-child {
+            border: 3px solid #ADB5BD;
+            .item-title{
+              color: #868E96;
+            }
+            .item-desc{
+              color: #ADB5BD;
+            }
+            .item-img {
+              background: url("../images/double-eleven/icon_filter.png") no-repeat;
+              background-size: 100%;
+            }
+
+          }
+
+          .item-img {
+            width: 0.6rem;
+            height: 0.6rem;
+            margin: 0 auto;
+          }
+
+          .item-title {
+            margin: 0.08rem 0 0;
+            font-size: 0.18rem;
+            text-align: center;
+            color: $default-gray;
+            line-height: 0.25rem;
+            font-weight: bold;
+          }
+
+          .item-desc {
+            margin: 0.06rem 0 0;
+            font-size: 0.14rem;
+            line-height: 0.2rem;
+            color: $light-gray;
+          }
+        }
+      }
+
+
+      .content-title {
+        background: url("../images/double-eleven/vip2-title.png") no-repeat center;
+        background-size: 100%;
+      }
+
+      .card-money {
+        padding: 0 0.42rem 0 0.4rem;
+      }
+    }
+
+    .silver-content {
+      height: 11.5rem;
+      background: url("../images/double-eleven/vip3-content-bg.png") no-repeat;
+      background-size: 100%;
+      .four-auth {
+        .auth-item {
+          &:first-child {
+            border: 3px solid #6236ff;
+            .item-title{
+              color: $default-gray;
+            }
+            .item-desc{
+              color: $light-gray;
+            }
+            .item-img {
+              background: url("../images/double-eleven/icon_basic_active.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+
+
+          &:nth-child(2) {
+            border: 3px solid #ADB5BD;
+            .item-title{
+              color: #868E96;
+            }
+            .item-desc{
+              color: #ADB5BD;
+            }
+            .item-img {
+              background: url("../images/double-eleven/icon_appraise.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+
+          &:nth-child(3) {
+            border: 3px solid #ADB5BD;
+            .item-title{
+              color: #868E96;
+            }
+            .item-desc{
+              color: #ADB5BD;
+            }
+            .item-img {
+              background: url("../images/double-eleven/icon_compare.png") no-repeat;
+              background-size: 100%;
+            }
+
+          }
+
+          &:last-child {
+            border: 3px solid #ADB5BD;
+            .item-title{
+              color: #868E96;
+            }
+            .item-desc{
+              color: #ADB5BD;
+            }
+            .item-img {
+              background: url("../images/double-eleven/icon_filter.png") no-repeat;
+              background-size: 100%;
+            }
+
+          }
+
+          .item-img {
+            width: 0.6rem;
+            height: 0.6rem;
+            margin: 0 auto;
+          }
+
+          .item-title {
+            margin: 0.08rem 0 0;
+            font-size: 0.18rem;
+            text-align: center;
+            color: $default-gray;
+            line-height: 0.25rem;
+            font-weight: bold;
+          }
+
+          .item-desc {
+            margin: 0.06rem 0 0;
+            font-size: 0.14rem;
+            line-height: 0.2rem;
+            color: $light-gray;
+          }
+        }
+      }
+
+
+      .content-title {
+        background: url("../images/double-eleven/vip3-title.png") no-repeat center;
+        background-size: 100%;
+      }
+
+      .card-money {
+        padding: 0 0.62rem 0 0.55rem;
+      }
+    }
+
+    .active {
+      display: block;
+    }
+
+
+  }
+}
+
+.wrap-modal {
+
+  .vip-modal-header {
+    background-color: #e9ecef;
+    height: 1.2rem;
+    padding-top: .17rem;
+    padding-left: .413rem;
+
+    .vip-modal-header-title {
+      display: flex;
+
+      .modal-header-icon {
+        width: .171rem;
+        height: .171rem;
+      }
+
+      span.title {
+        font-size: .14rem;
+        color: #343a40;
+        margin-left: .076rem;
+      }
+    }
+  }
+
+  .header-info-area {
+    display: flex;
+    margin-top: .11rem;
+
+    .avatar {
+      width: .54rem;
+      height: .54rem;
+      border-radius: 50%;
+    }
+
+    .info-name-area {
+      display: flex;
+      margin-left: .11rem;
+
+      .info-name {
+        font-size: .16rem;
+        color: #343a40;
+      }
+
+      .info-account {
+        font-size: .14rem;
+        color: #495057;
+      }
+    }
+  }
+
+  .vip-card-area {
+    display: flex;
+    //padding-left: .4rem;
+    //padding-right: .4rem;
+    margin-top: .2rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    height: 1.2rem;
+    align-items: center;
+    background: #F8F9FA;
+    border: 1px solid #CED4DA;
+    border-radius: 0.06rem;
+
+    .vip-coupon{
+      width: 3.38rem;
+      height: 0.74rem;
+      line-height: 0.74rem;
+      margin-left: 0.59rem;
+      background: url("../images/double-eleven/coupon_bg.png") no-repeat;
+      background-size: 100%;
+      font-size: 0.2rem;
+      color: $balance-white;
+      text-align: center;
+    }
+    .arrow-right{
+       width: 0.28rem;
+      height: 0.28rem;
+      margin: 0 0.18rem 0 0.135rem;
+    }
+    .vip-num{
+      p:first-child{
+        font-size: 0.18rem;
+        line-height: 0.25rem;
+        color: $light-gray;
+        i{
+          font-style: normal;
+          color: $default-red;
+        }
+      }
+      p:last-child{
+        font-size: 0.18rem;
+        color: $light-gray;
+        i{
+          font-style: normal;
+          font-weight: bold;
+          font-size: 0.32rem;
+          color: $default-red;
+        }
+      }
+    }
+
+  }
+
+  .vip-pay-area {
+    margin-top: .2rem;
+    margin-left: .4rem;
+    margin-right: .4rem;
+    border: 1px solid #ced4da;
+    border-radius: .06rem;
+    overflow: hidden;
+
+    .pay-header {
+      background-color: #f8f9fa;
+      display: flex;
+
+      .pay-header-item {
+        padding: .14rem .32rem;
+        font-size: .14rem;
+        color: #495057;
+        border-bottom: 1px solid #ced4da;
+        cursor: pointer;
+        background-color: #f8f9fa;
+
+        &.pay-header-item-active {
+          border-left: 1px solid #ced4da;
+          border-right: 1px solid #ced4da;
+          border-top: 1px solid #6248ff;
+          color: #6248ff;
+          border-bottom: none;
+          background-color: white;
+
+          &:first-child {
+            border-left: 0;
+          }
+        }
+      }
+
+      .pay-header-blank-item {
+        display: flex;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ced4da;
+        flex: 1;
+      }
+    }
+
+    .pay-qr-code-area {
+      display: flex;
+      padding-top: .37rem;
+      padding-bottom: .37rem;
+
+      .qr-code-area {
+        width: 1.18rem;
+        height: 1.18rem;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .qr-code-img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 1.16rem;
+          height: 1.16rem;
+        }
+
+        .qr-code-mask {
+          position: absolute;
+          width: 1.16rem;
+          height: 1.16rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          background-color: rgba(0, 0, 0, 0.4);
+          display: flex;
+
+          .mask-img {
+            width: .3rem;
+            height: .3rem;
+          }
+
+          .mask-text {
+            color: white;
+            font-size: .16rem;
+          }
+        }
+      }
+
+      .qr-price-area {
+        color: #868e96;
+        font-size: .14rem;
+        margin-left: .26rem;
+
+        .qr-price {
+          .price-mark {
+            color: black;
+            font-size: .12rem;
+          }
+
+          .qr-price-number {
+            color: black;
+            font-size: .24rem;
+            margin-left: 0.04rem;
+          }
+        }
+
+        .qr-price-tip {
+          .icon-tip {
+            width: .16rem;
+            height: .16rem;
+            margin-right: .05rem;
+          }
+        }
+      }
+
+    }
+
+    .union-pay-area {
+      display: flex;
+      margin-top: .2rem;
+      padding-bottom: .2rem;
+
+      .union-pay-line {
+        display: flex;
+
+        margin-bottom: 0.1rem;
+
+        .line-name {
+          color: #a4aab0;
+          width: 1.3rem;
+          text-align: right;
+        }
+
+        .line-content {
+          color: #16001c;
+        }
+      }
+
+      .bottom-union-pay-line {
+        display: flex;
+        padding-left: .3rem;
+        padding-right: .2rem;
+        margin-top: .3rem;
+
+        .exclamation-mark {
+          width: .16rem;
+          height: .16rem;
+          margin-top: .04rem;
+        }
+
+        .pay-tip {
+          font-size: .14rem;
+          color: red;
+        }
+      }
+    }
+  }
+
+  .clause-area {
+    margin-left: .4rem;
+    margin-top: .16rem;
+    margin-bottom: .41rem;
+    display: flex;
+    cursor: pointer;
+
+    .no-ic-select {
+      width: .16rem;
+      height: .16rem;
+      border: 1px solid #ced4da;
+      border-radius: 50%;
+    }
+
+    .ic-select {
+      width: .16rem;
+      height: .16rem;
+    }
+
+    span {
+      margin-left: 0.07rem;
+      font-size: .14rem;
+      color: #868e96;
+    }
+  }
+}
+
+.payment-agreement{
+  h4{
+    font-size: 0.16rem;
+    font-weight: 600;
+    margin: 0.1rem 0;
+  }
+  .ant-modal-header{
+    text-align: center;
+  }
+}
+.limit-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: .04rem;
+  display: flex;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}

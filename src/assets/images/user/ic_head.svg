@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_headsculpture</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#8E55BE" offset="0%"></stop>
+            <stop stop-color="#52289F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#8E55BE" offset="0%"></stop>
+            <stop stop-color="#7D48B5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_headsculpture">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FAF7FA" xlink:href="#path-1"></use>
+                <g id="分组-2" mask="url(#mask-2)">
+                    <g transform="translate(2.000000, 4.000000)">
+                        <path d="M26.4166667,15.8055556 L15.8055556,15.8055556 L15.8055556,34.4444444 C15.8055556,37.3746219 18.1809337,39.75 21.1111111,39.75 C24.0412885,39.75 26.4166667,37.3746219 26.4166667,34.4444444 L26.4166667,32.5316657 L26.6575704,32.5228946 C30.5471825,32.3812776 33.6388889,29.1817902 33.6388889,25.2777778 C33.6388889,21.3737654 30.5471825,18.1742779 26.6575704,18.032661 L26.4166667,18.0238899 L26.4166667,15.8055556 Z" id="合并形状" stroke="url(#linearGradient-3)" stroke-width="0.5" fill="#FFFFFF"></path>
+                        <path d="M25.5555556,31.6423267 L25.5555556,34.4444444 C25.5555556,36.8990433 23.56571,38.8888889 21.1111111,38.8888889 C18.6565122,38.8888889 16.6666667,36.8990433 16.6666667,34.4444444 C16.6666667,31.0053048 16.6666667,28.42595 16.6666667,26.7063802 C17.3723235,25.8400608 18.8913303,25.4633699 21.2236871,25.5763075 C22.9521428,25.660003 24.396099,25.1741612 25.5555556,24.1187821 L25.5555556,26.9444444 C25.5555556,28.0183315 26.426113,28.8888889 27.5,28.8888889 L27.8607631,28.8888889 C29.0813391,28.8888889 30.1558585,28.0843507 30.4995068,26.9131498 L30.4995193,26.9131535 C30.7264165,26.1398566 30.8325824,25.2472225 30.8180172,24.235251 C31.1484469,24.3906256 32.7777778,25.1909203 32.7777778,25.2777778 C32.7777778,28.8062637 29.9173748,31.6666667 26.3888889,31.6666667 C26.1248028,31.6666667 25.845787,31.6586463 25.5555556,31.6423267 Z" id="合并形状" stroke="none" fill="url(#linearGradient-3)"></path>
+                        <path d="M27.7023655,28.022054 C28.9296649,28.022054 29.9245877,26.7784006 29.9245877,25.2442763 C29.9245877,23.710152 28.9296649,22.4664985 27.7023655,22.4664985 C26.8841658,22.4664985 26.4934052,23.3924244 26.5300836,25.2442763 C26.4934052,27.0961281 26.8841658,28.022054 27.7023655,28.022054 Z" id="椭圆形" stroke="url(#linearGradient-4)" stroke-width="0.5" fill="#FFFFFF"></path>
+                        <polygon id="矩形" stroke="none" fill="#FFFFFF" points="11.9032457 13.3333333 16.6598511 13.3333333 16.6598511 13.8888889 11.9032457 13.8888889"></polygon>
+                        <circle id="椭圆形-copy-6" stroke="none" fill="url(#linearGradient-3)" cx="20.6666667" cy="10.6666667" r="1.66666667"></circle>
+                        <circle id="椭圆形-copy-9" stroke="none" fill="url(#linearGradient-3)" cx="23.1111111" cy="6.11111111" r="1.11111111"></circle>
+                        <circle id="椭圆形-copy-10" stroke="none" fill="url(#linearGradient-3)" cx="17.8333333" cy="3.83333333" r="1"></circle>
+                        <circle id="椭圆形-copy-11" stroke="none" fill="url(#linearGradient-3)" cx="21.5555556" cy="0.555555556" r="1"></circle>
+                        <circle id="椭圆形-copy" stroke="none" fill="url(#linearGradient-3)" cx="16" cy="14.8888889" r="1"></circle>
+                        <rect id="矩形" stroke="#8D54BD" stroke-width="0.5" fill="#FFFFFF" x="13.25" y="13.25" width="15.5" height="2.5" rx="1.25"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

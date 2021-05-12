@@ -1,0 +1,293 @@
+@import "var";
+
+.con-right {
+  width: 100%;
+  //margin-left: 0.24rem;
+
+  .con-change {
+    padding: 0.2rem 0 0 0.2rem;
+    font-size: 0.16rem;
+    color: #6B7177;
+    height: 0.6rem;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+
+    .tab-ul {
+      display: flex;
+      margin-bottom: 0;
+
+      li {
+        margin: 0 0.2rem;
+        cursor: pointer;
+      }
+
+      .active {
+        color: #6248FF;
+        border-bottom: solid 2px #6248FF;
+        padding-bottom: 0.14rem;
+      }
+
+    }
+
+  }
+
+  // 三者公共样式
+  .followingEnterprise,.followingPerson,.followingIP{
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    // 批量取消关注
+    .unFollowing{
+      height: 0.6rem;
+      background: #F8F9FA;
+      padding: 0 0.42rem 0rem;
+      position: relative;
+      .checkAll{
+        width: 1.60rem;
+        display: inline-block;
+        .custom-checkbox{
+          width: 0.16rem;
+          height: 0.16rem;
+          background-image: url("../images/check.jpg");
+          background-size: 100% 100%;
+          display: inline-block;
+          margin: 0.22rem 0.2rem 0 0;
+          cursor: pointer;
+          // &:hover{
+          //   background-image: url("../images/checked.svg");
+          // }
+        }
+        .custom-checkbox-check{
+          width: 0.16rem;
+          height: 0.16rem;
+          background-image: url("../images/checked.svg");
+          background-size: 100% 100%;
+          display: inline-block;
+          margin: 0.22rem 0.2rem 0 0;
+          cursor: pointer;
+        }
+        .checkbox-text{
+          display: inline-block;
+          margin: 0.15rem 0 0 0;
+          font-size: 0.14rem;
+          color: #6b7177;
+          letter-spacing: 0;
+          width: 1.20rem;
+          height: 0.3rem;
+          line-height: 0.30rem;
+          background: white;
+          text-align: center;
+          border: 1px solid #CED4DA;
+          border-radius: 3px;
+          cursor: pointer;
+          &:hover{
+            color: #6248FF;
+            border: 1px solid #6248FF;
+          }
+        }
+      }
+      .onSearchRight{
+        display: inline-block;
+        width: 4.4rem;
+        position: absolute;
+        top: 0.1rem;
+        right: 0.42rem;
+        .searchInput{
+
+        }
+
+      }
+    }
+    // 关注列表
+    .follingListDemo{
+      position: relative;
+      height: 1.4rem;
+      margin: 0 0.42rem;
+      border-bottom: 2px solid rgba($color: #ced4da, $alpha: 0.5);
+      .demoCheckbox{
+        display: inline-block;
+        vertical-align: top;
+        width: 0.16rem;
+        height: 0.16rem;
+        background-image: url("../images/check.jpg");
+        background-size: 100% 100%;
+        margin: 0.62rem 0.14rem 0 0;
+        cursor: pointer;
+        // &:hover{
+        //   background-image: url("../images/checked.svg");
+        // }
+      }
+      .demoCheckboxCheck{
+        display: inline-block;
+        vertical-align: top;
+        width: 0.16rem;
+        height: 0.16rem;
+        background-image: url("../images/checked.svg");
+        background-size: 100% 100%;
+        margin: 0.62rem 0.14rem 0 0;
+        cursor: pointer;
+      }
+      .picUrl{
+        width: 1rem;
+        height: 1rem;
+        margin: 0.2rem 0.12rem 0 0;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+      }
+      .picUrlPeople{
+        border-radius: 0.5rem;
+      }
+      .company{
+        width: 5.1rem;
+        margin-top: 0.44rem;
+        display: inline-block;
+        .companyName{
+          font-size: 0.16rem;
+          color: #343A40;
+          margin-bottom: 0.08rem;
+          cursor: pointer;
+          span{
+            display: inline-block;
+            width: .14rem;
+            height: .14rem;
+            margin-left: .03rem;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .companyCategoryName{
+          font-size: 0.14rem;
+          color: #6B7177;
+        }
+      }
+      .deleteFolling{
+        position: absolute;
+        right: 0.42rem;
+        top: 0.56rem;
+        font-size: 0.14rem;
+        color: #343A40;
+        cursor: pointer;
+        i{
+          color: red;
+          vertical-align: middle;
+        }
+        span{
+          vertical-align: middle;
+          margin-left: 0.06rem;
+          &:hover{
+            color: #ff6666;
+          }
+        }
+      }
+
+    }
+    .follingListDemo:last-child {
+      border-bottom: none;
+      padding-bottom: 0.2rem;
+      height: 1.6rem;
+    }
+    // IP关注列表
+    .follingIPOut{
+      padding: 0rem 0.42rem 0;
+      .follingIPListDemo{
+        display: inline-block;
+        width: 1.8rem;
+        height: 3rem;
+        margin-top: 0.2rem;
+        margin-right: 0.2rem;
+        position: relative;
+        .picUrl{
+          width: 1.8rem;
+          height: 2.4rem;
+          margin-bottom: 0.12rem;
+          border-radius: 0.05rem;
+        }
+        .ipName{
+          font-size: 16px;
+          color: #495057;
+        }
+        .unFollowingBox{
+          width: 1.8rem;
+          height: 0.4rem;
+          position: absolute;
+          top: 2rem;
+          left: 0;
+          background-color: rgba(0,0,0,0.50);
+          border-radius: 0 0 0.05rem 0.05rem;
+          .unFollowingCheckbox{
+            position: absolute;
+            top: 0.14rem;
+            left: 0.16rem;
+            display: inline-block;
+            width: 0.16rem;
+            height: 0.16rem;
+            // background-image: url("../images/check.jpg");
+            background-size: 100% 100%;
+            background: rgba(255,255,255,0.60);
+            border: 1px solid #FFFFFF;
+            border-radius: 2px;
+            cursor: pointer;
+            // &:hover{
+            //   background-image: url("../images/checked.svg");
+            //   border: none;
+            // }
+          }
+          .unFollowingCheckboxCheck{
+            position: absolute;
+            top: 0.14rem;
+            left: 0.16rem;
+            display: inline-block;
+            width: 0.16rem;
+            height: 0.16rem;
+            background-image: url("../images/checked.svg");
+            background-size: 100% 100%;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+          .checkboxText{
+            position: absolute;
+            top: 0.10rem;
+            right: 0.11rem;
+            font-size: 0.14rem;
+            color: #FFFFFF;
+            cursor: pointer;
+            &:hover{
+              color: #ff6666;
+            }
+          }
+        }
+
+      }
+      .follingIPListDemo:nth-child(4n){
+        margin-right: 0;
+      }
+
+    }
+
+  }
+  // 关注的企业
+  .followingEnterprise{
+
+  }
+
+  // 关注的人
+  .followingPerson{
+
+  }
+
+  // 关注的IP
+  .followingIP{
+
+  }
+
+  .loading{
+    img{
+      margin: 0 auto;
+      width:1rem;
+    }
+  }
+}

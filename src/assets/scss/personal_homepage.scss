@@ -1,0 +1,384 @@
+@import "var";
+
+.personal-homepage-container {
+  background: #fff;
+  width: 11.4rem;
+  margin: 0 auto 0.43rem;
+  // 封面及个人信息
+  .cover {
+    text-align: center;
+
+    .coverTop {
+      width: 100%;
+      height: 2.80rem;
+      // background-image: linear-gradient(0deg, #933EFE 0%, #fff 100%);
+      background-image: url("../images/personal_homepage_BG.png");
+      background-size: 100% 100%;
+      color: #fff;
+      padding-top: 1.82rem;
+      margin-bottom: 1rem;
+
+      .fans, .Avatar, .attention {
+        display: inline-block;
+      }
+
+      .Avatar {
+        width: 2rem;
+        height: 2rem;
+        vertical-align: top;
+        border-radius: 50%;
+        background-color: #fff;
+
+        img {
+          // background-color: skyblue;
+          width: 1.8rem;
+          height: 1.8rem;
+          display: block;
+          margin: 0.1rem auto;
+          border-radius: 50%;
+        }
+      }
+
+      .fans, .attention {
+        width: 1rem;
+        margin: 0 0.5rem;
+        font-size: 18px;
+
+        span {
+          font-size: 28px;
+          display: block;
+        }
+      }
+    }
+
+    .coverBottom {
+      text-align: center;
+
+      .name {
+        font-size: 24px;
+        color: #343A40;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.26rem;
+      }
+
+      .realStatus {
+        width: 0.2rem;
+        height: 0.2rem;
+        margin-left: 0.06rem;
+        vertical-align: middle;
+      }
+
+      .job {
+        font-size: 14px;
+        color: #6B7177;
+        margin: 0.06rem auto 0;
+
+        span {
+          cursor: pointer;
+        }
+      }
+
+      .threeButton {
+        margin-top: 0.1rem;
+        margin-bottom: 0.54rem;
+
+        div {
+          display: inline-block;
+          width: 1rem;
+          height: 0.34rem;
+          margin: 0 0.1rem;
+          background: #FFFFFF;
+          border: 1px solid #6248FF;
+          border-radius: 4px;
+          color: #6248FF;
+          cursor: pointer;
+          line-height: 0.34rem;
+          font-size: 14px;
+
+          &:hover {
+            background-color: #6248FF;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  // 基本资料
+  .information {
+    margin-bottom: 0.4rem;
+
+    .title {
+      font-size: 18px;
+      color: #343A40;
+    }
+
+    .ic_no_resultDiv {
+      text-align: center;
+
+      .ic_no_result {
+        display: block;
+        margin: 0 auto;
+        width: 3.7rem;
+      }
+    }
+
+    .informationText {
+      margin: 0.18rem 0;
+      font-size: 14px;
+      color: #343A40;
+      line-height: 24px;
+      word-wrap: break-word;
+    }
+
+    .informationList {
+      font-size: 14px;
+      color: #6B7177;
+      line-height: 24px;
+      word-wrap: break-word;
+    }
+  }
+
+  // 最近访客
+  .visitors {
+    margin-bottom: 0.76rem;
+    cursor: pointer;
+
+    .title {
+      font-size: 18px;
+      color: #343A40;
+      margin-bottom: 0.2rem;
+    }
+
+    .ic_no_resultDiv {
+      text-align: center;
+
+      .ic_no_result {
+        display: block;
+        margin: 0 auto;
+        width: 3.7rem;
+      }
+    }
+
+    .all-list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .visitorsList {
+      width: 3.80rem;
+      height: 1.00rem;
+      position: relative;
+      display: flex;
+
+      .visitorsAvatar {
+        width: 0.80rem;
+        height: 0.80rem;
+        border-radius: 50%;
+      }
+
+      .per-right {
+        position: absolute;
+        left: 0.92rem;
+        top: 0.15rem;
+      }
+
+      .name {
+        font-size: 16px;
+        color: #343A40;
+        width: 2.5rem;
+        display: flex;
+
+        .per-realName {
+          display: inline-block;
+          max-width: 1.6rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+
+        .per-realName:hover {
+          overflow: visible;
+          white-space: normal;
+        }
+
+        img {
+          margin: 0.04rem 0 0 0.08rem;
+          width: 0.14rem;
+          height: 0.14rem;
+          vertical-align: middle;
+        }
+
+        .lastTime {
+          font-size: 12px;
+          color: #ADB5BD;
+          vertical-align: middle;
+          margin: 0.02rem 0 0 0.14rem;
+        }
+      }
+
+      .company {
+        width: 2.5rem;
+        margin-top: 0.05rem;
+        font-size: 14px;
+        color: #6B7177;
+      }
+    }
+  }
+
+}
+
+// 登录提醒
+.toLogin {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.16rem;
+  background-image: linear-gradient(-95deg, #2853ff 0%, #933efe 100%);
+  width: 1.2rem;
+  height: 0.4rem;
+  border-radius: 4px;
+  text-align: center;
+  // vertical-align: middle;
+  line-height: 0.4rem;
+  margin: 0.2rem auto 0.1rem;
+}
+
+// 私信弹窗
+.letterDiv {
+  // width: 600px;
+  .modal-main {
+    padding: 0 0.4rem;
+  }
+
+  .userRealName {
+    // width: 520px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 20px;
+    background: #f1f3f5;
+    border: 1px solid #E9ECEF;
+    font-size: 14px;
+    color: #ADB5BD;
+    padding-left: 12px;
+  }
+
+  .twoBtn {
+    margin-top: 20px;
+    border-top: 1px solid #CED4DA;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    // background: red;
+    div {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 4px;
+      width: 148px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .cancelBtn {
+      color: #6248FF;
+      background: #fff;
+      border: 1px solid #6248FF;
+    }
+
+    .submitBtn {
+      background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+// 邀TA会面弹窗
+.inviteDiv {
+  .ant-modal-content {
+    width: 6rem;
+  }
+
+  .modal-main {
+    padding: 0 0.4rem;
+  }
+
+  .ant-modal-header {
+    text-align: center;
+    color: #495057;
+    height: 0.74rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .ant-modal-title {
+      font-size: 18px;
+      line-height: 0.74rem;
+      font-weight: 400;
+    }
+  }
+
+  .ant-modal-body {
+    padding-top: 0;
+
+    .label {
+      font-size: 14px;
+      color: #6B7177;
+      margin-top: 0.2rem;
+      margin-bottom: 0.08rem;
+
+      span {
+        color: #ff6666;
+      }
+    }
+  }
+
+  .teleInput {
+    margin-top: 0.08rem;
+  }
+
+  .twoBtn {
+    margin-top: 20px;
+    border-top: 1px solid #CED4DA;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    // background: red;
+    div {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 4px;
+      width: 148px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .cancelBtn {
+      color: #6248FF;
+      background: #fff;
+      border: 1px solid #6248FF;
+    }
+
+    .submitBtn {
+      background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+.ant-modal-title {
+  text-align: center;
+  font-size: 0.18rem;
+}
+
+.ant-modal-body {
+  padding: 0.2rem 0 0.1rem
+}

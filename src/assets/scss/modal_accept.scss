@@ -1,0 +1,124 @@
+@import 'var';
+
+li {
+  list-style: none;
+}
+
+.modal-box {
+
+  .modal-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #000;
+    opacity: 0.65;
+  }
+
+  .modal-accept {
+    position: fixed;
+    top: 0.25rem;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 1000;
+    width: 6rem;
+    max-height: 5.6rem;
+    min-height: 3.3rem;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin: auto;
+
+    .top {
+      position: relative;
+
+      .acc-close {
+        background: #fff;
+        position: absolute;
+        right: 0.18rem;
+        top: 0.21rem;
+        font-weight: 100;
+        cursor: pointer;
+        border: 1px solid #fff;
+        outline: none;
+        z-index:99;
+      }
+
+    }
+
+    .accept-title {
+      font-size: 0.18rem;
+      color: #495057;
+      padding: 0.22rem 0;
+      text-align: center;
+      border: 1px solid #CED4DA;
+    }
+
+    .modal-content {
+      margin-top: 0.17rem;
+      padding: 0 0.4rem;
+      border: none;
+
+      .modal-label {
+        font-size: 0.14rem;
+        color: #6B7177;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+
+        span {
+          color: #FF6666;
+        }
+      }
+
+      .dateAndTimePickerBody .meetingBox{
+        margin-top: -3.23rem;
+      }
+
+      .time-input {
+        margin-bottom: 0.25rem;
+      }
+
+      .input-radio {
+        margin-top: 0.1rem;
+      }
+    }
+
+    .modal-bottom {
+      margin-top: 0.1rem;
+      padding: 0.1rem 0;
+      text-align: center;
+      border-top: 1px solid #CED4DA;
+
+      .btn-submit {
+        background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+        border-radius: 4px;
+        font-size: 0.16rem;
+        color: #fff;
+        text-align: center;
+        border: none;
+        width: 1.4rem;
+        height: 0.48rem;
+        margin-right: 0.2rem;
+        outline: none;
+      }
+
+      .btn-reset {
+        font-size: 0.16rem;
+        background: #fff;
+        color: #6248FF;
+        text-align: center;
+        width: 1.4rem;
+        height: 0.48rem;
+        border-radius: 4px;
+        border: solid 1px #933EFE;
+        outline: none;
+      }
+    }
+
+  }
+
+}
+
+

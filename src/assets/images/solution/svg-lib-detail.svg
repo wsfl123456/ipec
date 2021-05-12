@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="493" height="282" viewBox="0 0 493 282">
+    <defs>
+        <circle id="a" cx="80" cy="139" r="78"/>
+        <circle id="b" cx="221" cy="139" r="78"/>
+        <circle id="c" cx="357" cy="139" r="78"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M28 255c22.687 15.76 50.265 25 80.006 25 29.736 0 57.31-9.237 79.994-24.991"/>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M180.84 263.633l7.16-8.624-10.582 3.696M307 255c22.687 15.76 50.265 25 80.006 25 29.736 0 57.31-9.237 79.994-24.991"/>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M459.84 263.633l7.16-8.624-10.582 3.696M167 27c22.687-15.76 50.265-25 80.006-25 29.736 0 57.31 9.237 79.994 24.991M319.84 10.633L327 2.01l-10.582 3.696"/>
+        <g transform="translate(28 2)">
+            <use fill="#8A54BE" style="mix-blend-mode:overlay" xlink:href="#a"/>
+            <use stroke="#8A54BE" stroke-opacity=".4" stroke-width="60" xlink:href="#a"/>
+        </g>
+        <g transform="translate(28 2)">
+            <use fill="#C560EF" style="mix-blend-mode:overlay" xlink:href="#b"/>
+            <use stroke="#C560EF" stroke-opacity=".4" stroke-width="60" xlink:href="#b"/>
+        </g>
+        <g transform="translate(28 2)">
+            <use fill="#F760D5" style="mix-blend-mode:overlay" xlink:href="#c"/>
+            <use stroke="#F760D5" stroke-opacity=".4" stroke-width="60" xlink:href="#c"/>
+        </g>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(28 2)">
+            <tspan x="42" y="132">代际文化</tspan> <tspan x="22" y="160">与亚文化研究</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(28 2)">
+            <tspan x="181" y="132">文化政策</tspan> <tspan x="201" y="160">研究</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(28 2)">
+            <tspan x="298.21" y="132">文化与IP产业</tspan> <tspan x="337" y="160">研究</tspan>
+        </text>
+    </g>
+</svg>

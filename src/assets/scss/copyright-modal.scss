@@ -1,0 +1,867 @@
+/**
+*  买卖方里的弹窗样式
+ */
+.copyright-modal {
+  &.show {
+    display: block;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+
+  .modal-header {
+    .modal-close {
+      cursor: pointer;
+    }
+  }
+
+  .modal-footer {
+    padding: 0;
+    margin: 0;
+    height: 72px;
+    border-top: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    .modal-button {
+      width: 148px;
+      height: 48px;
+      text-align: center;
+      border-radius: 4px;
+      background: #fff;
+      color: #6236FF;
+      border: 1px solid #6236FF;
+      outline: none;
+
+      &.button-active {
+        color: #fff;
+        border: none;
+        margin: 0 0.2rem 0 0;
+        background: linear-gradient(315deg, #2853FF 0%, #933EFE 100%);
+      }
+    }
+
+  }
+}
+
+// 查看大图
+.big-img-modal {
+
+  .img-content {
+    width: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-box {
+    position: relative;
+
+    .img-group {
+      height: 5.4rem;
+      width: 5.4rem;
+      position: relative;
+      .big-img {
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+      .img-index {
+        width: 100%;
+        position: absolute;
+        bottom: 8px;
+        text-align: center;
+        color: #fff;
+
+        span {
+          font-size: 24px;
+        }
+
+        line-height: 29px;
+      }
+    }
+
+
+  }
+
+  .btn-box {
+    padding: 36px 158px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .arrow-left, .arrow-right {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .arrow-close {
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+  }
+}
+
+.refuse-content, .collection-content, .cancel-content, .code-content, .post-content, .logistics-content, .upload-content {
+  background: #FFFFFF;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+// 监修不通过
+.refuse-modal {
+  .refuse-content {
+    width: 600px;
+    height: 369px;
+
+    .modal-header {
+      height: 74px;
+      //display: flex;
+      //align-items: center;
+      //justify-content: center;
+      padding: 0 27px;
+
+      .modal-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #495057;
+        width: 100%;
+        height: 100%;
+        line-height: 74px;
+        text-align: center;
+      }
+
+      .modal-close {
+        width: 30px;
+        height: 33px;
+        float: right;
+        margin-top: 20px;
+
+      }
+
+    }
+
+    .modal-body-border_top {
+      height: 221px;
+      padding: 30px 20px;
+      border-top: 1px solid #CED4DA;
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        border: 1px solid #CED4DA;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 4px 16px;
+        outline: none;
+
+        &::placeholder {
+          color: #ADB5BD;
+        }
+      }
+    }
+
+    .modal-footer {
+      justify-content: center;
+
+      .modal-btn {
+        margin: 0;
+
+      }
+    }
+  }
+}
+
+// 无账户信息- 申请收款
+.collection-content {
+  width: 600px;
+
+  .header-bg {
+    height: 128px;
+    background: url("../../assets/images/copyright-center/modal_header.png") no-repeat center bottom/cover;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    .modal-close {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      cursor: pointer;
+    }
+
+    .modal-title {
+      font-size: 24px;
+      margin: 24px 0 4px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .modal-body {
+    padding: 5px 40px;
+    // 无- 表单
+    .collection-form {
+      margin-top: 20px;
+
+      .form-group {
+        width: 100%;
+        margin-bottom: 0.2rem;
+        font-size: 0.14rem;
+
+        .ant-cascader-picker {
+          display: block;
+          .ant-input {
+            height: 48px;
+          }
+        }
+
+        label {
+          height: 0.2rem;
+          line-height: 0.2rem;
+          color: #6B7177;
+          margin-bottom: 0.04rem;
+
+          .dot {
+            color: #e02020;
+          }
+        }
+
+        .other-address {
+          font-size: 14px;
+          color: #6236FF;
+          line-height: 24px;
+          float: right;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+          }
+        }
+
+        .form-control {
+          border: 1px solid #CED4DA;
+          height: 48px;
+          width: 100%;
+          font-size: 0.14rem;
+        }
+
+        &::placeholder {
+          font-size: 0.14rem;
+          color: #ADB5BD;
+        }
+
+      }
+
+      .code-area {
+        //display: flex;
+        margin: 0 0 0.15rem;
+
+        label {
+          display: block;
+        }
+
+        .form-control {
+          display: inline-block;
+          vertical-align: top;
+          width: 4rem;
+          height: 0.48rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+
+        button {
+          display: inline-block;
+          width: 1.2rem;
+          height: 0.48rem;
+          vertical-align: top;
+          background: #6236FF;
+          border: none;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          font-weight: normal;
+          font-size: 0.13rem;
+          outline: none;
+          box-shadow: none;
+          border-radius: 0 0.04rem 0.04rem 0;
+
+          &.gray {
+            background-image: unset;
+            background: gray;
+          }
+        }
+      }
+
+      .form-operation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        .thirty-checkbox {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          input[type="checkbox"] {
+            margin-bottom: 0.02rem;
+            margin-right: 0.02rem;
+          }
+
+          span {
+            margin-left: 0.05rem;
+            font-size: 0.12rem;
+            color: #6B7177;
+            letter-spacing: 0;
+            line-height: 0.12rem;
+          }
+
+          a {
+            text-decoration: underline;
+            margin-left: 0.032rem;
+            font-size: 0.12rem;
+            color: #4185F3;
+            letter-spacing: 0;
+            line-height: 0.16rem;
+
+            &:hover {
+              text-decoration: underline !important;
+            }
+          }
+
+          .check-img {
+            width: 0.16rem;
+            height: 0.16rem;
+            cursor: pointer;
+            background-image: url("../images/check.jpg");
+          }
+        }
+      }
+
+    }
+
+    // 有账户信息
+    .invoice {
+      margin: 0.2rem 0;
+      background: #F5F2FF;
+      border-radius: 6px;
+      padding: 0.2rem 0.25rem;
+      font-size: 0;
+      color: #343A40;
+
+      &-body {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0.06rem;
+
+        span {
+          color: #666666;
+          margin-right: 0.05rem;
+        }
+      }
+
+    }
+  }
+
+
+  .modal-footer {
+    .button-active {
+      margin: 0 auto !important;
+    }
+  }
+}
+
+// 取消订单原因弹窗
+.cancel-content {
+  width: 600px;
+  height: 416px;
+  background: #FFFFFF;
+  border-radius: 6px;
+
+  .modal-header {
+    padding: 0 28px;
+    border: none;
+
+    .modal-close {
+      width: 30px;
+      height: 33px;
+      float: right;
+      margin-top: 20px;
+    }
+
+    .title-box {
+      padding-top: 27px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 11px;
+      }
+
+      p {
+        height: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #343A40;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .cancel-body {
+    padding: 10px 40px;
+    font-size: 16px;
+
+    p {
+      font-weight: 400;
+      color: #666666;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 94px;
+
+      label {
+        margin: 0 0 8px;
+      }
+
+      .ant-select-selection--single {
+        height: 48px;
+      }
+
+      .ant-select-selection__rendered {
+        line-height: 48px;
+      }
+    }
+
+  }
+
+  .modal-footer {
+    .modal-btn {
+      margin: 0 auto;
+    }
+  }
+
+}
+
+// 获取防伪码弹窗
+.code-content {
+  width: 600px;
+  height: 293px;
+
+  .modal-header {
+    padding: 0 28px;
+    border: none;
+
+    .modal-close {
+      width: 30px;
+      height: 33px;
+      float: right;
+      margin-top: 20px;
+    }
+
+    .title-box {
+      padding-top: 27px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 11px;
+      }
+
+      p {
+        height: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #343A40;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .cancel-body {
+    padding: 10px 40px 47px;
+
+    p {
+      line-height: 26px;
+    }
+  }
+
+  .modal-footer {
+    .button-active {
+      margin: 0 auto !important;
+    }
+  }
+
+
+}
+
+// 查看邮寄弹窗
+.post-content {
+  width: 600px;
+  height: 368px;
+
+  .modal-header {
+    border: none;
+    height: 64px;
+    padding: 0 22px;
+
+    .modal-close {
+      width: 30px;
+      height: 33px;
+      float: right;
+      margin-top: 20px;
+    }
+
+    p {
+      width: 100%;
+      height: 100%;
+      line-height: 64px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: #343A40;
+    }
+  }
+
+  .modal-body {
+    padding: 20px 40px 48px;
+    border-top: 1px solid #CED4DA;;
+
+    .invoice-title {
+      text-align: right;
+      color: #6236FF;
+      margin-bottom: 12px;
+    }
+
+    .invoice {
+      background: #F5F2FF;
+      border-radius: 6px;
+      padding: 0.2rem 0.25rem 0.18rem;
+      font-size: 0;
+      color: #343A40;
+
+      &-body {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0.06rem;
+
+        span {
+          color: #666666;
+          margin-right: 0.05rem;
+        }
+      }
+
+    }
+  }
+
+  .modal-footer {
+    .button-active {
+      margin: 0 auto !important;
+    }
+  }
+
+
+}
+
+// 样品物流单号
+.logistics-content {
+  width: 600px;
+  height: 560px;
+
+  .header-bg {
+    height: 128px;
+    background: url("../../assets/images/copyright-center/modal_header.png") no-repeat center bottom/cover;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    .modal-close {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      cursor: pointer;
+    }
+
+    .modal-title {
+      font-size: 24px;
+      margin: 24px 0 4px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .modal-body {
+    padding: 5px 40px;
+    //  表单
+    .logistics-form {
+      margin-top: 20px;
+
+      .form-group {
+        width: 100%;
+        margin-bottom: 0.2rem;
+        font-size: 0.14rem;
+
+        label {
+          height: 0.2rem;
+          line-height: 0.2rem;
+          color: #6B7177;
+          margin-bottom: 0.04rem;
+
+          .dot {
+            color: #e02020;
+          }
+        }
+
+        .form-control {
+          border: 1px solid #CED4DA;
+          height: 48px;
+          width: 100%;
+          font-size: 0.14rem;
+        }
+
+        &::placeholder {
+          font-size: 0.14rem;
+          color: #ADB5BD;
+        }
+
+      }
+
+      .upload-group {
+        margin-bottom: 24px;
+
+        label {
+          font-size: 14px;
+          color: #6B7177;
+          line-height: 20px;
+        }
+
+        .list {
+          margin-top: 5px;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          // justify-content: space-between;
+          img {
+            width: 88px;
+            height: 88px;
+            border-radius: 6px;
+            object-fit: cover;
+
+            &:not(:first-child) {
+              margin-left: 5px;
+            }
+          }
+
+          .upload-box {
+            width: 88px;
+            height: 88px;
+            border-radius: 6px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            border: 1px dashed #ced4da;
+            background: #F8F9FA;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+              border: 1px dashed #6236ff;
+              color: #6236ff;
+            }
+
+            input {
+              position: absolute;
+              width: 88px;
+              height: 88px;
+              left: 0;
+              top: 0;
+              opacity: 0;
+              cursor: pointer;
+            }
+
+            span {
+              display: inline-block;
+              width: 56px;
+              margin: 2px auto 0;
+              font-size: 12px;
+              color: #ADB5BD;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .modal-footer {
+    align-content: center;
+    justify-content: center;
+
+    .modal-button {
+      margin: 0;
+    }
+  }
+}
+
+// 上传设计图弹窗
+.upload-content {
+  width: 600px;
+
+  .modal-header {
+    border: none;
+    height: 64px;
+    padding: 0 22px;
+
+    .modal-close {
+      width: 30px;
+      height: 33px;
+      float: right;
+      margin-top: 20px;
+    }
+
+    p {
+      width: 100%;
+      height: 100%;
+      line-height: 64px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: #343A40;
+    }
+  }
+
+  .body-border-top {
+    border-top: 1px solid #CED4DA;
+   padding: 15px 20px 30px;
+    p {
+      font-size: 12px;
+      line-height: 24px;
+      color: #666666;
+      margin: 0 0 15px;
+
+      .red {
+        color: #E02020;
+      }
+    }
+    .upload-click-drag{
+      height: 206px;
+      background: #F8F9FA;
+      border-radius: 6px 6px 0px 0px;
+      border: 1px solid #CED4DA;
+      text-align: center;
+      padding: 28px 25px;
+      position: relative;
+      input[type=file]{
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        cursor: pointer;
+        transform: translateX(-50%);
+      }
+      button{
+        width: 240px;
+        height: 48px;
+        background: #F4EDFF;
+        border-radius: 4px;
+        border: 1px solid #6248FF;
+        outline: none;
+      }
+      p{
+        margin: 17px 0 6px;
+        height: 24px;
+        font-size: 16px;
+        color: #343A40;
+        line-height: 24px;
+      }
+      span{
+        display:block;
+        font-size: 14px;
+        color: #ADB5BD;
+        line-height: 24px;
+        &:first-child{
+          margin-bottom: 6px;
+        }
+        .purple{
+          font-style: normal;
+          color: #6236FF;
+        }
+      }
+    }
+    .upload-img{
+      margin: 12px 0 0;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      img {
+        width: 88px;
+        height: 88px;
+        border-radius: 6px;
+        object-fit: cover;
+
+        &:not(:first-child) {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    align-content: center;
+    justify-content: center;
+
+    .modal-button {
+      margin: 0;
+    }
+  }
+}

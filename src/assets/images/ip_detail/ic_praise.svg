@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_praise</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="14 14 0 14 0 0 14 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_praise">
+            <g>
+                <path d="M12.027121,2.94829611 C11.4045784,2.34131703 10.5601323,2.00008696 9.67929689,2.00008696 C8.79846148,2.00008696 7.95401539,2.34131703 7.33111598,2.94829611 L6.99968784,3.27143855 L6.66825969,2.94829611 C5.37180126,1.6839013 3.26942659,1.6839013 1.97261139,2.94829611 C0.675796202,4.21303876 0.675796202,6.26250622 1.97261139,7.52690104 L2.30403954,7.85004348 L6.99968784,11.7486231 L11.6956929,7.85004348 L12.027121,7.52690104 C12.6500204,6.91992196 13,6.09658702 13,5.23777249 C13,4.37895797 12.6500204,3.55562303 12.027121,2.94829611" id="Fill-1" fill="#FB3D3D"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+            </g>
+        </g>
+    </g>
+</svg>

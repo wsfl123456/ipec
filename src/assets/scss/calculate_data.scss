@@ -1,0 +1,256 @@
+@import "var";
+
+.table tbody:nth-child(odd) {
+  background: rgba(248, 249, 250, 0.60);
+}
+
+.calculate-right {
+  width: 100%;
+
+  .g-top {
+    height: 0.6rem;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #CED4DA;
+
+    .u-left {
+      font-size: 0.16rem;
+      color: #343A40;
+      margin: 0.2rem 0 0.18rem 0.4rem;
+    }
+
+    .u-right {
+      position: absolute;
+      right: 0.4rem;
+      top: 0.21rem;
+      font-size: 0.14rem;
+      color: #6B7177;
+
+      img {
+        width: 0.15rem;
+        height: 0.15rem;
+        margin: -0.04rem 0.04rem 0 0;
+      }
+    }
+
+  }
+
+  .g-change {
+    display: flex;
+    background: #F8F9FA;
+
+    li:first-child {
+      margin: 0.12rem 0.2rem 0.12rem 0.4rem;
+    }
+
+    li:last-child {
+      margin: 0.12rem 0 0.12rem;
+    }
+
+    li {
+      font-size: 0.14rem;
+      margin: 0.12rem 0.2rem 0.12rem 0;
+      line-height: 24px;
+      color: #ADB5BD;
+
+      .u-input {
+        width: 3.2rem;
+        height: 0.48rem;
+        font-size: 0.14rem;
+        color: #343A40;
+        border: 1px solid #E9ECEF;
+        text-indent: 0.16rem;
+        border-radius: 0.04rem;
+        outline: none;
+      }
+
+      .u-input::placeholder {
+        color: $balance-color-gray;
+      }
+
+      .u-search {
+        width: 0.63rem;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #E9ECEF;
+        border-left: none;
+        display: inline-block;
+        border-radius: 0 0.04rem 0.04rem 0;
+
+        i {
+          font-size: 0.288rem;
+          color: #9b9b9b;
+          cursor: pointer;
+        }
+      }
+
+      .ant-select-selection--multiple {
+        background: white !important;
+      }
+
+      .ant-calendar-picker {
+        .ant-calendar-input,
+        input {
+          min-height: 0.48rem;
+        }
+      }
+
+      .ant-calendar-picker-input:hover,
+      .form-control:hover {
+        box-shadow: none !important;
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-calendar-picker-input:focus,
+      .form-control:focus {
+        box-shadow: none !important;
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-select-selection {
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-select-open {
+        .ant-select-selection {
+          box-shadow: none !important;
+          border-color: #E9ECEF !important;
+        }
+      }
+
+      .ant-select-selection:focus {
+        box-shadow: none !important;
+        border-color: #E9ECEF !important;
+      }
+
+      .ant-select-selection,
+      .ant-select-selection--multiple {
+        min-height: 0.48rem;
+        background: #fff;
+        border-radius: 4px 0 0 4px;
+
+        &:hover {
+          border-color: #E9ECEF;
+        }
+
+        .ant-select-selection__rendered {
+          height: 100%;
+          font-size: 0.14rem;
+          line-height: 0.36rem;
+
+          ul {
+            li {
+              margin-top: 0.08rem;
+
+              input:focus {
+                border-color: #E9ECEF;
+              }
+            }
+          }
+
+          .ant-select-selection--multiple .ant-select-selection__placeholder {
+            font-size: 0.14rem;
+            color: #ADB5BD !important;
+            letter-spacing: 0;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .g-list {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0.21rem 0;
+
+    .table {
+      font-size: 0.12rem;
+      table-layout: fixed;
+      width: 8.06rem;
+      margin: 0 auto;
+
+      .td-190 {
+        width: 1.9rem;
+      }
+
+      .td-100 {
+        width: 1rem;
+      }
+      .td-60{
+        width: 0.6rem;
+      }
+      .td-54{
+        width: 0.54rem;
+        padding: 0.05rem 0.1rem;
+      }
+      .td-55 {
+        width: 0.55rem;
+        padding: 0.05rem 0.1rem;
+        a {
+          padding: 0;
+        }
+      }
+
+      td {
+        padding: 0.07rem 0.15rem;
+      }
+
+      thead tr {
+        border: solid 1px #E9ECEF;
+        border-bottom: none;
+
+        td {
+          color: #6B7177;
+          border: solid 1px #E9ECEF;
+        }
+      }
+
+      tbody tr {
+        td {
+          font-size: 0.14rem;
+          color: #343A40;
+          line-height: 0.24rem;
+          border: solid 1px #E9ECEF;
+
+          a {
+            display: inline-block;
+            font-size: 0.14rem;
+            color: #6248FF;
+            line-height: 24px;
+            padding:0 0.05rem 0 0;
+          }
+
+          div {
+            a:last-child {
+              i {
+                font-style: normal;
+                opacity: 0;
+              }
+            }
+
+            .u-disabled {
+              color: $limit-detail-title-color;
+              cursor: auto;
+            }
+          }
+        }
+
+
+      }
+
+
+    }
+
+    .page {
+      margin-left: 6.2rem;
+      margin-top: 0.2rem;
+    }
+  }
+}
+

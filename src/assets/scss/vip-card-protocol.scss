@@ -1,0 +1,51 @@
+.vip-card-protocol {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: red;
+  box-sizing: border-box;
+
+  &_area {
+    width: 7.2rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 0.06rem;
+    font-size: 0.14rem;
+    color: #000;
+    .name {
+        position: relative;
+      padding: 0.16rem 0.24rem;
+      text-align: center;
+      font-size: 0.16rem;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      border-bottom: 1px solid #e8e8e8;
+      img {
+        width: 0.25rem;
+        height: 0.26rem;
+        position: absolute;
+        right: 0.21rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    }
+    .content {
+      overflow: auto;
+      height: 7.4rem;
+      padding: 0.2rem;
+      .header {
+        font-size: 0.16rem;
+        font-weight: 600;
+        margin: 0.1rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="345" viewBox="0 0 361 345">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#ADB5BD" stroke-linecap="square" stroke-width="4" d="M298.538 113.462l-120.076 48.076M58.463 290.54l100.074-101.08M83.461 72.462L296.54 290.538"/>
+        <circle cx="63" cy="63" r="63" fill="#C560EF"/>
+        <circle cx="177.5" cy="174.5" r="64.5" fill="#8A54BE"/>
+        <circle cx="307.5" cy="102.5" r="53.5" fill="#F760D5"/>
+        <circle cx="290.5" cy="288.5" r="56.5" fill="#FF6B6B"/>
+        <circle cx="63" cy="280" r="56" fill="#FFC078"/>
+        <text fill="#FFF" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400">
+            <tspan x="273.152" y="109">IP设定</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400">
+            <tspan x="257.152" y="297">IP调性</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400">
+            <tspan x="28.152" y="289">IP定位</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400">
+            <tspan x="143.652" y="179">IP品牌</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400">
+            <tspan x="17.5" y="68">存在的意义</tspan>
+        </text>
+    </g>
+</svg>

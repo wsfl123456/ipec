@@ -1,0 +1,325 @@
+@import "var";
+
+.main-container {
+  .detail-forecast {
+
+    .g-top {
+      background-color: $limit-gray-bg-color;
+
+      .tab {
+        display: flex;
+        //margin-left: 0.9rem;
+        width: 11.4rem;
+        margin: auto;
+        border-bottom: $balance-model-border;
+
+        span {
+          padding: 0.132rem 0.2rem;
+          font-size: 0.14rem;
+          color: $limit-detail-title-color;
+          cursor: pointer;
+          border-bottom: 2px solid transparent;
+        }
+
+        .span-active {
+          color: $limit-purple-text;
+          border-bottom: 2px solid $limit-purple-text;
+        }
+
+        span:hover {
+          color: $limit-purple-text;
+          border-bottom: 2px solid $limit-purple-text;
+        }
+      }
+
+    }
+
+    .g-content {
+      width: 11.4rem;
+      margin: 0 auto;
+      padding: 0.4rem 0 0.24rem;
+
+      .show {
+        display: block;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      //  TGI 明星表
+      .m-star {
+        //margin: 0.32rem 0 0 0;
+
+        table {
+          width: 11.4rem;
+          table-layout: fixed;
+
+          td, th {
+            padding: 0.1rem;
+
+          }
+
+          th:first-child, td:first-child {
+            width: 2.68rem;
+          }
+
+          th {
+            text-align: center;
+            background: $balance-model-border;
+            font-size: 0.14rem;
+            height: 0.48rem;
+            line-height: 0.48rem;
+            font-weight: normal;
+            color: $limit-gray-text;
+            border-width: 0.01rem;
+
+            .u-hover.wb img:hover + .hover-box {
+              left: 0.68rem;
+            }
+
+            .u-hover {
+              position: relative;
+
+              img {
+                width: 0.13rem;
+                cursor: pointer;
+                margin: 0 0 0 0.036rem;
+              }
+
+              img:hover + .hover-box {
+                display: inline-block;
+              }
+
+              .hover-box {
+                text-align: left;
+                width: 2rem;
+                position: absolute;
+                top: 0.4rem;
+                left: 0.6rem;
+                background: rgba(0, 0, 0, .4);
+                color: #fff;
+                line-height: 0.24rem;
+                padding: 0.05rem;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                border-radius: 0.04rem;
+                display: none;
+              }
+
+              .hover-box:after {
+                position: absolute;
+                top: -0.1rem;
+                left: 0.1rem;
+                content: "";
+                width: 0;
+                height: 0;
+                border: 0.05rem solid;
+                border-color: transparent transparent rgba(0, 0, 0, 0.4) transparent;
+              }
+            }
+          }
+
+          tr {
+            td {
+              height: 0.6rem;
+              line-height: 0.22rem;
+              color: $limit-detail-title-color;
+              //border-left: none;
+              //border-right: none;
+              //border-top: none;
+              //border-bottom: $balance-model-border;
+            }
+
+            td:first-child {
+
+              div {
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+
+                img {
+                  display: inline-block;
+                  width: 0.9rem;
+                  height: 1.2rem;
+                  border-radius: 0.06rem;
+                  object-fit: cover;
+                  margin: 0 0.1rem 0 0;
+                }
+
+                div {
+                  display: inline-block;
+                  //margin: 0 0 0 0.1rem;
+
+                  span {
+                    display: block;
+                    margin: 0 0 0.08rem;
+                  }
+                }
+
+              }
+
+            }
+
+            td:last-child {
+              //border-right: $balance-model-border;
+              //border-left: none;
+            }
+
+            .td-math {
+              text-align: right;
+              padding: 0 0.2rem 0 0;
+            }
+
+            td:nth-child(4), th:nth-child(4),
+            td:nth-child(5), th:nth-child(5),
+            td:nth-child(6), th:nth-child(6) {
+              width: 2.06rem;
+            }
+          }
+
+          tr:nth-child(n+1) td {
+            background: $limit-gray-bg-color;
+          }
+
+          tr:nth-child(2n) td {
+            background: #fff;
+          }
+
+
+        }
+
+      }
+
+      .m-star {
+        .title {
+          .hover-box {
+            left: 0.9rem;
+          }
+        }
+
+        .fans-sex {
+          .hover-box {
+            left: 0.9rem;
+          }
+        }
+
+        .fans-age {
+          .hover-box {
+            left: 1.7rem;
+          }
+        }
+      }
+
+      .m-star > div, .m-develop > div, .m-heat-trend > div {
+        margin: 0 0 0.4rem 0;
+
+        .title {
+          display: flex;
+          height: 0.25rem;
+          line-height: 0.25rem;
+          margin: 0 0 0.2rem 0;
+          flex: 1;
+          align-items: center;
+          flex-direction: row;
+          font-size: 0.16rem;
+          color: $limit-detail-title-color;
+          letter-spacing: 0;
+          font-weight: bold;
+          position: relative;
+
+          img {
+            vertical-align: top;
+          }
+
+          .icon_detail:hover + .hover-box {
+            display: inline-block;
+          }
+
+          .icon_detail {
+            width: 0.13rem;
+            height: 0.13rem;
+            margin: 0 0 0 0.05rem;
+            cursor: pointer;
+            vertical-align: middle;
+          }
+
+
+          .hover-box {
+            font-weight: 400;
+            z-index: 99;
+            position: absolute;
+            top: 0.24rem;
+            font-size: 0.14rem;
+            line-height: 0.24rem;
+            padding: 0.05rem 0.1rem;
+            color: $balance-white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 0.04rem;
+            background: rgba(0, 0, 0, .4);
+            display: none;
+            max-width: 5rem;
+          }
+
+          .hover-box:after {
+            border-width: 0.05rem;
+            border-color: transparent transparent rgba(0, 0, 0, .4) transparent;
+            border-style: solid;
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            top: -0.1rem;
+            left: 0.13rem;
+          }
+        }
+
+
+        .chart {
+          height: 5.62rem;
+          border: 1px solid #e5e5e5;
+          padding: 0.3rem;
+
+          .echart {
+            height: 100%;
+
+            .echarts-for-react {
+              height: 100% !important;
+            }
+          }
+        }
+      }
+
+      .m-develop {
+        .wave-value {
+          .hover-box {
+            left: 0.92rem;
+          }
+        }
+      }
+
+
+      //  热度趋势图
+      .m-heat-trend {
+        .chart {
+          height: 5.04rem;
+        }
+
+        .title {
+          .hover-box {
+            left: 0.92rem;
+          }
+        }
+
+        .famous-heat, .match-heat {
+          .chart {
+            height: 5.2rem;
+          }
+        }
+      }
+
+
+    }
+
+  }
+}
+

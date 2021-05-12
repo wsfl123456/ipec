@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>attestation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.4975,1.745 L9.978,1.73650001 C9.966,1.73650001 8.801,1.71250001 7.5985,1.24750001 C6.3645,0.769500012 5.5695,0.221500008 5.562,0.216000012 L5.2485,0 L4.9365,0.216500004 C4.929,0.221499996 4.134,0.770000004 2.9,1.2475 C1.6985,1.7135 0.533000004,1.7365 0.522,1.7365 L0,1.745 L0,6.7895 C0,9.322 3.414,12 5.2495,12 C7.0865,12 10.5,9.322 10.5,6.7895 L10.4975,1.745 Z M3.68866666,9.0525 L3.68866666,4.165 L3.22266667,4.165 L3.22266667,3.7205 L5.08666666,3.7205 L5.08666666,5.94250001 L7.43266666,3.7205 L9.28066666,3.7205 L3.68866666,9.0525 Z" id="path-1"></path>
+    </defs>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="attestation">
+            <g id="矩形">
+                <rect fill="#000000" opacity="0" x="0" y="0.666666667" width="10.6666667" height="10.6666667"></rect>
+                <g transform="translate(0.666667, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#6248FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <rect fill="#836EFE" mask="url(#mask-2)" x="5.25" y="-1.5" width="6" height="15"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

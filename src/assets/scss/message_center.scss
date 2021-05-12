@@ -1,0 +1,485 @@
+@import "var";
+
+.message-page {
+  background: #f7f7f7;
+}
+
+.message-container {
+  width: 11.4rem;
+  margin: 0 auto;
+  padding: 0.47rem 0;
+
+  .message-list, .message-personal, .message-aside {
+    background: #fff;
+    border-radius: 6px;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  .message-left {
+    width: 2.2rem;
+    display: inline-block;
+
+    .message-personal {
+      width: 100%;
+      height: 2.2rem;
+      text-align: center;
+      padding: 0.36rem 0 0;
+
+      .head-img {
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto 0.11rem;
+        display: block;
+        border-radius: 50%;
+      }
+
+      .date {
+        height: 0.17rem;
+        line-height: 0.17rem;
+        font-size: 0.12rem;
+        color: #868E96;
+        margin: 0.06rem 0 0;
+      }
+
+      .rzhy {
+        .proveText {
+          color: $balance-color;
+        }
+      }
+
+      .hjhy {
+        .proveText {
+          color: #D79E6B;
+        }
+      }
+
+      .zshy {
+        .proveText {
+          color: #D09F10;
+        }
+      }
+
+      p {
+        .proveText {
+          font-size: 12px;
+          color: #999999;
+          letter-spacing: 0;
+          margin-left: 0.04rem;
+        }
+      }
+    }
+
+    .message-aside {
+      width: 100%;
+      height: 1.8rem;
+      margin: 0.24rem 0 0;
+
+      .aside-href {
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-indent: 0.32rem;
+        color: $limit-detail-title-color;
+      }
+
+      .aside-href:hover {
+        cursor: pointer;
+      }
+
+      .active {
+        color: $balance-color;
+        border-left: 2px solid #6248ff;
+      }
+
+      .aside-href:last-child {
+        border-top: 0.01rem solid #CED4DA;
+      }
+    }
+  }
+
+  .message-list {
+    margin: 0 0 0 0.32rem;
+    width: 8.88rem;
+    background: $balance-white;
+    padding: 0.05rem 0;
+
+    //width: calc( 100%  -  2.2rem);
+    .tab-change {
+      padding: 0 0.4rem;
+      border-bottom: 1px solid #CED4DA;
+      height: 0.55rem;
+
+      ul {
+        margin-bottom: 0;
+
+        li {
+          height: 0.55rem;
+          line-height: 0.55rem;
+          margin-right: 0.4rem;
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          color: $limit-detail-title-color;
+        }
+
+        //.active {
+        //  color: $balance-color !important;
+        //  border-bottom: 2px solid #6248ff;
+        //}
+        .none {
+          display: none;
+        }
+      }
+    }
+
+    .tab-content {
+      width: 100%;
+      padding: 0 0.4rem;
+      display: inline-block;
+
+      .loading-more {
+        width: 100%;
+        margin: 0.1rem 0 0;
+        text-align: center;
+        font-size: 0.14rem;
+        color: #888;
+
+        img {
+          width: 1.2rem;
+        }
+      }
+
+      .is-no-result {
+        width: 100%;
+        font-size: 14px;
+        color: #888888;
+        text-align: center;
+        margin: 0.2rem auto;
+
+        span {
+          width: unset;
+          position: relative;
+
+          &::before {
+            content: '';
+            display: block;
+            width: 0.4rem;
+            height: 1px;
+            background: #888888;
+            position: absolute;
+            left: -50%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            width: 0.4rem;
+            height: 1px;
+            background: #888888;
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%) translateX(50%);
+
+          }
+        }
+      }
+
+      .message-single:last-child {
+        border: none;
+      }
+
+      .message-single {
+        padding: 0.2rem 0;
+        border-bottom: 1px dashed #ced4da;
+        font-size: 0;
+        display: flex;
+
+        .type, .message {
+          //display: inline-block;
+          //vertical-align: top;
+        }
+
+        .type {
+          margin: 0 0.26rem 0 0;
+
+          img {
+            width: 0.35rem;
+            height: 0.35rem;
+          }
+        }
+
+        .message {
+          font-size: 0.14rem;
+
+          p {
+            margin: 0 0 0.02rem 0;
+            line-height: 0.24rem;
+          }
+
+          .message-top {
+            display: flex;
+
+            .title {
+              height: 0.24rem;
+              color: $limit-detail-title-color;
+            }
+
+            .message-date {
+              color: #adb5bd;
+              font-size: 0.12rem;
+              margin-left: 0.2rem;
+            }
+          }
+
+          .detail {
+            color: $limit-gray-text;
+
+          }
+
+          .date {
+            font-size: 0.12rem;
+            color: $balance-color-gray;
+          }
+        }
+      }
+
+      // 与别人的私信  private_letter
+      .private-content {
+        .head-img {
+          width: 0.48rem;
+          height: 0.48rem;
+          border-radius: 50%;
+        }
+
+        .p-title {
+          text-align: center;
+          height: 0.57rem;
+          line-height: 0.57rem;
+          border-bottom: 1px solid #ced4da;
+          color: $limit-detail-title-color;
+          position: relative;
+
+          img {
+            position: absolute;
+            left: 0.4rem;
+            top: 0.23rem;
+            cursor: pointer;
+          }
+        }
+
+        .content-user {
+          height: 4.6rem;
+          overflow-y: auto;
+
+          .p-main {
+            height: 1.1rem;
+            padding: 0.2rem 0.4rem;
+
+            .p-me, .p-he {
+              margin: 0 0 0.24rem 0;
+              font-size: 0.14rem;
+              //position: relative;
+              .head-img {
+                vertical-align: top;
+              }
+
+              p {
+                display: inline-block;
+                padding: 0.13rem 0.17rem 0.13rem 0.15rem;
+                line-height: 0.2rem;
+                color: #495057;
+                max-width: 5.9rem;
+                border-radius: 0.04rem;
+                vertical-align: top;
+                word-wrap: break-word;
+              }
+
+              .p-date {
+                display: inline-block;
+                font-size: 12px;
+                margin: 0.09rem 0 0;
+                color: #ADB5BD;
+              }
+
+            }
+
+            .p-me {
+              float: right;
+
+              p {
+                background: #e5e1fa;
+                margin: 0 0.17rem 0 0.05rem;
+              }
+
+              .p-date {
+                //left: 0;
+              }
+            }
+
+            .p-he {
+              float: left;
+              display: flex;
+
+              p {
+                background: #f1f3f5;
+                margin: 0 0.12rem 0 0.17rem;
+              }
+
+              .p-date {
+                //right: 0;
+              }
+            }
+          }
+        }
+
+        .p-operation {
+          padding: 0.2rem 0.4rem 0.27rem;
+          overflow: hidden;
+          border-top: 1px solid #ced4da;
+
+          .p-words {
+            .head-img {
+              margin-right: 0.12rem;
+              vertical-align: top;
+            }
+
+            textarea {
+              width: 7.48rem;
+              height: 0.46rem;
+              line-height: 0.24rem;
+              font-size: 0.14rem;
+              border: 1px solid #979797;
+
+              resize: none;
+              outline: none;
+              padding: 0.05rem 0.12rem;
+            }
+          }
+
+          button {
+            border: none;
+            background: $balance-color;
+            color: $balance-white;
+            width: 0.68rem;
+            height: 0.32rem;
+            margin: 0.2rem 0 0;
+            outline: none;
+            float: right;
+            border-radius: 0.04rem;
+          }
+        }
+
+      }
+
+
+    }
+
+    // 私信列表
+    .private-content {
+      padding: 0;
+      min-height: 3.58rem;
+
+      .out-message {
+        position: relative;
+      }
+
+      .out-message:hover {
+        background: $limit-gray-bg-color;
+        cursor: pointer;
+
+        .message-button {
+          display: inline-block;
+        }
+      }
+
+      .private-single {
+        padding: 0.2rem 0;
+        position: relative;
+        margin: 0 0.4rem;
+        width: 8.07rem;
+        border-bottom: 1px solid #CED4DA;
+
+        .type {
+          width: 0.48rem;
+          height: 0.48rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .message {
+          color: $limit-detail-title-color;
+
+          .title {
+            font-size: 0.16rem;
+            height: 0.24rem;
+            line-height: 0.24rem;
+            margin: 0 0 0.03rem;
+
+            .fix {
+              color: $limit-gray-text !important;
+              font-size: 0.14rem;
+              margin: 0 0.16rem 0 0.12rem;
+            }
+
+            .date {
+              color: $balance-color-gray;
+              font-size: 0.12rem;
+            }
+          }
+
+          .detail {
+            line-height: 0.2rem;
+            max-width: 5.48rem;
+          }
+
+        }
+      }
+
+      .message-button {
+        margin: -0.75rem 0 0;
+        position: absolute;
+        right: 0.4rem;
+        display: none;
+
+        button {
+          //width: 0.5rem;
+          font-size: 0.14rem;
+          text-indent: 20px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .sixin {
+          margin: 0 0.2rem 0 0;
+          border: 0;
+          outline: none;
+          background: url(../images/message-center/ic_sixin.svg) transparent no-repeat left;
+        }
+
+        .delete {
+          border: 0;
+          outline: none;
+          background: url(../images/message-center/ic_shanchu.svg) transparent no-repeat left;
+        }
+      }
+    }
+
+    .private {
+      padding: 0;
+    }
+
+    .message-none {
+      display: none;
+    }
+  }
+
+}

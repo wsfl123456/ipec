@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_down">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M14,5.5 C14,5.22385763 13.7761424,5 13.5,5 C13.3705,5 13.2535,5.0505 13.16475,5.13125 L13.1635,5.13 L8,9.82425 L2.83625,5.13 L2.835,5.13125 C2.74369635,5.04711354 2.62415805,5.0002795 2.5,5 C2.22385763,5 2,5.22385763 2,5.5 C2,5.64675 2.06425,5.77725 2.16475,5.86875 L2.16375,5.87 L7.66375,10.87 L7.66475,10.86875 C7.7535,10.9495 7.8705,11 8,11 C8.1295,11 8.2465,10.9495 8.33525,10.8685 L8.3365,10.86975 L13.8365,5.86975 L13.83525,5.8685 C13.93575,5.77725 14,5.6465 14,5.5 Z" id="路径" fill="#6B7177"></path>
+            </g>
+        </g>
+    </g>
+</svg>

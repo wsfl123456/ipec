@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="80" cy="80" r="80" fill="#F760D5"/>
+        <text fill="#FFF" font-family="DINNextLTPro-Medium, DIN Next LT Pro" font-size="24" font-weight="400">
+            <tspan x="69.608" y="70">IP</tspan> <tspan x="32" y="94" font-family="PingFangSC-Medium, PingFang SC">社区经营</tspan>
+        </text>
+    </g>
+</svg>

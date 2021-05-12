@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>add</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2853FF" offset="0%"></stop>
+            <stop stop-color="#933EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="add">
+            <g id="添加-copy">
+                <g>
+                    <rect id="矩形" opacity="0" x="0" y="0" width="28" height="28"></rect>
+                    <path d="M20.3000168,15.2599764 L15.2600101,15.2599764 L15.2600101,20.2999831 L12.7399899,20.2999831 L12.7399899,15.2599764 L7.69998314,15.2599764 L7.69998314,12.7399562 L12.7399899,12.7399562 L12.7399899,7.69994946 L15.2600101,7.69994946 L15.2600101,12.7399562 L20.3000168,12.7399562 L20.3000168,15.2599764 Z M14,1.4 C7.07001178,1.4 1.4,7.0699781 1.4,14 C1.4,20.9300219 7.07001178,26.6 14,26.6 C20.9299882,26.6 26.6,20.9300219 26.6,14 C26.6,7.0699781 20.9300219,1.4 14,1.4 Z" id="形状" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

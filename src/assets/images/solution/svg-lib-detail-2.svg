@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="354" height="354" viewBox="0 0 354 354">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#8A54BE" d="M177 27C94.157 27 27 94.157 27 177h150V27z"/>
+        <path fill="#FF6B6B" d="M177 327c-82.843 0-150-67.157-150-150h150v150z"/>
+        <path fill="#C560EF" d="M177 27c82.843 0 150 67.157 150 150H177V27z"/>
+        <path fill="#F760D5" d="M177 327c82.843 0 150-67.157 150-150H177v150z"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(2 2)">
+            <tspan x="90" y="109">联合</tspan> <tspan x="90" y="137">调研</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(2 2)">
+            <tspan x="90" y="227">咨询</tspan> <tspan x="90" y="255">服务</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(2 2)">
+            <tspan x="220" y="109">定性</tspan> <tspan x="220" y="137">研究</tspan>
+        </text>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="20" transform="translate(2 2)">
+            <tspan x="220" y="227">定量</tspan> <tspan x="220" y="255">研究</tspan>
+        </text>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M32.395 78.408C13.215 106.484 2 140.432 2 177c0 30.364 7.733 58.923 21.338 83.813"/>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M23.826 85.634l8.57-7.226-3.616 10.61M66.575 312.769C96.694 337.296 135.13 352 177 352c39.447 0 75.846-13.052 105.114-35.073"/>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M73.055 321.915l-6.48-9.146 10.269 4.493M325.222 270.076C342.187 243.117 352 211.205 352 177c0-34.331-9.886-66.354-26.966-93.376"/>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M333.513 262.533l-8.29 7.543 3.212-10.738M276.087 32.734C247.915 13.348 213.783 2 177 2c-33.933 0-65.61 9.658-92.433 26.375"/>
+        <path stroke="#ADB5BD" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M268.89 24.14l7.197 8.594-10.598-3.65"/>
+    </g>
+</svg>

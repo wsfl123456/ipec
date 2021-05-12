@@ -1,0 +1,442 @@
+@import "var";
+
+.search-container {
+  width: 11.4rem;
+  min-height: 5rem;
+  margin: 0 auto;
+
+  .see-more, .is-no-result {
+    text-align: center;
+    font-size: 0.14rem;
+    margin-bottom: 0.2rem;
+    color: #6b7177;
+  }
+
+  .is-no-result {
+    font-size: 14px;
+    margin-top: .38rem;
+
+    span {
+      width: unset;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0.4rem;
+        height: 1px;
+        background: #888888;
+        position: absolute;
+        left: -50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0.4rem;
+        height: 1px;
+        background: #888888;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%) translateX(50%);
+
+      }
+    }
+  }
+
+  .loading-more {
+    width: 11.4rem;
+    background: #fff;
+    text-align: center;
+    font-size: 0.16rem;
+    color: #6b7177;
+    cursor: pointer;
+    margin: 0 auto;
+
+    img {
+      width: 1.5rem;
+    }
+  }
+
+  .tabOne, .tab-two, .tab-three {
+    width: 9rem;
+  }
+
+  .total-count {
+    margin: 0.2rem auto 0.2rem;
+
+    i {
+      color: $balance-color;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+
+  .search-content {
+    display: flex;
+
+    .tab-change {
+      height: 1.9rem;
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 1px 2px 2px #eee;
+      display: inline-block;
+      margin-right: 0.2rem;
+      vertical-align: top;
+
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+
+        li {
+          width: 2.2rem;
+          height: 0.64rem;
+          line-height: 0.64rem;
+          text-indent: 0.3rem;
+          cursor: pointer;
+        }
+
+        li:hover, .active:hover {
+          background: $balance-color;
+          color: #fff;
+        }
+
+        li.active {
+          color: $balance-color;
+          background: #fff;
+          border-left: $balance-button-purple-bold;
+        }
+      }
+    }
+
+    .tab-content {
+      display: inline-block;
+      width: 9rem;
+
+      .ip-t {
+        //width: 100%;
+        display: flex;
+        border-radius: 4px;
+        margin: 0 0 0.2rem 0;
+
+        .ip-type-list-parent {
+          margin: 0 0.2rem 0.1rem 0;
+        }
+
+        // .ip-type-list-parent:nth-child(5n) {
+        //   margin: 0 0 0 0;
+        // }
+
+        .ip-type-list {
+          position: relative;
+          cursor: pointer;
+          height: 2.68rem;
+          //overflow: hidden;
+          .ip-type-item {
+            display: flex;
+            overflow: unset;
+            position: relative;
+
+            .ip-type-img {
+              width: 1.8rem;
+              height: 2.4rem;
+              background: #F8F9FA;
+              border-radius: 6px;
+
+            }
+
+            .ipTypeSuperiorNumber {
+              position: absolute;
+              left: 0;
+              top: 0;
+              font-size: 0.12rem;
+              color: #6248ff;
+              text-align: center;
+              padding: .04rem .12rem;
+              background: hsla(0, 0%, 100%, .6);
+              border-radius: 0 0 .04rem 0;
+            }
+          }
+
+          .ip-type-item-text {
+            display: flex;
+            margin: 0.12rem 0 0 -0.18rem;
+
+            div {
+              height: 0.22rem;
+            }
+
+            .item-name {
+              color: $limit-title-color;
+              width: 120px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+            .item-name:hover {
+              width: auto;
+              white-space: normal;
+              cursor: pointer;
+              color: $balance-color;
+              margin-left: 0.02rem;
+            }
+
+            .item-dou {
+              img {
+                width: 0.16rem;
+                vertical-align: top;
+                padding-right: 0.05rem;
+              }
+
+              span {
+                font-size: 0.16rem;
+                color: #F59F00;
+                letter-spacing: 0;
+                margin-right: 0;
+                margin-left: 0.04rem;
+              }
+            }
+          }
+
+          .hover-show {
+            display: none;
+            //display: inline-flex;
+            width: 3rem;
+            height: 2.68rem;
+            padding: 0.28rem 0.2rem 0.28rem 0.16rem;
+            background: #FFFFFF;
+            box-shadow: 0 0 15px #9CACC0;
+            //box-shadow: 0 12px 32px 0 #9CACC0;
+            border-radius: 0 6px 6px 0;
+            position: absolute;
+            left: 2.01rem;
+            top: 0;
+            z-index: 99;
+            overflow: hidden;
+
+            .hover-content {
+              overflow: hidden;
+
+              .left-content {
+                display: inline-block;
+
+                .hover-type-name.name {
+                  font-size: 0.2rem;
+                  color: #343A40;
+                  margin-bottom: 0.14rem;
+                }
+
+                .hover-type-name:first-child {
+                }
+
+                .hover-type-name {
+                  font-size: 12px;
+                  color: #6B7177;
+                  width: 2.21rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+
+                  span {
+                    font-size: 12px;
+                    color: #6B7177;
+                  }
+                }
+
+                .hover-type {
+                  margin-top: 0.24rem;
+
+                  span {
+                    display: inline-block;
+                    border: $balance-border;
+                    border-radius: 2px;
+                    height: 0.24rem;
+                    line-height: 0.24rem;
+                    padding: 0 0.05rem;
+                    margin-right: 0.08rem;
+                    cursor: pointer;
+                    color: $balance-color;
+                  }
+
+                }
+
+              }
+
+              .right-icon {
+                vertical-align: top;
+                float: right;
+              }
+            }
+
+          }
+
+        }
+
+        .ip-type-list:last-child {
+          margin: 0 0 0.12rem 0;
+        }
+
+        .case-introduce:nth-child(3n) {
+          margin: 0 0 0.3rem;
+        }
+
+        .case-introduce {
+          width: 2.95rem;
+          position: relative;
+          display: inline-block;
+          margin: 0 0.05rem 0.3rem 0;
+
+          .case-top {
+            width: 2.95rem;
+            height: 1.95rem;
+            display: inline-block;
+            background: #e5e5e5;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .case-bottom {
+            width: 2.95rem;
+            background-color: #f8f8f8;
+
+            .case-img {
+              width: 0.6rem;
+              height: 0.8rem;
+
+              img {
+                width: 100%;
+                height: 100%;
+                margin: 0.2rem 0 0.2rem 0.16rem;
+              }
+            }
+
+            .case-word {
+              height: 1rem;
+
+              .title {
+                font-size: 0.16rem;
+                font-weight: 500;
+                width: 1.9rem;
+                height: 0.44rem;
+                color: #343a40;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-left: 0.896rem;
+                margin-top: -0.6rem;
+              }
+
+              .bottom-title {
+                height: 0.2rem;
+                line-height: 0.2rem;
+                display: flex;
+                justify-content: space-between;
+                margin: 0.17rem 0.2rem 0 0.896rem;
+
+                .count {
+                  color: #343A40;
+                  font-size: 0.14rem;
+                }
+
+                .active:before {
+                  color: #FB3D3D;
+                }
+
+                .iconic_praise:before {
+                  margin: 0 0.04rem 0 0;
+                  font-size: 0.16rem;
+                }
+
+                .span-one {
+                  font-size: 0.12rem;
+                  color: #6b7177;
+                  margin-left: 0.6rem;
+                }
+
+                .span-two {
+                  font-size: 0.12rem;
+                  color: #adb5bd;
+                }
+              }
+            }
+          }
+        }
+
+        .case-introduce:hover {
+          cursor: pointer;
+          box-shadow: 0 2px 0.1rem 0 #adb5bd;
+          animation-name: anmitop;
+          animation-duration: 0.3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+
+        .company-type {
+          width: 1.8rem;
+          height: 1.8rem;
+          position: relative;
+          margin-bottom: 0.5rem;
+          background: #F8F9FA;
+          border: 1px solid #E5E5E5;
+          border-radius: 6px;
+          margin-right: 0.1rem;
+          cursor: pointer;
+
+          .company-title {
+            position: absolute;
+            width: 1.8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            bottom: -0.4rem;
+          }
+
+          .company-title:hover {
+            height: auto;
+            white-space: normal;
+          }
+        }
+
+        .cooperate-img {
+          display: inline-block;
+          width: 100%;
+          max-height: 1.8rem;
+          transform: translate(0, -50%); // 图片垂直居中！
+          position: absolute;
+          top: 50%;
+        }
+
+        @keyframes anmitop {
+          from {
+            top: 0;
+          }
+          to {
+            top: -0.1rem;
+          }
+        }
+
+      }
+
+      .loading-more {
+        width: 100%;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        font-size: 0.16rem;
+        color: rgb(107, 113, 119);
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+        margin: 0.19rem auto 0.8rem;
+      }
+    }
+  }
+}

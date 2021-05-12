@@ -1,0 +1,97 @@
+@import "var";
+
+.address-content {
+  background: $balance-white;
+  color: $default-gray;
+  font-size: 0.14rem;
+
+  .content-title {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-bottom: $balance-model-border;
+    font-size: 0.16rem;
+    font-weight: bold;
+    padding-left: 0.4rem;
+  }
+
+  .content-box {
+    padding: 0.24rem 0.4rem 0.45rem;
+
+    .content-box-header {
+      display: flex;
+
+      .header-button {
+        display: inline-block;
+        width: 1.8rem;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        font-size: 0.16rem;
+        color: $balance-white;
+        cursor: pointer;
+        border-radius: 0.04rem;
+        text-align: center;
+        background: $balance-button-active;
+      }
+
+      p {
+        color: $balance-color-9;
+        line-height: 0.2rem;
+
+        i {
+          font-style: normal;
+          color: $balance-color;
+        }
+      }
+    }
+
+    .content-box-frame{
+      padding: 0.17rem 0.25rem  0.19rem;
+      margin: 0.24rem 0 0;
+      border: $balance-model-border;
+      p{
+       color: $balance-color-9;
+        line-height: 0.2rem;
+        margin-bottom: 0.1rem;
+        span{
+          color: $default-gray;
+          margin-left: 0.1rem;
+        }
+        &:first-child{
+          font-weight: bold;
+          color: $default-gray;
+          margin-bottom: 0.12rem;
+          font-size: 0.16rem;
+          span{
+            font-weight: normal;
+            background: $balance-color-9;
+            color: $balance-white;
+            margin: 0 0 0 0.2rem;
+            height: 0.24rem;
+            line-height: 0.24rem;
+            padding: 0 0.08rem;
+            border-radius: 0.02rem;
+          }
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      div{
+        display: flex;
+        color: $balance-color-9;
+        span{
+          color: $default-gray;
+        }
+        .frame-operation{
+          span{
+            cursor: pointer;
+            color: $balance-color;
+          }
+
+        }
+      }
+
+    }
+  }
+
+}

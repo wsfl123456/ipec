@@ -1,0 +1,304 @@
+@import 'var';
+
+li {
+  list-style: none;
+}
+
+.ecosphere-container {
+  .no-result {
+    margin: 0.45rem 0 0.7rem;
+    text-align: center;
+
+    p {
+      color: $limit-gray-text;
+      margin: 0.3rem 0;
+    }
+  }
+
+  .no-result {
+    text-align: center;
+  }
+
+  .ecosphere-content {
+    width: 100%;
+    font-size: 0.14rem;
+    font-weight: normal;
+    text-align: left;
+    color: #343A40;
+    background: #F8F9FA;
+    min-height: 4.97rem;
+
+    .type-tab {
+      line-height: 0.42rem;
+      height: 0.42rem;
+      width: 11.4rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-bottom: 0.08rem;
+
+      span {
+        display: inline-block;
+        height: 0.42rem;
+        margin-right: 0.4rem;
+        color: #343A40;
+        cursor: pointer;
+      }
+
+      .active {
+        color: $balance-color;
+        border-bottom: $balance-button-purple-bold;
+        box-sizing: border-box;
+        height: 0.42rem;
+      }
+    }
+
+    .tab-content {
+      background: #fff;
+      padding: 0.4rem 0 0.56rem;
+
+      .tab-list {
+        line-height: 0.28rem;
+        width: 11.4rem;
+        margin: 0 auto 0.08rem;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        .user-card-parent:nth-child(5n), .person-card-parent:nth-child(5n) {
+          .user-card, .person-card {
+
+            margin-right: 0;
+          }
+        }
+
+        .user-card {
+          position: relative;
+          width: 2.7rem;
+          height: 3.05rem;
+          background: #FFFFFF;
+          box-sizing: border-box;
+          border: 1px solid #E5E5E5;
+          border-radius: 6px;
+          display: inline-block;
+          margin: 0.61rem 0.2rem 0 0;
+          padding: 0 0.16rem;
+          text-align: center;
+          letter-spacing: 0;
+
+          .name {
+            height: 0.25rem;
+            line-height: 0.25rem;
+            font-size: 0.18rem;
+            color: $balance-color;
+            font-weight: 500;
+            margin: 0.72rem 0 0.02rem;
+          }
+
+          .name:hover {
+            height: auto;
+            white-space: normal;
+          }
+
+          .position {
+            height: 0.17rem;
+            line-height: 0.17rem;
+            font-size: 0.12rem;
+            color: #999;
+            margin-bottom: 0.15rem;
+          }
+
+          .introduce {
+            width: 2.38rem;
+            font-size: 14px;
+            color: #6B7177;
+            letter-spacing: 0;
+            line-height: 0.2rem;
+            margin: 0;
+          }
+
+          img {
+            position: absolute;
+            width: 1.22rem;
+            height: 1.22rem;
+            top: -0.61rem;
+            left: 0.74rem;
+            border-radius: 50%;
+          }
+        }
+
+        .person-card {
+          width: 2.12rem;
+          text-align: center;
+          display: inline-block;
+          margin: 0 0.2rem 0 0;
+
+          img {
+            width: 2.12rem;
+            height: 2.12rem;
+            border-radius: 50%;
+            display: block;
+          }
+          img:hover{
+            cursor: pointer;
+          }
+
+
+          .name {
+            height: 0.25rem;
+            line-height: 0.25rem;
+            margin: 0.2rem 0 0.05rem;
+            color: #343A40;
+            font-weight: bold;
+            font-size: 0.18rem;
+          }
+
+          .name:hover {
+            height: auto;
+            white-space: normal;
+          }
+
+          .position {
+            font-size: 0.14rem;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            margin-bottom: 0.15rem;
+          }
+        }
+
+        .cooperate-img {
+          display: inline-block;
+          width: 100%;
+          max-height: 1.8rem;
+          transform: translate(0, -50%); // 图片垂直居中！
+          position: absolute;
+          top: 50%;
+        }
+
+        .company-type {
+          width: 1.8rem;
+          height: 1.8rem;
+          position: relative;
+          margin-bottom: 0.5rem;
+          background: #F8F9FA;
+          border: 1px solid #E5E5E5;
+          border-radius: 6px;
+          margin-right: 0.1rem;
+          cursor: pointer;
+
+          .company-title {
+            position: absolute;
+            width: 1.8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            bottom: -0.4rem;
+          }
+
+          .company-title:hover {
+            height: auto;
+            white-space: normal;
+          }
+        }
+
+        .loading-more {
+          width: 100%;
+          margin: 0.1rem 0 0;
+          text-align: center;
+          font-size: 0.14rem;
+          color: #888;
+
+          img {
+            width: 1.2rem;
+          }
+        }
+
+        .is-no-result {
+          width: 100%;
+          font-size: 14px;
+          color: #888888;
+          text-align: center;
+          margin-bottom: 0;
+          margin-top: .38rem;
+
+          span {
+            width: unset;
+            position: relative;
+
+            &::before {
+              content: '';
+              display: block;
+              width: 0.4rem;
+              height: 1px;
+              background: #888888;
+              position: absolute;
+              left: -50%;
+              top: 50%;
+              transform: translateY(-50%) translateX(-50%);
+            }
+
+            &::after {
+              content: '';
+              display: block;
+              width: 0.4rem;
+              height: 1px;
+              background: #888888;
+              position: absolute;
+              left: 100%;
+              top: 50%;
+              transform: translateY(-50%) translateX(50%);
+
+            }
+          }
+        }
+
+      }
+    }
+
+    /* 企业筛选条件*/
+    .type-list {
+      width: 100%;
+      font-size: 0.14rem;
+      background: #F8F9FA;
+
+      .type-content {
+        width: 11.4rem;
+        height: 0.8rem;
+        margin: 0 auto;
+        display: flex;
+        border-top: solid 1px #CED4DA;
+        padding: 0.13rem 0;
+
+        span {
+          font-size: 0.14rem;
+          color: #9B9B9B;
+          width: 0.9rem;
+          //margin-top: 0.18rem;
+        }
+
+        .type-ul {
+          display: flex;
+          font-size: 0.14rem;
+          color: #666666;
+          flex-wrap: wrap;
+
+          li {
+            padding: 0.05rem 0.1rem;
+            height: 0.3rem;
+            cursor: pointer
+          }
+
+          li:hover, .active {
+            cursor: pointer;
+            color: #6248FF;
+            background: #E9ECEF;
+            border-radius: 2px;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+

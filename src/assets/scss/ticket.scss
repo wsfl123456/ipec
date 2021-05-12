@@ -1,0 +1,135 @@
+@import "var";
+
+.ticket-box {
+  .tic-content {
+    width: 11.4rem;
+    margin: 0 auto;
+    padding: 0;
+
+    .img-top {
+      width: 11.4rem;
+      height: 2.56rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .form-table {
+      margin-top: 0.4rem;
+
+      .title {
+        font-size: 0.24rem;
+        color: #343A40;
+
+        .word {
+          font-size: 0.14rem;
+          color: #868E96;
+          margin-left: 0.1rem;
+
+          .star {
+            font-size: 0.14rem;
+            color: #FF6666;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .change {
+        margin-top: 0.24rem;
+
+        .input-label {
+          font-size: 0.16rem;
+          color: #343A40;
+          width: 100%;
+          margin-bottom: 0.12rem;
+
+          .case-hot {
+            font-size: 0.16rem;
+            color: #f760d5;
+          }
+
+        }
+
+        .group {
+          margin-left: 0.15rem;
+
+          .check-box {
+            display: flex;
+            flex-wrap: wrap;
+
+            .check-row {
+              width: 3.2rem;
+            }
+          }
+        }
+
+        .input-radio {
+          .lab-input {
+            width: 11rem;
+            margin-top: 0.1rem;
+            height: 0.46rem;
+          }
+        }
+
+        .table-label {
+          font-size: 0.16rem;
+          color: #6B7177;
+
+          .case-hot {
+            font-size: 0.16rem;
+            color: #f760d5;
+          }
+        }
+
+        .table-form {
+          width: 4rem;
+          height: 0.46rem;
+          margin-right: 0.24rem;
+        }
+
+        .ant-select-selection {
+          height: 0.46rem;
+        }
+
+        .ant-select-selection__rendered {
+          margin-top: 0.07rem;
+        }
+      }
+
+      .add {
+        margin-top: 0.24rem;
+        display: flex;
+        cursor: pointer;
+
+        img {
+          width: 0.15rem;
+          height: 0.15rem;
+        }
+
+        .more-people {
+          font-size: 0.14rem;
+          color: #6B7177;
+          margin-left: 0.04rem;
+          margin-top: -0.03rem;
+        }
+      }
+
+      .btn {
+        width: 100%;
+
+        .btn-submit {
+          background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+          border-radius: 4px;
+          font-size: 0.16rem;
+          color: #fff;
+          text-align: center;
+          width: 2.4rem;
+          height: 0.48rem;
+          margin: 0.9rem auto 0.5rem;
+          outline: none;
+        }
+      }
+    }
+  }
+}

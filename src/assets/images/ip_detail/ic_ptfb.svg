@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_ptfb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2853FF" offset="0%"></stop>
+            <stop stop-color="#933EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_ptfb">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="1" y="3" width="16" height="16"></rect>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <path d="M10,0 C15.5241431,7.11076043e-16 20,4.47835877 20,10 C20,15.5216412 15.5216412,20 10,20 C4.47835877,20 0,15.5216412 0,10 C0,4.47835877 4.47835877,0 10,0 Z M4,10.7869837 C4,13.9123905 6.44055069,16.4430538 9.45481852,16.4430538 C12.4690864,16.4430538 14.909637,13.9123905 14.909637,10.7869837 L9.45331665,10.7869837 L9.45331665,5.13091364 C6.44055069,5.13091364 4,7.66157697 4,10.7869837 Z M16,9.65607009 C16,6.53066333 13.5594493,4 10.5451815,4 L10.5451815,9.65607009 L16,9.65607009 Z" id="合并形状" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>attestation1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-16.9524658%" id="linearGradient-1">
+            <stop stop-color="#9B7EFF" offset="0%"></stop>
+            <stop stop-color="#6248FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M15.74625,2.61750001 L14.967,2.60475001 C14.949,2.60475001 13.2015,2.56875001 11.39775,1.87125001 C9.54675,1.15425002 8.35425,0.332250012 8.343,0.324000018 L7.87275,0 L7.40475,0.324750006 C7.3935,0.332249994 6.201,1.15500001 4.35000001,1.87124999 C2.54775001,2.57025001 0.799500006,2.60474999 0.783,2.60474999 L0,2.61750001 L0,10.18425 C0,13.983 5.121,18 7.87424999,18 C10.62975,18 15.75,13.983 15.75,10.18425 L15.74625,2.61750001 Z M5.53299999,13.57875 L5.53299999,6.24749999 L4.834,6.24749999 L4.834,5.58075001 L7.62999999,5.58075001 L7.62999999,8.91375001 L11.149,5.58075001 L13.921,5.58075001 L5.53299999,13.57875 Z" id="path-2"></path>
+    </defs>
+    <g id="个人中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VIP会员主页" transform="translate(-400.000000, -326.000000)">
+            <g id="attestation1" transform="translate(400.000000, 326.000000)">
+                <rect id="矩形" x="0" y="0" width="40" height="40"></rect>
+                <ellipse id="Oval-2" fill="url(#linearGradient-1)" cx="19.6508361" cy="20.3418803" rx="17.0923077" ry="17.0940171"></ellipse>
+                <g id="认证" transform="translate(11.000000, 12.000000)">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="1" width="16" height="16"></rect>
+                    <g id="矩形" transform="translate(1.000000, 0.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="#CCC4FF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                        <rect fill="#A597FB" mask="url(#mask-3)" x="7.875" y="-2.25" width="9" height="22.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

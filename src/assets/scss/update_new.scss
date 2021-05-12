@@ -1,0 +1,995 @@
+@import "var";
+
+//antd-img-crop
+.antd-img-crop-modal {
+  .antd-img-crop-container{
+    height: 3.6rem;
+  }
+  .ant-modal-footer,.ant-modal-header{
+    .ant-modal-title{
+      font-weight: bold;
+      font-size: 16px;
+      color: #495057;
+    }
+    text-align: center;
+  }
+  .ant-btn{
+    width: 1.48rem;
+    height: 0.48rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    border: 1px solid #6248ff;
+    color: #6248ff;
+  }
+  .ant-btn-primary{
+    background: #6248ff;
+    color: #fff;
+  }
+}
+
+.update-new-body {
+  background: #e9ecef;
+
+  .update_new-container {
+    width: 11.4rem;
+    margin: 0 auto 0;
+    padding-bottom: 0.26rem;
+    padding-top: 0.6rem;
+
+    // 左边上传封面IP
+    .update_newLeft {
+      display: inline-block;
+      width: 2.4rem;
+      margin-right: 0.25rem;
+      vertical-align: top;
+
+      .leftUpload {
+        width: 2.4rem;
+        height: 3.2rem;
+        background: #FFFFFF;
+        border-radius: 0.06rem;
+        padding: 0.2rem;
+        position: relative;
+        overflow: hidden;
+
+        .leftUploadIn {
+          width: 2.0rem;
+          height: 2.8rem;
+          border-radius: 6px;
+          border: 1px dashed #ced4da;
+          font-size: 0.16rem;
+          color: #ced4da;
+          padding-top: 1.19rem;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        img {
+          pointer-events: none;
+          height: 3.2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
+
+        .leftUploadInput {
+          position: absolute;
+          top: 0.2rem;
+          left: 0.2rem;
+          width: 2rem;
+          height: 2.8rem;
+          background: red;
+          opacity: 0;
+          .ant-upload-list{
+             display: none;
+          }
+        }
+      }
+
+      .leftUploadTest {
+        font-size: 0.14rem;
+        color: #ADB5BD;
+        margin: 0.17rem auto;
+      }
+    }
+
+    // 右边详细信息上传
+    .update_newRight {
+      display: inline-block;
+      width: 8.75rem;
+      vertical-align: top;
+
+      // 通用样式
+      .rightIPName, .rightIPKinds, .rightIPCopyright, .rightIPImage, .rightIPCase,
+      .rightIPDetails, .rightIPInvestment, .rightIPReadAndAgree,
+      .rightIPUpload,.rightSocialPlatform {
+        border-radius: 0.06rem;
+        background-color: #fff;
+        padding: 0.4rem 0.4rem 0.16rem 0.4rem;
+        margin-bottom: 0.24rem;
+
+        .labelTitle {
+          font-size: 0.16rem;
+          color: #6B7177;
+          font-weight: bold;
+          margin-bottom: 0.12rem;
+          position: relative;
+          overflow: hidden;
+
+          span {
+            color: #f760d5;
+          }
+          .img-mark{
+            width: 0.16rem;
+            height: 0.16rem;
+            margin-left: 0.04rem;
+            cursor: pointer;
+          }
+          .img-mark:hover + .hover-box{
+            display: inline-block;
+          }
+          .hover-box {
+            font-weight: 400;
+            z-index: 99;
+            width: 6.6rem;
+            position: absolute;
+            top: 0;
+            left:1.9rem;
+            font-size: 0.12rem;
+            line-height: 0.24rem;
+            padding: 0.05rem;
+            color: #fff;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 0.04rem;
+            background: rgba(0, 0, 0, .4);
+            display: none;
+          }
+
+          .add-repeat{
+            float: right;
+            font-size: 0.14rem;
+            color: $balance-word-purple;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            .img-add{
+              width: 0.14rem;
+              height: 0.14rem;
+              margin: 0 0.07rem 0 0 ;
+            }
+          }
+        }
+
+        .select-groups{
+          //display: flex;
+          //align-items: center;
+          .u-line{
+            display: inline-block;
+            width: 0.13rem;
+            height: 0.01rem;
+            background: $limit-header-font-color;
+            margin: 0 0.05rem 0;
+            vertical-align: middle;
+          }
+          .u-close{
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.14rem;
+            height: 0.14rem;
+            cursor: pointer;
+            margin: 0 0 0 0.15rem;
+          }
+        }
+        .antdInput-w540 {
+          width: 5.4rem;
+        }
+
+        .antdInput-w250 {
+          width: 2.5rem;
+          // display: inline-block;
+        }
+        .antdInput-w240{
+          width: 2.4rem;
+        }
+
+        .ant-input {
+          height: 0.48rem;
+          margin-bottom: 0.24rem;
+
+          &:hover {
+            box-shadow: none !important;
+            border-color: #9013fe !important;
+          }
+
+          &:focus {
+            border-color: #9013fe;
+          }
+        }
+
+        .ant-radio {
+          --antd-wave-shadow-color: #9013fe;
+
+          .ant-radio-inner:hover {
+            border-color: #9013fe;
+          }
+        }
+
+        .ant-radio-checked {
+          &:after {
+            border: 1px solid #9013fe;
+          }
+
+          .ant-radio-inner {
+            border-color: #9013fe;
+
+            &:after {
+              background-color: #9013fe;
+            }
+          }
+        }
+
+        .ant-checkbox {
+          --antd-wave-shadow-color: #9013fe;
+
+          .ant-checkbox-inner {
+
+          }
+        }
+
+        .ant-checkbox-checked {
+          // border: 1px solid #9013fe;
+          &:after {
+
+          }
+
+          .ant-checkbox-inner {
+            background-color: #9013fe;
+            border-color: #9013fe;
+          }
+        }
+
+        .ant-select {
+
+          margin-bottom: 0.24rem;
+
+          .ant-select-selection {
+            min-height: 0.48rem;
+            padding-top: 0.04rem;
+
+            &:hover {
+              box-shadow: none !important;
+              border-color: #9013fe !important;
+            }
+
+            &:focus {
+              border-color: #9013fe;
+            }
+
+            .ant-select-selection__rendered {
+              &:hover {
+                box-shadow: none !important;
+                border-color: #9013fe !important;
+              }
+
+              &:focus {
+                border-color: #9013fe;
+              }
+            }
+          }
+
+        }
+
+
+      }
+
+      // IP名称 IP分类 IP简介
+      .rightIPName {
+
+        .IPListRadioGroup {
+          margin-bottom: 0.12rem;
+
+          .IPListRadio {
+            margin-bottom: 0.12rem;
+            width: 1.15rem;
+          }
+        }
+
+        .IpListChildRadioGroup {
+          width: 100%;
+          background: #f8f9fa;
+          border: 1px solid #ced4da;
+          border-radius: 6px;
+          padding: 0.16rem 0.14rem 0.04rem;
+          margin-bottom: 0.12rem;
+
+          .IPListChildRadio {
+            margin-bottom: 0.12rem;
+            width: 1.15rem;
+          }
+        }
+      }
+
+      // IP类型 IP所属国家地区 等 组件
+      .rightIPKinds {
+        .labelTitle {
+          span.duanxuan {
+            font-size: 0.14rem;
+            color: #adb5bd;
+            line-height: 0.24rem;
+          }
+        }
+
+        .labelBox{
+          margin:-0.12rem  0 0.24rem  ;
+          span{
+             display: inline-block;
+             color: $light-gray;
+             margin:0  0.2rem 0 0 ;
+             font-size: 0.14rem;
+             line-height: 0.24rem;
+            cursor: pointer;
+           }
+         }
+
+        .rightIPKindsCheckboxGroup {
+          text-align: left;
+          margin-bottom: 0.12rem;
+
+          .rightIPKindsCheckbox {
+            margin-bottom: 0.12rem;
+            // width: 0.88rem;
+            margin-left: 0;
+            margin-right: 0.15rem;
+          }
+        }
+
+        .rightIPReleased {
+          display: block;
+
+          .anticon-calendar {
+            font-size: 0.2rem;
+            top: 0.19rem;
+            right: 0.2rem;
+          }
+        }
+
+        .div-w40 {
+          width: 0.40rem;
+          text-align: center;
+          display: inline-block;
+          font-size: 0.16rem;
+          color: #6B7177;
+        }
+
+        .ant-calendar-picker {
+
+          .ant-calendar-picker-clear {
+            top: calc(50% - 0.12rem);
+            right: 0.5rem;
+          }
+        }
+
+      }
+
+      // IP版权方 -- 可授权截止时限
+      .rightIPCopyright {
+
+        .isTransferableRadioGroup {
+          margin-bottom: 0.24rem;
+        }
+
+        .ant-calendar-picker {
+
+          .anticon-calendar {
+            font-size: 0.2rem;
+            top: 0.19rem;
+            right: 0.2rem;
+          }
+
+          .ant-calendar-picker-clear {
+            top: calc(50% - 0.12rem);
+            right: 0.5rem;
+          }
+        }
+      }
+
+      // IP素材图库
+      .rightIPImage {
+        padding-bottom: 0.32rem;
+
+        .rightIPImageTop {
+          font-size: 0.16rem;
+          color: #6B7177;
+          //margin-bottom: 0.08rem;
+
+          .leftTitle {
+            display: inline-block;
+            font-weight: bold;
+            .notice {
+              font-size: 0.14rem;
+              color: #adb5bd;
+              font-weight: normal;
+              margin: 0 0 0 0.06rem;
+            }
+          }
+
+          .rightTitle {
+            color: #6B7177;
+            float: right;
+            display: inline-block;
+            cursor: pointer;
+
+            i {
+              margin-left: 0.07rem;
+              font-size: 0.14rem;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .rightIPImageBtm {
+          //border-top: 1px solid #ccc;
+          margin-bottom: 0.08rem;
+
+
+          .notice {
+            font-size: 0.14rem;
+            color: #adb5bd;
+            margin: 0.15rem 0;
+          }
+
+          //.rightIPImageUploadBox {
+            .rightIPImageUpload {
+              display: inline-block;
+              vertical-align: top;
+              //width: 1.80rem;
+              margin-right: 0.15rem;
+              // ant-img-crop 组件更改
+              .ant-upload.ant-upload-select-picture-card{
+                border: none;
+                background: none;
+              }
+              .ant-upload-list-picture-card-container,
+              .ant-upload-list-picture-card .ant-upload-list-item{
+                width: 1.8rem;
+                height: 1.8rem;
+              }
+              .ant-upload-list-picture-card .ant-upload-list-item-info{
+                border-radius: 0.06rem;
+              }
+              .ant-upload-list-item{
+                width: 1.8rem;
+                height: 1.8rem;
+                margin: 0.2rem 0 0;
+              }
+              .ant-upload-list-picture-card .ant-upload-list-item-error,
+              .ant-upload-list-picture .ant-upload-list-item-error{
+                border: none;
+              }
+              .anticon-eye-o{
+                display:none;
+              }
+
+              .upload-box {
+                background-color: #f8f9fa;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 0.06rem;
+                margin: 0.2rem 0 0;
+                padding: 0.1rem;
+
+                position: relative;
+                color: #ced4da;
+                .icon-detail{
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 9;
+                  margin: 0;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%,-50%);
+                }
+                &:hover {
+                  background-color: #494153;
+                  //border: 1px dashed transparent;
+                  color: #fff;
+                  .icon-detail{
+                    opacity: 1;
+                  }
+                }
+                .border-box{
+                  width: 1.6rem;
+                  height: 1.6rem;
+                  border: 1px dashed $balance-color-gray;
+                  border-radius: 6px;
+                }
+
+                i {
+                  font-size: 0.28rem;
+                  margin-top: 0.47rem;
+                }
+
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  pointer-events: none;
+                }
+
+                .upload-box-file {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  opacity: 0;
+                }
+
+                .upload-box-text {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  padding-top: 0.86rem;
+                }
+              }
+
+              .upload-Input {
+                width: 1.8rem;
+                height: 0.48rem;
+                margin-top: 0.15rem;
+                line-height: 0.24rem;
+                margin-bottom: 0;
+              }
+            }
+          //}
+        }
+      }
+
+      // 衍生品/合作案例
+      .rightIPCase {
+        padding-bottom: 0.32rem;
+
+        .rightIPCaseTop {
+          font-size: 0.16rem;
+          color: #6B7177;
+          // position: relative;
+          //margin-bottom: 0.08rem;
+
+          .leftTitle {
+            display: inline-block;
+            font-weight: bold;
+            .notice {
+              font-size: 0.14rem;
+              font-weight: normal;
+              color: #adb5bd;
+              margin:0 0 0 0.06rem;
+            }
+          }
+
+          .rightTitle {
+            color: #6B7177;
+            float: right;
+            display: inline-block;
+            cursor: pointer;
+
+            i {
+              margin-left: 0.07rem;
+              font-size: 0.14rem;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .rightIPCaseBtm {
+          //border-top: 1px solid #ccc;
+          margin-bottom: 0.08rem;
+
+          .notice {
+            font-size: 0.14rem;
+            color: #adb5bd;
+            margin: 0.15rem 0;
+          }
+
+          //.rightIPCaseUploadBox {
+            .rightIPCaseUpload {
+              display: inline-block;
+              vertical-align: top;
+              //width: 1.80rem;
+              margin-right: 0.15rem;
+              // ant-img-crop 组件更改
+              .ant-upload.ant-upload-select-picture-card{
+                border: none;
+                background: none;
+              }
+              .ant-upload-list-picture-card-container,
+              .ant-upload-list-picture-card .ant-upload-list-item{
+                width: 1.8rem;
+                height: 1.8rem;
+              }
+              .ant-upload-list-picture-card .ant-upload-list-item-info{
+                border-radius: 0.06rem;
+              }
+              .ant-upload-list-item{
+                width: 1.8rem;
+                height: 1.8rem;
+                margin: 0.2rem 0 0;
+              }
+              .ant-upload-list-picture-card .ant-upload-list-item-error,
+              .ant-upload-list-picture .ant-upload-list-item-error{
+                border: none;
+              }
+              .anticon-eye-o{
+                display:none;
+              }
+
+              .upload-box {
+                background-color: #f8f9fa;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 0.06rem;
+                margin: 0.2rem 0 0;
+                padding: 0.1rem;
+
+                position: relative;
+                color: #ced4da;
+                .icon-detail{
+                  opacity: 0;
+                  position: absolute;
+                  z-index: 9;
+                  margin: 0;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%,-50%);
+                }
+                &:hover {
+                  background-color: #494153;
+                  //border: 1px dashed transparent;
+                  color: #fff;
+                  .icon-detail{
+                    opacity: 1;
+                  }
+                }
+                .border-box{
+                  width: 1.6rem;
+                  height: 1.6rem;
+                  border: 1px dashed $balance-color-gray;
+                  border-radius: 6px;
+                }
+
+                i {
+                  font-size: 0.28rem;
+                  margin-top: 0.47rem;
+                }
+
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  pointer-events: none;
+                }
+
+                .upload-box-file {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  opacity: 0;
+                }
+
+                .upload-box-text {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  padding-top: 0.86rem;
+                }
+              }
+
+              .upload-Input {
+                width: 1.8rem;
+                height: 0.48rem;
+                margin-top: 0.15rem;
+                line-height: 0.24rem;
+                margin-bottom: 0;
+              }
+            }
+          //}
+        }
+      }
+
+      // 图文详情
+      .rightIPDetails {
+        padding: 0.40rem;
+
+        .rightIPDetailsTitle {
+          font-size: 0.16rem;
+          color: #6b7171;
+          font-weight: bold;
+          margin-bottom: 0.15rem;
+        }
+
+        .rightIPDetailsText {
+          font-size: 0.14rem;
+          color: #ADB5BD;
+          margin-bottom: 0.15rem;
+        }
+      }
+
+      // 招商资料
+      .rightIPInvestment {
+        margin-bottom: 0;
+        position: relative;
+
+        .rightIPInvestmentTitle {
+          font-size: 0.16rem;
+          color: #6B7177;
+          font-weight: bold;
+          margin-bottom: 0.15rem;
+        }
+
+        .rightIPInvestmentText {
+          font-size: 0.14rem;
+          color: #ADB5BD;
+          margin-bottom: 0.15rem;
+        }
+
+        .rightIPInvestmentBtn {
+          position: absolute;
+          top: 0.35rem;
+          right: 0.40rem;
+          background-color: #6248FF;
+          width: 1.00rem;
+          height: 0.32rem;
+          line-height: 0.32rem;
+          color: #fff;
+          font-size: 0.14rem;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 0.06rem;
+        }
+
+        .rightIPInvestmentBtnFile {
+          position: absolute;
+          top: 0.35rem;
+          right: 0.40rem;
+          width: 1.00rem;
+          height: 0.32rem;
+          cursor: pointer;
+          opacity: 0;
+        }
+
+        .rightIPInvestmentTable {
+          // border: 1px solid #E9ECEF;
+          color: #6B7177;
+          margin-bottom: 0.15rem;
+
+          .tableTitle {
+            border: 1px solid #E9ECEF;
+            line-height: 0.32rem;
+            font-size: 0.12rem;
+
+            .tableTitle1 {
+              width: 3.56rem;
+              padding-left: 0.24rem;
+              border-right: 1px solid #E9ECEF;
+              display: inline-block;
+            }
+
+            .tableTitle2 {
+              width: 2.80rem;
+              padding-left: 0.24rem;
+              border-right: 1px solid #E9ECEF;
+              display: inline-block;
+            }
+
+            .tableTitle3 {
+              padding-left: 0.24rem;
+              display: inline-block;
+            }
+          }
+
+          .tableText {
+            font-size: 0.14rem;
+            border-left: 1px solid #E9ECEF;
+            border-right: 1px solid #E9ECEF;
+            border-bottom: 1px solid #E9ECEF;
+            line-height: 0.48rem;
+
+            .tableText1 {
+              width: 3.56rem;
+              padding-left: 0.24rem;
+              border-right: 1px solid #E9ECEF;
+              display: inline-block;
+            }
+
+            .tableText2 {
+              width: 2.80rem;
+              padding-left: 0.24rem;
+              border-right: 1px solid #E9ECEF;
+              display: inline-block;
+            }
+
+            .tableText3 {
+              padding-left: 0.24rem;
+              display: inline-block;
+
+              span {
+                margin-right: 0.2rem;
+                color: #4A90E2;
+                cursor: pointer;
+
+                &:hover {
+                  color: #8a54be;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 上传资料
+      .rightIPUpload {
+        margin: 0.24rem auto 0;
+        border-radius: 0.06rem 0.06rem 0 0;
+        padding: 0.4rem 0.4rem 0.1rem;
+
+        .rules_Tip {
+          padding: 0.1rem 0.11rem;
+          font-size: 0.14rem;
+          color: #FF6666;
+          letter-spacing: 0;
+          background: #FBFBFC;
+          border: 1px solid #E9ECEF;
+          border-radius: 2px;
+          margin-bottom: 0;
+
+          img {
+            margin-right: 0.07rem;
+          }
+        }
+
+        .rules_pull {
+          //line-height: 0.75rem;
+          //height: 0.85rem;
+          border-bottom: 1px solid #E9ECEF;
+          //position: relative;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .clearfix {
+            line-height: 0.5rem;
+
+          }
+
+          .clearfix + div {
+            margin: 0 0 0.1rem;
+          }
+
+          .download {
+            //position: absolute;
+            //right: 1.5rem;
+            color: #007bff;
+            font-size: 0.14rem;
+            margin: 0 0.1rem 0;
+            cursor: pointer;
+          }
+
+          > p, span {
+            font-size: 14px;
+            color: #6b7171;
+            letter-spacing: 0;
+            line-height: 0.2rem;
+          }
+
+          > p {
+            margin-bottom: 1em
+          }
+
+          .ruleText {
+            font-size: 0.16rem;
+            color: #343A40;
+            font-weight: bold;
+            float: left;
+          }
+
+          .file {
+            position: relative;
+            background: $balance-color;
+            border: $balance-border;
+            border-radius: 6px;
+            float: right;
+            font-size: 0.14rem;
+            line-height: 0.14rem;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            width: 1rem;
+            height: 0.32rem;
+            overflow: hidden;
+            //top: 50%;
+            //transform: translateY(-50%);
+            cursor: pointer;
+
+            &.limit-custom-btn {
+              //top: 36px;
+              margin: 0.1rem 0 0;
+            }
+
+            span {
+              display: block;
+              width: 100%;
+              height: 100%;
+              line-height: 0.32rem;
+              text-align: center;
+            }
+
+            input {
+              position: absolute;
+              width: 1rem;
+              height: 0.32rem;
+              left: 0;
+              top: 0;
+              opacity: 0;
+            }
+          }
+        }
+
+      }
+
+      // 阅读并同意
+      .rightIPReadAndAgree {
+        padding: 0.26rem 0.4rem;
+        border-radius: 0 0 0.06rem 0.06rem;
+        border-top: 1px solid #E9ECEF;
+
+        .rightIPReadAndAgreeCheckbox {
+          font-size: 0.14rem;
+          color: #6B7177;
+
+          .span {
+            color: #5c96f5;
+          }
+        }
+      }
+
+      // 两个Btn
+      .rightIPTwoBtn {
+        margin-top: 0.40rem;
+        margin-bottom: 0.66rem;
+        text-align: center;
+
+        .submitBtn, .cancelBtn {
+          cursor: pointer;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0.10rem;
+          background: #F8F9FA;
+          border: 1px solid #6248FF;
+          border-radius: 0.04rem;
+          width: 2.4rem;
+          height: 0.48rem;
+          line-height: 0.48rem;
+          font-size: 0.16rem;
+          color: #6248FF;
+          text-align: center;
+
+          &:hover {
+            background-image: linear-gradient(45deg, #2853FF 0%, #933EFE 100%);
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

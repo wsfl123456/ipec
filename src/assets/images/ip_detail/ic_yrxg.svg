@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_yrxg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2853FF" offset="0%"></stop>
+            <stop stop-color="#933EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_yrxg">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <path d="M10,0 C4.49980874,0 0,4.49977977 0,10.0001159 C0,15.5003362 4.49980874,20.0001159 10,20.0001159 C15.5002202,20.0001159 20,15.5003362 20,10.0001159 C20,4.49977977 15.5002202,0 10,0 M10,2.99987249 C11.6992188,2.99987249 12.9999015,4.30055523 12.9999015,5.99974498 C12.9999015,7.70105016 11.6992188,8.99953054 10,8.99953054 C8.30092615,8.99953054 7.00021444,7.70105016 7.00021444,5.99974498 C7.00021444,4.30055523 8.30089718,2.99987249 10,2.99987249 M10,17.2001634 C7.49968123,17.2001634 5.30102466,15.8993938 4.00034192,14.000313 C4.00034192,11.999461 8.00068388,10.9001762 10,10.9001762 C11.999461,10.9001762 15.999803,11.999461 15.999803,14.000313 C14.6990043,15.8993938 12.5004347,17.2001634 10,17.2001634" id="形状" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

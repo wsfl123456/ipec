@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~antd/dist/antd.min.css";
+
+body {
+  font-size: 0.16rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (max-width: 749px){
+}

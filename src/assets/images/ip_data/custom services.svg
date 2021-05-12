@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>custom services</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6F6F6F" offset="0%"></stop>
+            <stop stop-color="#BABABA" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-78.4%" y="-84.3%" width="260.0%" height="269.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="custom-services">
+            <g>
+                <rect id="矩形" x="0" y="0" width="40" height="40"></rect>
+                <ellipse id="Oval-2" fill="url(#linearGradient-1)" cx="19.6508361" cy="20.3418803" rx="17.0923077" ry="17.0940171"></ellipse>
+                <g id="星-2" filter="url(#filter-2)" transform="translate(19.615385, 19.615385) scale(1, -1) translate(-19.615385, -19.615385) translate(8.461538, 9.230769)" fill="">
+                    <path d="M7.96967904,9.56044601 C7.96967904,9.38268767 7.99344496,9.20977757 8.02205093,9.03836886 L5.0801348,8.07263091 L0,12.9764527 L6.96412646,13.927646 L8.67977105,11.5510704 C8.24128062,11.001718 7.96967904,10.316396 7.96967904,9.56044601 Z" id="Fill-1"></path>
+                    <path d="M10.570061,6.41509615 L10.5716123,3.38995134 L4.3763721,0.0347822057 L5.62976035,7.00608086 L8.43035305,7.92368049 C8.89099604,7.1502456 9.65829999,6.58490964 10.570061,6.41509615 Z" id="Fill-2"></path>
+                    <path d="M11.7423783,3.36746177 L11.740796,6.41678522 C12.6399294,6.58810009 13.3976463,7.14696131 13.856738,7.91098123 L16.677932,6.98850209 L17.9313202,0.014012975 L11.7423783,3.36746177 Z" id="Fill-3"></path>
+                    <path d="M11.1482615,12.7617852 C10.5780347,12.7617852 10.0505927,12.59682 9.58678506,12.3309488 L8.10625548,14.3841311 L11.1594308,20.7691995 L14.2094105,14.3873216 L12.724165,12.3245992 C12.2570996,12.595256 11.7249107,12.7617852 11.1482615,12.7617852 Z" id="Fill-4"></path>
+                    <path d="M17.2149299,8.07263091 L14.2713384,9.03677363 C14.2983931,9.20805723 14.3238344,9.38109245 14.3238344,9.56044601 C14.3238344,10.316396 14.0505264,11.0034384 13.6153247,11.5510704 L15.3261292,13.9260507 L22.2950958,12.9715732 L17.2149299,8.07263091 Z" id="Fill-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

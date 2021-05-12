@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_left">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M5.2,14.3333333 C5.06666667,14.3333333 4.93333333,14.2666667 4.86666667,14.2 C4.66666667,14 4.66666667,13.6666667 4.86666667,13.4666667 L10.0666667,8 L4.86666667,2.53333333 C4.66666667,2.33333333 4.66666667,2 4.86666667,1.8 C5.06666667,1.6 5.4,1.6 5.6,1.8 L11.1333333,7.6 C11.3333333,7.8 11.3333333,8.06666667 11.1333333,8.26666667 L5.6,14.0666667 C5.46666667,14.2666667 5.33333333,14.3333333 5.2,14.3333333 Z" id="路径" fill="#6B7177"></path>
+            </g>
+        </g>
+    </g>
+</svg>

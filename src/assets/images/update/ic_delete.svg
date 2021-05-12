@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_delete</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_delete">
+            <g>
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M8,0 C3.584,0 0,3.584 0,8 C0,12.416 3.584,16 8,16 C12.416,16 16,12.416 16,8 C16,3.584 12.416,0 8,0 Z M11.16,10.68 C11.32,10.84 11.32,11.088 11.16,11.248 C11,11.408 10.752,11.408 10.592,11.248 L7.968,8.624 L5.352,11.24 C5.192,11.4 4.944,11.4 4.784,11.24 C4.624,11.08 4.624,10.832 4.784,10.672 L7.4,8.056 L4.76,5.4 C4.6,5.24 4.6,4.992 4.76,4.832 C4.92,4.672 5.168,4.672 5.328,4.832 L7.976,7.48 L10.632,4.824 C10.792,4.664 11.04,4.664 11.2,4.824 C11.36,4.984 11.36,5.232 11.2,5.392 L8.544,8.048 L11.16,10.68 Z" id="形状" fill="#D0021B" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
